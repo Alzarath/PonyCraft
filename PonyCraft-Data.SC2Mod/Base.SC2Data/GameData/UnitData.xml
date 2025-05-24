@@ -1,0 +1,2366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CUnit id="AlicornSanctuary">
+        <ReviveType value="FusionCore"/>
+        <Facing value="315"/>
+        <Race value="Eque"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="Turnable" value="0"/>
+        <FlagArray index="PreventDefeat" value="1"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="PenaltyRevealed" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="TownAlert" value="1"/>
+        <FlagArray index="NoPortraitTalk" value="1"/>
+        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
+        <FogVisibility value="Snapshot"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Burrow" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="RoachBurrow" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Structure" value="1"/>
+        <LifeStart value="1500"/>
+        <LifeMax value="1500"/>
+        <LifeArmor value="1"/>
+        <LifeArmorName value="Unit/LifeArmorName/EquestrianBuildingArmor"/>
+        <Sight value="9"/>
+        <CostCategory value="Technology"/>
+        <RepairTime value="65"/>
+        <AttackTargetPriority value="11"/>
+        <AbilArray Link="BuildInProgress"/>
+        <AbilArray Link="que5"/>
+        <AbilArray Link="AlicornSanctuaryResearch"/>
+        <CardLayouts>
+            <LayoutButtons Face="ResearchAurora" Type="AbilCmd" AbilCmd="AlicornSanctuaryResearch,Research1" Row="0" Column="0"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
+            <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" Row="1" Column="3"/>
+            <LayoutButtons Face="ResearchParaspriteSwarm" Type="AbilCmd" AbilCmd="AlicornSanctuaryResearch,Research3" Row="2" Column="1"/>
+            <LayoutButtons Face="ResearchMassTeleport" Type="AbilCmd" AbilCmd="AlicornSanctuaryResearch,Research4" Row="2" Column="0"/>
+            <LayoutButtons Face="ResearchSpectralNova" Type="AbilCmd" AbilCmd="AlicornSanctuaryResearch,Research2" Row="0" Column="1"/>
+            <LayoutButtons Face="ResearchPlow" Type="AbilCmd" AbilCmd="AlicornSanctuaryResearch,Research5" Row="1" Column="0"/>
+        </CardLayouts>
+        <CardLayouts>
+            <LayoutButtons Face="ResearchBattlecruiserSpecializations" Type="AbilCmd" AbilCmd="FusionCoreResearch,Research1" Row="0" Column="0"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
+            <LayoutButtons Face="ResearchBattlecruiserEnergyUpgrade" Type="AbilCmd" AbilCmd="FusionCoreResearch,Research2" Row="0" Column="1"/>
+            <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" Row="1" Column="3"/>
+        </CardLayouts>
+        <Radius value="1.5"/>
+        <SeparationRadius value="1.5"/>
+        <Footprint value="Footprint3x3Contour"/>
+        <PlacementFootprint value="Footprint3x3"/>
+        <ScoreMake value="150"/>
+        <ScoreKill value="450"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="1.5"/>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:Melee"/>
+        <GlossaryPriority value="282"/>
+        <HotkeyCategory value="Unit/Category/EquestrianUnits"/>
+        <TechTreeUnlockedUnitArray value="Battlecruiser"/>
+        <TechTreeUnlockedUnitArray value="Hercules"/>
+        <TechTreeUnlockedUnitArray value="Battlecruiser"/>
+        <TechTreeUnlockedUnitArray value="Hercules"/>
+        <ReviveInfoBase>
+            <Charge Link="FusionCore/Revive"/>
+            <Cooldown Link="FusionCore/Revive"/>
+        </ReviveInfoBase>
+        <EnergyStart value="50"/>
+        <EnergyMax value="200"/>
+        <EnergyRegenRate value="0.5625"/>
+        <GlossaryCategory value="Unit/Category/EquestrianUnits"/>
+    </CUnit>
+    <CUnit id="BattleTower">
+        <DeathRevealRadius value="3"/>
+        <ReviveType value="AutoTurret"/>
+        <Race value="Eque"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="Turnable" value="0"/>
+        <FlagArray index="PreventDefeat" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="NoPortraitTalk" value="1"/>
+        <FlagArray index="AILifetime" value="1"/>
+        <FlagArray index="AIDefense" value="1"/>
+        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
+        <FogVisibility value="Snapshot"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Burrow" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="RoachBurrow" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Structure" value="1"/>
+        <LifeStart value="350"/>
+        <LifeMax value="350"/>
+        <LifeArmor value="1"/>
+        <LifeArmorName value="Unit/LifeArmorName/EquestrianBuildingArmor"/>
+        <StationaryTurningRate value="719.4726"/>
+        <TurningRate value="719.4726"/>
+        <Sight value="7"/>
+        <RepairTime value="50"/>
+        <AttackTargetPriority value="20"/>
+        <AbilArray Link="BuildInProgress"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="attack"/>
+        <WeaponArray Link="AutoTurret" Turret="AutoTurret"/>
+        <WeaponArray Link="AutoTurret" Turret="AutoTurret"/>
+        <CardLayouts>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="AttackBuilding" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="3"/>
+            <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" Row="1" Column="3"/>
+        </CardLayouts>
+        <CardLayouts>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="AttackBuilding" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+        </CardLayouts>
+        <Radius value="1"/>
+        <SeparationRadius value="0.75"/>
+        <Footprint value="FootprintAutoTurret"/>
+        <PlacementFootprint value="FootprintAutoTurret"/>
+        <ScoreMake value="50"/>
+        <ScoreKill value="150"/>
+        <SubgroupPriority value="2"/>
+        <MinimapRadius value="0.75"/>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:Melee"/>
+        <GlossaryCategory value="Unit/Category/EquestrianUnits"/>
+        <GlossaryPriority value="291"/>
+        <GlossaryStrongArray value="Marine"/>
+        <GlossaryStrongArray value="Firebat"/>
+        <GlossaryStrongArray value="Marine"/>
+        <GlossaryStrongArray value="Firebat"/>
+        <GlossaryWeakArray value="Diamondback"/>
+        <GlossaryWeakArray value="Marauder"/>
+        <GlossaryWeakArray value="SiegeTank"/>
+        <GlossaryWeakArray value="Diamondback"/>
+        <GlossaryWeakArray value="Marauder"/>
+        <GlossaryWeakArray value="SiegeTank"/>
+        <HotkeyCategory value="Unit/Category/EquestrianUnits"/>
+        <KillDisplay value="Never"/>
+        <ReviveInfoBase>
+            <Charge Link="AutoTurret/Revive"/>
+            <Cooldown Link="AutoTurret/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
+    <CUnit id="Beastiary">
+        <DeathRevealRadius value="3"/>
+        <ReviveType value="Armory"/>
+        <Race value="Eque"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="Turnable" value="0"/>
+        <FlagArray index="PreventDefeat" value="1"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="PenaltyRevealed" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="TownAlert" value="1"/>
+        <FlagArray index="NoPortraitTalk" value="1"/>
+        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
+        <FogVisibility value="Snapshot"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Burrow" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="RoachBurrow" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Structure" value="1"/>
+        <LifeStart value="1500"/>
+        <LifeMax value="1500"/>
+        <LifeArmor value="1"/>
+        <LifeArmorName value="Unit/LifeArmorName/EquestrianBuildingArmor"/>
+        <StationaryTurningRate value="719.4726"/>
+        <TurningRate value="719.4726"/>
+        <Sight value="9"/>
+        <CostCategory value="Technology"/>
+        <RepairTime value="65"/>
+        <AttackTargetPriority value="11"/>
+        <AbilArray Link="BuildInProgress"/>
+        <AbilArray Link="que5"/>
+        <AbilArray Link="BeastiaryResearch"/>
+        <CardLayouts>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
+            <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" Row="1" Column="3"/>
+            <LayoutButtons Face="TailSpikes" Type="AbilCmd" AbilCmd="BeastiaryResearch,Research2" Row="0" Column="0"/>
+            <LayoutButtons Face="ResearchDeepBreath" Type="AbilCmd" AbilCmd="BeastiaryResearch,Research3" Row="0" Column="1"/>
+            <LayoutButtons Face="ResearchHydraRegeneration" Type="AbilCmd" AbilCmd="BeastiaryResearch,Research1" Row="1" Column="0"/>
+            <LayoutButtons Face="ResearchWingTraining" Type="AbilCmd" AbilCmd="BeastiaryResearch,Research4" Row="1" Column="1"/>
+        </CardLayouts>
+        <CardLayouts>
+            <LayoutButtons Face="TerranVehicleWeaponsLevel1" Type="AbilCmd" AbilCmd="ArmoryResearch,Research6" Row="0" Column="0"/>
+            <LayoutButtons Face="TerranVehicleWeaponsLevel2" Type="AbilCmd" AbilCmd="ArmoryResearch,Research7" Row="0" Column="0"/>
+            <LayoutButtons Face="TerranVehicleWeaponsLevel3" Type="AbilCmd" AbilCmd="ArmoryResearch,Research8" Row="0" Column="0"/>
+            <LayoutButtons Face="TerranVehicleWeaponsUltraCapacitorsLevel1" Type="AbilCmd" AbilCmd="ArmoryResearch,Research16" Row="0" Column="0"/>
+            <LayoutButtons Face="TerranVehicleWeaponsUltraCapacitorsLevel2" Type="AbilCmd" AbilCmd="ArmoryResearch,Research17" Row="0" Column="0"/>
+            <LayoutButtons Face="TerranVehicleWeaponsUltraCapacitorsLevel3" Type="AbilCmd" AbilCmd="ArmoryResearch,Research18" Row="0" Column="0"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
+            <LayoutButtons Face="TerranVehiclePlatingLevel1" Type="AbilCmd" AbilCmd="ArmoryResearch,Research3" Row="0" Column="1"/>
+            <LayoutButtons Face="TerranVehiclePlatingLevel2" Type="AbilCmd" AbilCmd="ArmoryResearch,Research4" Row="0" Column="1"/>
+            <LayoutButtons Face="TerranVehiclePlatingLevel3" Type="AbilCmd" AbilCmd="ArmoryResearch,Research5" Row="0" Column="1"/>
+            <LayoutButtons Face="TerranVehiclePlatingVanadiumPlatingLevel1" Type="AbilCmd" AbilCmd="ArmoryResearch,Research22" Row="0" Column="1"/>
+            <LayoutButtons Face="TerranVehiclePlatingVanadiumPlatingLevel2" Type="AbilCmd" AbilCmd="ArmoryResearch,Research23" Row="0" Column="1"/>
+            <LayoutButtons Face="TerranVehiclePlatingVanadiumPlatingLevel3" Type="AbilCmd" AbilCmd="ArmoryResearch,Research24" Row="0" Column="1"/>
+            <LayoutButtons Face="TerranShipWeaponsLevel1" Type="AbilCmd" AbilCmd="ArmoryResearch,Research12" Row="1" Column="0"/>
+            <LayoutButtons Face="TerranShipWeaponsLevel2" Type="AbilCmd" AbilCmd="ArmoryResearch,Research13" Row="1" Column="0"/>
+            <LayoutButtons Face="TerranShipWeaponsLevel3" Type="AbilCmd" AbilCmd="ArmoryResearch,Research14" Row="1" Column="0"/>
+            <LayoutButtons Face="TerranShipWeaponsUltraCapacitorsLevel1" Type="AbilCmd" AbilCmd="ArmoryResearch,Research19" Row="1" Column="0"/>
+            <LayoutButtons Face="TerranShipWeaponsUltraCapacitorsLevel2" Type="AbilCmd" AbilCmd="ArmoryResearch,Research20" Row="1" Column="0"/>
+            <LayoutButtons Face="TerranShipWeaponsUltraCapacitorsLevel3" Type="AbilCmd" AbilCmd="ArmoryResearch,Research21" Row="1" Column="0"/>
+            <LayoutButtons Face="TerranShipPlatingLevel1" Type="AbilCmd" AbilCmd="ArmoryResearch,Research9" Row="1" Column="1"/>
+            <LayoutButtons Face="TerranShipPlatingLevel2" Type="AbilCmd" AbilCmd="ArmoryResearch,Research10" Row="1" Column="1"/>
+            <LayoutButtons Face="TerranShipPlatingLevel3" Type="AbilCmd" AbilCmd="ArmoryResearch,Research11" Row="1" Column="1"/>
+            <LayoutButtons Face="TerranShipPlatingVanadiumPlatingLevel1" Type="AbilCmd" AbilCmd="ArmoryResearch,Research25" Row="1" Column="1"/>
+            <LayoutButtons Face="TerranShipPlatingVanadiumPlatingLevel2" Type="AbilCmd" AbilCmd="ArmoryResearch,Research26" Row="1" Column="1"/>
+            <LayoutButtons Face="TerranShipPlatingVanadiumPlatingLevel3" Type="AbilCmd" AbilCmd="ArmoryResearch,Research27" Row="1" Column="1"/>
+            <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" Row="1" Column="3"/>
+        </CardLayouts>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <Footprint value="Footprint3x3Contour"/>
+        <PlacementFootprint value="Footprint3x3"/>
+        <ScoreMake value="150"/>
+        <ScoreKill value="450"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="1.25"/>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:Melee"/>
+        <GlossaryPriority value="274"/>
+        <HotkeyCategory value="Unit/Category/EquestrianUnits"/>
+        <TechTreeUnlockedUnitArray value="Thor"/>
+        <TechTreeUnlockedUnitArray value="Thor"/>
+        <ReviveInfoBase>
+            <Charge Link="Armory/Revive"/>
+            <Cooldown Link="Armory/Revive"/>
+        </ReviveInfoBase>
+        <GlossaryCategory value="Unit/Category/EquestrianUnits"/>
+    </CUnit>
+    <CUnit id="CloudFort">
+        <DeathRevealRadius value="3"/>
+        <ReviveType value="Starport"/>
+        <Facing value="315"/>
+        <Race value="Eque"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="Turnable" value="0"/>
+        <FlagArray index="PreventDefeat" value="1"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="PenaltyRevealed" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="TownAlert" value="1"/>
+        <FlagArray index="NoPortraitTalk" value="1"/>
+        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
+        <FogVisibility value="Snapshot"/>
+        <PlaneArray index="Air" value="1"/>
+        <Collide index="Flying" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Structure" value="1"/>
+        <LifeStart value="1000"/>
+        <LifeMax value="1000"/>
+        <LifeArmor value="1"/>
+        <LifeArmorName value="Unit/LifeArmorName/EquestrianBuildingArmor"/>
+        <StationaryTurningRate value="719.4726"/>
+        <TurningRate value="719.4726"/>
+        <Sight value="9"/>
+        <CostCategory value="Technology"/>
+        <RepairTime value="50"/>
+        <AttackTargetPriority value="11"/>
+        <AbilArray Link="BuildInProgress"/>
+        <AbilArray Link="que5"/>
+        <AbilArray Link="CloudFortTrain"/>
+        <AbilArray Link="Rally"/>
+        <AbilArray Link="ResearchFilteredGoggles"/>
+        <AbilArray Link="move"/>
+        <AbilArray Link="stop"/>
+        <CardLayouts>
+            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="4"/>
+            <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="Rally,Rally1" Row="1" Column="4"/>
+            <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" AbilCmd="StarportTrain,Train5" Row="1" Column="3"/>
+            <LayoutButtons Face="TrainSkybolt" Type="AbilCmd" AbilCmd="CloudFortTrain,Train1" Row="0" Column="0"/>
+            <LayoutButtons Face="TrainWeatherPony" Type="AbilCmd" AbilCmd="CloudFortTrain,Train2" Row="0" Column="1"/>
+            <LayoutButtons Face="TrainFeatherstriker" Type="AbilCmd" AbilCmd="CloudFortTrain,Train4" Row="1" Column="0"/>
+            <LayoutButtons Face="ResearchFilteredGoggles" Type="AbilCmd" AbilCmd="ResearchFilteredGoggles,Research1" Row="2" Column="0"/>
+            <LayoutButtons Face="TrainStarDiver" Type="AbilCmd" AbilCmd="CloudFortTrain,Train3" Row="0" Column="2"/>
+        </CardLayouts>
+        <CardLayouts>
+            <LayoutButtons Face="VikingFighter" Type="AbilCmd" AbilCmd="StarportTrain,Train5" Row="0" Column="0"/>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Type="AbilCmd" Row="0" Column="0"/>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Face="Medivac" Type="AbilCmd" AbilCmd="StarportTrain,Train1" Row="0" Column="1"/>
+            <LayoutButtons Face="Raven" Type="AbilCmd" AbilCmd="StarportTrain,Train3" Row="0" Column="2"/>
+            <LayoutButtons Face="BuildScienceVessel" Type="AbilCmd" AbilCmd="StarportTrain,Train7" Row="0" Column="2"/>
+            <LayoutButtons Face="Banshee" Type="AbilCmd" AbilCmd="StarportTrain,Train2" Row="0" Column="3"/>
+            <LayoutButtons Face="Battlecruiser" Type="AbilCmd" AbilCmd="StarportTrain,Train4" Row="0" Column="4"/>
+            <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="Rally,Rally1" Row="1" Column="4"/>
+            <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="StarportAddOns,Halt" Row="2" Column="4"/>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" AbilCmd="StarportTrain,Train5" Row="1" Column="3"/>
+            <LayoutButtons Face="Wraith" Type="AbilCmd" AbilCmd="StarportTrain,Train8" Row="1" Column="0"/>
+            <LayoutButtons Face="BuildHercules" Type="AbilCmd" AbilCmd="StarportTrain,Train6" Row="1" Column="1"/>
+        </CardLayouts>
+        <Radius value="1.625"/>
+        <SeparationRadius value="1.625"/>
+        <Footprint value="Footprint3x3Contour"/>
+        <PlacementFootprint value="Footprint3x3"/>
+        <ScoreMake value="200"/>
+        <ScoreKill value="600"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="1.625"/>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:Melee"/>
+        <TechAliasArray value="Alias_Starport"/>
+        <TechAliasArray value="Alias_Starport"/>
+        <GlossaryPriority value="278"/>
+        <HotkeyCategory value="Unit/Category/EquestrianUnits"/>
+        <TechTreeProducedUnitArray value="VikingFighter"/>
+        <TechTreeProducedUnitArray value="Medivac"/>
+        <TechTreeProducedUnitArray value="Raven"/>
+        <TechTreeProducedUnitArray value="Banshee"/>
+        <TechTreeProducedUnitArray value="Battlecruiser"/>
+        <TechTreeProducedUnitArray value="ScienceVessel"/>
+        <TechTreeProducedUnitArray value="Wraith"/>
+        <TechTreeProducedUnitArray value="Hercules"/>
+        <TechTreeProducedUnitArray value="VikingFighter"/>
+        <TechTreeProducedUnitArray value="Medivac"/>
+        <TechTreeProducedUnitArray value="Raven"/>
+        <TechTreeProducedUnitArray value="Banshee"/>
+        <TechTreeProducedUnitArray value="Battlecruiser"/>
+        <TechTreeProducedUnitArray value="ScienceVessel"/>
+        <TechTreeProducedUnitArray value="Wraith"/>
+        <TechTreeProducedUnitArray value="Hercules"/>
+        <ReviveInfoBase>
+            <Charge Link="Starport/Revive"/>
+            <Cooldown Link="Starport/Revive"/>
+        </ReviveInfoBase>
+        <Mover value="Fly"/>
+        <Speed value="1"/>
+        <Acceleration value="1"/>
+        <Height value="2"/>
+        <GlossaryCategory value="Unit/Category/EquestrianUnits"/>
+    </CUnit>
+    <CUnit id="Cockatrice">
+        <DeathRevealRadius value="3"/>
+        <ReviveType value="Ghost"/>
+        <Race value="Eque"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <Attributes index="Psionic" value="1"/>
+        <LifeStart value="85"/>
+        <LifeMax value="85"/>
+        <LifeArmorName value="Unit/LifeArmorName/MonsterArmor"/>
+        <Speed value="3"/>
+        <Acceleration value="1000"/>
+        <LateralAcceleration value="46.0625"/>
+        <StationaryTurningRate value="999.8437"/>
+        <TurningRate value="999.8437"/>
+        <Sight value="8"/>
+        <CostCategory value="Army"/>
+        <RepairTime value="40"/>
+        <AttackTargetPriority value="20"/>
+        <DamageDealtXP value="1"/>
+        <DamageTakenXP value="1"/>
+        <KillXP value="30"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="move"/>
+        <AbilArray Link="StoneEye"/>
+        <WeaponArray Link="EnvenomedBeak"/>
+        <CardLayouts>
+            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
+            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="StoneEye" Type="AbilCmd" AbilCmd="StoneEye,Execute" Row="2" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <InnerRadius value="0.375"/>
+        <CargoSize value="2"/>
+        <ScoreMake value="300"/>
+        <ScoreKill value="600"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="18"/>
+        <MinimapRadius value="0.375"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
+        <TacticalAIThink value="AIThinkGhost"/>
+        <AIEvalFactor value="1.2"/>
+        <GlossaryCategory value="Unit/Category/EquestrianUnits"/>
+        <GlossaryPriority value="80"/>
+        <HotkeyCategory value="Unit/Category/EquestrianUnits"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="33"/>
+            <ChanceArray index="Idle" value="33"/>
+            <ChanceArray index="Turn" value="33"/>
+        </Fidget>
+        <ReviveInfoBase>
+            <Charge Link="Ghost/Revive"/>
+            <Cooldown Link="Ghost/Revive"/>
+        </ReviveInfoBase>
+        <Food value="-2"/>
+        <BehaviorArray Link="WingTraining"/>
+    </CUnit>
+    <CUnit id="Compressor">
+        <DeathRevealRadius value="3"/>
+        <ReviveType value="Refinery"/>
+        <Facing value="315"/>
+        <Race value="Eque"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="Turnable" value="0"/>
+        <FlagArray index="PreventDefeat" value="1"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="PenaltyRevealed" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="TownAlert" value="1"/>
+        <FlagArray index="NoPortraitTalk" value="1"/>
+        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
+        <ResourceState value="Harvestable"/>
+        <ResourceType value="Vespene"/>
+        <FogVisibility value="Snapshot"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Burrow" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="RoachBurrow" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Structure" value="1"/>
+        <LifeStart value="600"/>
+        <LifeMax value="600"/>
+        <LifeArmor value="1"/>
+        <LifeArmorName value="Unit/LifeArmorName/EquestrianBuildingArmor"/>
+        <StationaryTurningRate value="719.4726"/>
+        <TurningRate value="719.4726"/>
+        <Sight value="9"/>
+        <CostCategory value="Economy"/>
+        <RepairTime value="30"/>
+        <AttackTargetPriority value="11"/>
+        <AbilArray Link="BuildInProgress"/>
+        <BehaviorArray Link="HarvestableVespeneGeyserGas"/>
+        <BehaviorArray Link="RefineryMorph"/>
+        <CardLayouts>
+            <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" Row="1" Column="3"/>
+        </CardLayouts>
+        <CardLayouts>
+            <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" Row="1" Column="3"/>
+            <LayoutButtons>
+                <Face value="MicroFiltering"/>
+                <Type value="Passive"/>
+                <AbilCmd value="255"/>
+                <Requirements value="HaveMicroFiltering"/>
+                <Row value="1"/>
+                <Column value="0"/>
+            </LayoutButtons>
+        </CardLayouts>
+        <Radius value="1.5"/>
+        <SeparationRadius value="1.5"/>
+        <Footprint value="FootprintGeyserRoundedBuilt"/>
+        <PlacementFootprint value="Footprint3x3CappedGeyser"/>
+        <BuiltOn value="VespeneGeyser"/>
+        <BuiltOn value="SpacePlatformGeyser"/>
+        <BuiltOn value="RichVespeneGeyser"/>
+        <BuiltOn value="VespeneGeyser"/>
+        <BuiltOn value="SpacePlatformGeyser"/>
+        <BuiltOn value="RichVespeneGeyser"/>
+        <ScoreMake value="50"/>
+        <ScoreKill value="150"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="1.5"/>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:Melee"/>
+        <GlossaryPriority value="244"/>
+        <HotkeyCategory value="Unit/Category/EquestrianUnits"/>
+        <ReviveInfoBase>
+            <Charge Link="Refinery/Revive"/>
+            <Cooldown Link="Refinery/Revive"/>
+        </ReviveInfoBase>
+        <GlossaryCategory value="Unit/Category/EquestrianUnits"/>
+    </CUnit>
+    <CUnit id="Deadeye">
+        <DeathRevealRadius value="3"/>
+        <ReviveType value="Sentry"/>
+        <Race value="Eque"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <Attributes index="Psionic" value="1"/>
+        <EnergyStart value="50"/>
+        <EnergyMax value="200"/>
+        <EnergyRegenRate value="0.5625"/>
+        <LifeStart value="80"/>
+        <LifeMax value="80"/>
+        <LifeArmorName value="Unit/LifeArmorName/EquineArmor"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/ProtossPlasmaShields"/>
+        <Speed value="2.5"/>
+        <Acceleration value="1000"/>
+        <LateralAcceleration value="46"/>
+        <StationaryTurningRate value="999.8437"/>
+        <TurningRate value="999.8437"/>
+        <Sight value="10"/>
+        <CostCategory value="Army"/>
+        <AttackTargetPriority value="20"/>
+        <DamageDealtXP value="1"/>
+        <DamageTakenXP value="1"/>
+        <KillXP value="90"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="move"/>
+        <AbilArray Link="ProgressRally"/>
+        <AbilArray Link="BuildInProgress"/>
+        <AbilArray Link="Teleport"/>
+        <AbilArray Link="DeadeyeCloak"/>
+        <WeaponArray Link="PsychicArrow"/>
+        <CardLayouts>
+            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
+            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="ProgressRally,Rally1" Row="1" Column="4"/>
+            <LayoutButtons Face="Blink" Type="AbilCmd" AbilCmd="Teleport,Execute" Row="2" Column="1"/>
+            <LayoutButtons Face="CloakOnDeadeye" Type="AbilCmd" AbilCmd="DeadeyeCloak,On" Row="2" Column="0"/>
+            <LayoutButtons Face="CloakOff" Type="AbilCmd" AbilCmd="DeadeyeCloak,Off" Row="2" Column="0"/>
+        </CardLayouts>
+        <SeparationRadius value="0.625"/>
+        <InnerRadius value="0.375"/>
+        <CargoSize value="1"/>
+        <ScoreMake value="400"/>
+        <ScoreKill value="800"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="16"/>
+        <MinimapRadius value="0.375"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
+        <TacticalAIThink value="AIThinkDisruptor"/>
+        <GlossaryCategory value="Unit/Category/EquestrianUnits"/>
+        <GlossaryPriority value="30"/>
+        <HotkeyCategory value="Unit/Category/EquestrianUnits"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="5"/>
+            <ChanceArray index="Idle" value="90"/>
+            <ChanceArray index="Turn" value="5"/>
+        </Fidget>
+        <ReviveInfoBase>
+            <Charge Link="Sentry/Revive"/>
+            <Cooldown Link="Sentry/Revive"/>
+        </ReviveInfoBase>
+        <Food value="-2"/>
+    </CUnit>
+    <CUnit id="Dragon">
+        <DeathRevealRadius value="3"/>
+        <ReviveType value="Wraith"/>
+        <Race value="Eque"/>
+        <Mob value="Campaign"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <PlaneArray index="Air" value="1"/>
+        <Collide index="Flying" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <Attributes index="Massive" value="1"/>
+        <LifeStart value="400"/>
+        <LifeMax value="400"/>
+        <LifeArmorName value="Unit/LifeArmorName/MonsterArmor"/>
+        <EnergyStart value="50"/>
+        <EnergyMax value="200"/>
+        <EnergyRegenRate value="0.5625"/>
+        <Mover value="Fly"/>
+        <Speed value="1.6015"/>
+        <Acceleration value="2.625"/>
+        <Sight value="12"/>
+        <Height value="3.75"/>
+        <VisionHeight value="4"/>
+        <AttackTargetPriority value="20"/>
+        <DamageDealtXP value="1"/>
+        <DamageTakenXP value="1"/>
+        <KillXP value="50"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="move"/>
+        <BehaviorArray Link="SpikedTail"/>
+        <WeaponArray Link="Spitfire"/>
+        <CardLayouts>
+            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
+            <LayoutButtons Face="DragonBreath" Type="Passive" Row="1" Column="0"/>
+            <LayoutButtons Face="DeepBreathUpgraded" Type="Passive" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.625"/>
+        <SeparationRadius value="0.625"/>
+        <ScoreMake value="400"/>
+        <ScoreKill value="800"/>
+        <SubgroupPriority value="15"/>
+        <MinimapRadius value="0.625"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
+        <GlossaryCategory value="Unit/Category/EquestrianUnits"/>
+        <GlossaryPriority value="180"/>
+        <GlossaryStrongArray value="Mutalisk"/>
+        <GlossaryStrongArray value="VoidRay"/>
+        <GlossaryStrongArray value="Battlecruiser"/>
+        <GlossaryWeakArray value="SporeCrawler"/>
+        <GlossaryWeakArray value="PhotonCannon"/>
+        <GlossaryWeakArray value="MissileTurret"/>
+        <HotkeyCategory value="Unit/Category/EquestrianUnits"/>
+        <ReviveInfoBase>
+            <Charge Link="Wraith/Revive"/>
+            <Cooldown Link="Wraith/Revive"/>
+        </ReviveInfoBase>
+        <LifeArmor value="2"/>
+        <Food value="-6"/>
+    </CUnit>
+    <CUnit id="Embassy">
+        <DeathRevealRadius value="3"/>
+        <ReviveType value="TwilightCouncil"/>
+        <Facing value="315"/>
+        <Race value="Eque"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="Turnable" value="0"/>
+        <FlagArray index="PreventDefeat" value="1"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="PenaltyRevealed" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="TownAlert" value="1"/>
+        <FlagArray index="NoPortraitTalk" value="1"/>
+        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
+        <FogVisibility value="Snapshot"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Burrow" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="RoachBurrow" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Structure" value="1"/>
+        <LifeStart value="1200"/>
+        <LifeMax value="1200"/>
+        <LifeArmor value="1"/>
+        <LifeArmorName value="Unit/LifeArmorName/EquestrianBuildingArmor"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/ProtossPlasmaShields"/>
+        <StationaryTurningRate value="719.4726"/>
+        <TurningRate value="719.4726"/>
+        <Sight value="9"/>
+        <CostCategory value="Technology"/>
+        <AttackTargetPriority value="11"/>
+        <AbilArray Link="BuildInProgress"/>
+        <AbilArray Link="que5"/>
+        <CardLayouts>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="3"/>
+            <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" Row="1" Column="3"/>
+        </CardLayouts>
+        <CardLayouts>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Face="ResearchStalkerTeleport" Type="AbilCmd" AbilCmd="TwilightCouncilResearch,Research2" Row="0" Column="1"/>
+            <LayoutButtons Face="ResearchCharge" Type="AbilCmd" AbilCmd="TwilightCouncilResearch,Research1" Row="0" Column="0"/>
+        </CardLayouts>
+        <Radius value="1.5"/>
+        <SeparationRadius value="1.5"/>
+        <Footprint value="Footprint3x3Contour"/>
+        <PlacementFootprint value="Footprint3x3"/>
+        <ScoreMake value="100"/>
+        <ScoreKill value="300"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="2"/>
+        <MinimapRadius value="1.5"/>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:Melee"/>
+        <TacticalAI value="TwilightCouncil"/>
+        <GlossaryPriority value="164"/>
+        <HotkeyCategory value="Unit/Category/EquestrianUnits"/>
+        <AIEvaluateAlias value="TwilightCouncil"/>
+        <ReviveInfoBase>
+            <Charge Link="TwilightCouncil/Revive"/>
+            <Cooldown Link="TwilightCouncil/Revive"/>
+        </ReviveInfoBase>
+        <GlossaryCategory value="Unit/Category/EquestrianUnits"/>
+    </CUnit>
+    <CUnit id="Featherstriker">
+        <DeathRevealRadius value="3"/>
+        <ReviveType value="Mutalisk"/>
+        <Race value="Eque"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <PlaneArray index="Air" value="1"/>
+        <Collide index="Flying" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="200"/>
+        <LifeMax value="200"/>
+        <LifeArmorName value="Unit/LifeArmorName/MonsterArmor"/>
+        <Mover value="Fly"/>
+        <Speed value="3"/>
+        <Acceleration value="3.25"/>
+        <StationaryTurningRate value="1499.9414"/>
+        <TurningRate value="1499.9414"/>
+        <Sight value="10"/>
+        <Height value="3.75"/>
+        <VisionHeight value="4"/>
+        <CostCategory value="Army"/>
+        <AttackTargetPriority value="20"/>
+        <DamageDealtXP value="1"/>
+        <DamageTakenXP value="1"/>
+        <KillXP value="40"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="move"/>
+        <WeaponArray Link="FeatherStrikerTalons"/>
+        <CardLayouts>
+            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
+        </CardLayouts>
+        <ScoreMake value="300"/>
+        <ScoreKill value="600"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="13"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
+        <GlossaryCategory value="Unit/Category/EquestrianUnits"/>
+        <GlossaryPriority value="40"/>
+        <GlossaryStrongArray value="VoidRay"/>
+        <GlossaryWeakArray value="MissileTurret"/>
+        <GlossaryWeakArray value="Marine"/>
+        <GlossaryWeakArray value="PhotonCannon"/>
+        <HotkeyCategory value="Unit/Category/EquestrianUnits"/>
+        <ReviveInfoBase>
+            <Charge Link="Mutalisk/Revive"/>
+            <Cooldown Link="Mutalisk/Revive"/>
+        </ReviveInfoBase>
+        <LifeArmor value="1"/>
+        <Food value="-4"/>
+        <CostResource index="Minerals" value="200"/>
+        <CostResource index="Vespene" value="50"/>
+    </CUnit>
+    <CUnit id="Garrison">
+        <DeathRevealRadius value="3"/>
+        <ReviveType value="Barracks"/>
+        <Facing value="315"/>
+        <Race value="Eque"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="Turnable" value="0"/>
+        <FlagArray index="PreventDefeat" value="1"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="PenaltyRevealed" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="TownAlert" value="1"/>
+        <FlagArray index="NoPortraitTalk" value="1"/>
+        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
+        <FogVisibility value="Snapshot"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Burrow" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="RoachBurrow" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Structure" value="1"/>
+        <LifeStart value="1000"/>
+        <LifeMax value="1000"/>
+        <LifeArmor value="1"/>
+        <LifeArmorName value="Unit/LifeArmorName/EquestrianBuildingArmor"/>
+        <StationaryTurningRate value="719.4726"/>
+        <TurningRate value="719.4726"/>
+        <Sight value="9"/>
+        <CostCategory value="Technology"/>
+        <RepairTime value="65"/>
+        <AttackTargetPriority value="11"/>
+        <AbilArray Link="BuildInProgress"/>
+        <AbilArray Link="que5"/>
+        <AbilArray Link="Rally"/>
+        <AbilArray Link="GarrisonTrain"/>
+        <CardLayouts>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="Rally,Rally1" Row="1" Column="4"/>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" Row="1" Column="3"/>
+            <LayoutButtons Face="TrainMilitia" Type="AbilCmd" AbilCmd="GarrisonTrain,Train1" Row="0" Column="0"/>
+            <LayoutButtons Face="TrainGreatCharger" Type="AbilCmd" AbilCmd="GarrisonTrain,Train4" Row="0" Column="1"/>
+            <LayoutButtons Face="TrainDeadeye" Type="AbilCmd" AbilCmd="GarrisonTrain,Train2" Row="1" Column="0"/>
+            <LayoutButtons Face="TrainMage" Type="AbilCmd" AbilCmd="GarrisonTrain,Train3" Row="1" Column="1"/>
+            <LayoutButtons Face="TrainPlaneWarper" Type="AbilCmd" AbilCmd="GarrisonTrain,Train5" Row="1" Column="2"/>
+        </CardLayouts>
+        <CardLayouts>
+            <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="BarracksTrain,Train1" Row="0" Column="0"/>
+            <LayoutButtons Face="Marauder" Type="AbilCmd" AbilCmd="BarracksTrain,Train4" Row="0" Column="1"/>
+            <LayoutButtons Face="Reaper" Type="AbilCmd" AbilCmd="BarracksTrain,Train2" Row="0" Column="2"/>
+            <LayoutButtons Face="Ghost" Type="AbilCmd" AbilCmd="BarracksTrain,Train3" Row="0" Column="3"/>
+            <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="Rally,Rally1" Row="1" Column="4"/>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="BarracksAddOns,Halt" Row="2" Column="4"/>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" Row="1" Column="3"/>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Face="Spectre" Type="AbilCmd" AbilCmd="BarracksTrain,Train7" Row="0" Column="3"/>
+            <LayoutButtons Face="Medic" Type="AbilCmd" AbilCmd="BarracksTrain,Train5" Row="1" Column="0"/>
+            <LayoutButtons Face="Firebat" Type="AbilCmd" AbilCmd="BarracksTrain,Train6" Row="1" Column="1"/>
+        </CardLayouts>
+        <Radius value="1.75"/>
+        <SeparationRadius value="1.75"/>
+        <Footprint value="Footprint3x3Contour"/>
+        <PlacementFootprint value="Footprint3x3"/>
+        <ScoreMake value="75"/>
+        <ScoreKill value="225"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="1.75"/>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:Melee"/>
+        <TechAliasArray value="Alias_Barracks"/>
+        <TechAliasArray value="Alias_Barracks"/>
+        <GlossaryPriority value="248"/>
+        <HotkeyCategory value="Unit/Category/EquestrianUnits"/>
+        <TechTreeProducedUnitArray value="Marine"/>
+        <TechTreeProducedUnitArray value="Marauder"/>
+        <TechTreeProducedUnitArray value="Reaper"/>
+        <TechTreeProducedUnitArray value="Ghost"/>
+        <TechTreeProducedUnitArray value="Spectre"/>
+        <TechTreeProducedUnitArray value="Medic"/>
+        <TechTreeProducedUnitArray value="Firebat"/>
+        <TechTreeProducedUnitArray value="Marine"/>
+        <TechTreeProducedUnitArray value="Marauder"/>
+        <TechTreeProducedUnitArray value="Reaper"/>
+        <TechTreeProducedUnitArray value="Ghost"/>
+        <TechTreeProducedUnitArray value="Spectre"/>
+        <TechTreeProducedUnitArray value="Medic"/>
+        <TechTreeProducedUnitArray value="Firebat"/>
+        <ReviveInfoBase>
+            <Charge Link="Barracks/Revive"/>
+            <Cooldown Link="Barracks/Revive"/>
+        </ReviveInfoBase>
+        <GlossaryCategory value="Unit/Category/EquestrianUnits"/>
+    </CUnit>
+    <CUnit id="Glades">
+        <DeathRevealRadius value="3"/>
+        <ReviveType value="Factory"/>
+        <Facing value="315"/>
+        <Race value="Eque"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="Turnable" value="0"/>
+        <FlagArray index="PreventDefeat" value="1"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="PenaltyRevealed" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="TownAlert" value="1"/>
+        <FlagArray index="NoPortraitTalk" value="1"/>
+        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
+        <FogVisibility value="Snapshot"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Burrow" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="RoachBurrow" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Structure" value="1"/>
+        <LifeStart value="1250"/>
+        <LifeMax value="1250"/>
+        <LifeArmor value="1"/>
+        <LifeArmorName value="Unit/LifeArmorName/EquestrianBuildingArmor"/>
+        <StationaryTurningRate value="719.4726"/>
+        <TurningRate value="719.4726"/>
+        <Sight value="9"/>
+        <CostCategory value="Technology"/>
+        <RepairTime value="60"/>
+        <AttackTargetPriority value="11"/>
+        <AbilArray Link="BuildInProgress"/>
+        <AbilArray Link="que5"/>
+        <AbilArray Link="Rally"/>
+        <AbilArray Link="ForestGladesTrain"/>
+        <CardLayouts>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="Rally,Rally1" Row="1" Column="4"/>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" Row="1" Column="3"/>
+            <LayoutButtons Face="TrainCockatrice" Type="AbilCmd" AbilCmd="ForestGladesTrain,Train1" Row="0" Column="0"/>
+            <LayoutButtons Face="TrainHydra" Type="AbilCmd" AbilCmd="ForestGladesTrain,Train2" Row="0" Column="1"/>
+            <LayoutButtons Face="TrainDragon" Type="AbilCmd" AbilCmd="ForestGladesTrain,Train3" Row="0" Column="2"/>
+            <LayoutButtons Face="TrainZebraHerbalist" Type="AbilCmd" AbilCmd="ForestGladesTrain,Train4" Row="1" Column="0"/>
+        </CardLayouts>
+        <CardLayouts>
+            <LayoutButtons Face="Hellion" Type="AbilCmd" AbilCmd="FactoryTrain,Train6" Row="0" Column="0"/>
+            <LayoutButtons Face="SiegeTank" Type="AbilCmd" AbilCmd="FactoryTrain,Train2" Row="0" Column="1"/>
+            <LayoutButtons Face="Thor" Type="AbilCmd" AbilCmd="FactoryTrain,Train5" Row="0" Column="2"/>
+            <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="Rally,Rally1" Row="1" Column="4"/>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="FactoryAddOns,Halt" Row="2" Column="4"/>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" Row="1" Column="3"/>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Face="Goliath" Type="AbilCmd" AbilCmd="FactoryTrain,Train7" Row="1" Column="2"/>
+            <LayoutButtons Face="Diamondback" Type="AbilCmd" AbilCmd="FactoryTrain,Train8" Row="1" Column="1"/>
+            <LayoutButtons Face="Vulture" Type="AbilCmd" AbilCmd="FactoryTrain,Train9" Row="1" Column="0"/>
+            <LayoutButtons Face="Predator" Type="AbilCmd" AbilCmd="FactoryTrain,Train10" Row="0" Column="3"/>
+        </CardLayouts>
+        <Radius value="1.625"/>
+        <SeparationRadius value="1.625"/>
+        <Footprint value="Footprint3x3Contour"/>
+        <PlacementFootprint value="Footprint3x3"/>
+        <ScoreMake value="200"/>
+        <ScoreKill value="600"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="1.625"/>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:Melee"/>
+        <TechAliasArray value="Alias_Factory"/>
+        <TechAliasArray value="Alias_Factory"/>
+        <GlossaryPriority value="271"/>
+        <HotkeyCategory value="Unit/Category/EquestrianUnits"/>
+        <TechTreeProducedUnitArray value="Hellion"/>
+        <TechTreeProducedUnitArray value="SiegeTank"/>
+        <TechTreeProducedUnitArray value="Thor"/>
+        <TechTreeProducedUnitArray value="Predator"/>
+        <TechTreeProducedUnitArray value="Vulture"/>
+        <TechTreeProducedUnitArray value="Diamondback"/>
+        <TechTreeProducedUnitArray value="Goliath"/>
+        <TechTreeProducedUnitArray value="Hellion"/>
+        <TechTreeProducedUnitArray value="SiegeTank"/>
+        <TechTreeProducedUnitArray value="Thor"/>
+        <TechTreeProducedUnitArray value="Predator"/>
+        <TechTreeProducedUnitArray value="Vulture"/>
+        <TechTreeProducedUnitArray value="Diamondback"/>
+        <TechTreeProducedUnitArray value="Goliath"/>
+        <ReviveInfoBase>
+            <Charge Link="Factory/Revive"/>
+            <Cooldown Link="Factory/Revive"/>
+        </ReviveInfoBase>
+        <GlossaryCategory value="Unit/Category/EquestrianUnits"/>
+    </CUnit>
+    <CUnit id="GalaApple" parent="MISSILE">
+        <Mover value="MissileDefault"/>
+        <Race value="Eque"/>
+    </CUnit>
+    <CUnit id="CometLauncherWeapon" parent="MISSILE">
+        <Race value="Prot"/>
+        <Mover value="IonCannonsWeapon"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Melee"/>
+    </CUnit>
+    <CUnit id="ParaspriteAir">
+        <DeathRevealRadius value="3"/>
+        <Race value="Eque"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="NoScore" value="1"/>
+        <FlagArray index="AILifetime" value="1"/>
+        <PlaneArray index="Air" value="1"/>
+        <Collide index="Flying" value="1"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="15"/>
+        <LifeMax value="30"/>
+        <LifeArmorName value="Unit/LifeArmorName/ZergGroundArmor"/>
+        <Mover value="Fly"/>
+        <Speed value="3"/>
+        <Acceleration value="4"/>
+        <LateralAcceleration value="46.0625"/>
+        <StationaryTurningRate value="999.8437"/>
+        <TurningRate value="999.8437"/>
+        <Sight value="7"/>
+        <Height value="3"/>
+        <AttackTargetPriority value="20"/>
+        <DamageDealtXP value="1"/>
+        <DamageTakenXP value="1"/>
+        <KillXP value="5"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="move"/>
+        <AbilArray Link="ParaspriteHover"/>
+        <BehaviorArray Link="UnhealthyAppetiteAir"/>
+        <WeaponArray Link="NibbleAir"/>
+        <WeaponArray Link="NibbleAirFriendlyFire"/>
+        <CardLayouts>
+            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
+            <LayoutButtons Face="UnhealthyAppetite" Type="Passive" AbilCmd="SpawnParasprite,0" Row="1" Column="0"/>
+            <LayoutButtons Face="ParaspriteHover" Type="AbilCmd" AbilCmd="ParaspriteHover,Execute" Row="2" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <InnerRadius value="0.375"/>
+        <SubgroupPriority value="14"/>
+        <MinimapRadius value="0.375"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
+        <AIEvalFactor value="0"/>
+        <GlossaryCategory value="Unit/Category/EquestrianUnits"/>
+        <GlossaryPriority value="65"/>
+        <ReviveInfoBase>
+            <Charge Link="Broodling/Revive"/>
+            <Cooldown Link="Broodling/Revive"/>
+        </ReviveInfoBase>
+        <HotkeyCategory value="Unit/Category/EquestrianUnits"/>
+        <ReviveType value="ParaspriteGround"/>
+        <VisionHeight value="4"/>
+        <TacticalAI value="ParaspriteGround"/>
+        <LeaderAlias value="ParaspriteGround"/>
+        <HotkeyAlias value="ParaspriteGround"/>
+        <SelectAlias value="ParaspriteGround"/>
+        <SubgroupAlias value="ParaspriteGround"/>
+        <AIEvaluateAlias value="ParaspriteGround"/>
+    </CUnit>
+    <CUnit id="YorkImperialApple" parent="MISSILE">
+        <Mover value="MissileDefault"/>
+        <Race value="Eque"/>
+    </CUnit>
+    <CUnit id="GreatCharger">
+        <DeathRevealRadius value="3"/>
+        <Race value="Eque"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="TurnBeforeMove" value="1"/>
+        <FlagArray index="AISplash" value="1"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="175"/>
+        <LifeMax value="175"/>
+        <LifeArmor value="1"/>
+        <LifeArmorName value="Unit/LifeArmorName/EquineArmor"/>
+        <Speed value="2.25"/>
+        <SpeedMultiplierCreep value="1.3"/>
+        <Acceleration value="1000"/>
+        <LateralAcceleration value="46.0625"/>
+        <TurningRate value="360"/>
+        <Sight value="9"/>
+        <CostCategory value="Technology"/>
+        <AttackTargetPriority value="20"/>
+        <DamageDealtXP value="1"/>
+        <DamageTakenXP value="1"/>
+        <KillXP value="150"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="move"/>
+        <AbilArray Link="Ram"/>
+        <AbilArray Link="RamPlow"/>
+        <BehaviorArray Link="MassiveVoidRayVulnerability"/>
+        <BehaviorArray Link="YorkImperialApples"/>
+        <WeaponArray Link="HoofBoots"/>
+        <CardLayouts>
+            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
+            <LayoutButtons Face="Ram" Type="AbilCmd" AbilCmd="Ram,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="RamPlowUpgrade" Type="AbilCmd" AbilCmd="RamPlow,Execute" Row="2" Column="0"/>
+        </CardLayouts>
+        <Radius value="1"/>
+        <SeparationRadius value="1"/>
+        <InnerRadius value="0.75"/>
+        <CargoSize value="2"/>
+        <ScoreMake value="800"/>
+        <ScoreKill value="1600"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="12"/>
+        <MinimapRadius value="1"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
+        <GlossaryCategory value="Unit/Category/EquestrianUnits"/>
+        <GlossaryPriority value="55"/>
+        <HotkeyCategory value="Unit/Category/EquestrianUnits"/>
+        <KillDisplay value="Always"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="50"/>
+            <ChanceArray index="Idle" value="50"/>
+        </Fidget>
+        <TauntDuration index="Cheer" value="5"/>
+        <TauntDuration index="Dance" value="5"/>
+        <ReviveInfoBase>
+            <Charge Link="Ultralisk/Revive"/>
+            <Cooldown Link="Ultralisk/Revive"/>
+        </ReviveInfoBase>
+        <Food value="-3"/>
+    </CUnit>
+    <CUnit id="HerdTown">
+        <DeathRevealRadius value="3"/>
+        <ReviveType value="Lair"/>
+        <Race value="Eque"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="Turnable" value="0"/>
+        <FlagArray index="PreventReveal" value="1"/>
+        <FlagArray index="PreventDefeat" value="1"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="TownAlert" value="1"/>
+        <FlagArray index="NoPortraitTalk" value="1"/>
+        <FlagArray index="TownCamera" value="1"/>
+        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
+        <ResourceDropOff index="Minerals" value="1"/>
+        <ResourceDropOff index="Vespene" value="1"/>
+        <ResourceDropOff index="Terrazine" value="1"/>
+        <ResourceDropOff index="Custom" value="1"/>
+        <FogVisibility value="Snapshot"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Burrow" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="RoachBurrow" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <Attributes index="Structure" value="1"/>
+        <LifeStart value="1800"/>
+        <LifeMax value="1800"/>
+        <LifeArmor value="1"/>
+        <LifeRegenRate value="0.2734"/>
+        <LifeArmorName value="Unit/LifeArmorName/EquestrianBuildingArmor"/>
+        <StationaryTurningRate value="719.4726"/>
+        <TurningRate value="719.4726"/>
+        <Sight value="11"/>
+        <Food value="10"/>
+        <CostCategory value="Technology"/>
+        <AttackTargetPriority value="11"/>
+        <AbilArray Link="BuildInProgress"/>
+        <AbilArray Link="que5"/>
+        <AbilArray Link="TrainPioneer"/>
+        <AbilArray Link="RenovateHerdTowntoPonyPalace"/>
+        <AbilArray Link="Rally"/>
+        <CardLayouts>
+            <LayoutButtons Face="TrainPioneer" Type="AbilCmd" AbilCmd="TrainPioneer,Train1" Row="0" Column="0"/>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="RenovateHerdTowntoPonyPalace,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="RenovatePonyPalace" Type="AbilCmd" AbilCmd="RenovateHerdTowntoPonyPalace,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="Rally,Rally1" Row="1" Column="4"/>
+        </CardLayouts>
+        <Radius value="2"/>
+        <SeparationRadius value="2"/>
+        <Footprint value="Footprint6x5DropOffCreepSourceContour"/>
+        <PlacementFootprint value="Footprint6x5DropOffCreepSource"/>
+        <ScoreMake value="150"/>
+        <ScoreKill value="1200"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="2"/>
+        <MinimapRadius value="2.5"/>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:Melee"/>
+        <AIEvalFactor value="0"/>
+        <TechAliasArray value="Alias_Hatchery"/>
+        <TechAliasArray value="Alias_Lair"/>
+        <TechAliasArray value="Alias_Hatchery"/>
+        <TechAliasArray value="Alias_Lair"/>
+        <GlossaryPriority value="14"/>
+        <HotkeyCategory value="Unit/Category/EquestrianUnits"/>
+        <TechTreeUnlockedUnitArray value="Overseer"/>
+        <TechTreeUnlockedUnitArray value="Overseer"/>
+        <ReviveInfoBase>
+            <Charge Link="Lair/Revive"/>
+            <Cooldown Link="Lair/Revive"/>
+        </ReviveInfoBase>
+        <CostResource index="Minerals" value="500"/>
+        <CostResource index="Vespene" value="100"/>
+        <GlossaryCategory value="Unit/Category/EquestrianUnits"/>
+    </CUnit>
+    <CUnit id="Hydra">
+        <DeathRevealRadius value="3"/>
+        <ReviveType value="Queen"/>
+        <Race value="Eque"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="AIDefense" value="1"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="400"/>
+        <LifeMax value="400"/>
+        <LifeArmor value="2"/>
+        <LifeArmorName value="Unit/LifeArmorName/MonsterArmor"/>
+        <Speed value="2.5"/>
+        <Acceleration value="1000"/>
+        <LateralAcceleration value="46"/>
+        <StationaryTurningRate value="999.8437"/>
+        <TurningRate value="999.8437"/>
+        <Sight value="11"/>
+        <CostCategory value="Army"/>
+        <AttackTargetPriority value="20"/>
+        <DamageDealtXP value="1"/>
+        <DamageTakenXP value="1"/>
+        <KillXP value="30"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="move"/>
+        <WeaponArray Link="Snapjaw"/>
+        <CardLayouts>
+            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
+            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="HydraRegeneration" Type="Passive" Requirements="HaveHydraRegeneration" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.875"/>
+        <SeparationRadius value="0.875"/>
+        <InnerRadius value="0.5"/>
+        <CargoSize value="8"/>
+        <ScoreMake value="150"/>
+        <ScoreKill value="300"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="21"/>
+        <MinimapRadius value="0.875"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
+        <AIEvalFactor value="0.55"/>
+        <GlossaryCategory value="Unit/Category/EquestrianUnits"/>
+        <GlossaryPriority value="80"/>
+        <GlossaryStrongArray value="Hellion"/>
+        <GlossaryStrongArray value="Mutalisk"/>
+        <GlossaryStrongArray value="VoidRay"/>
+        <GlossaryStrongArray value="Hellion"/>
+        <GlossaryStrongArray value="Mutalisk"/>
+        <GlossaryStrongArray value="VoidRay"/>
+        <GlossaryWeakArray value="Marine"/>
+        <GlossaryWeakArray value="Zergling"/>
+        <GlossaryWeakArray value="Zealot"/>
+        <GlossaryWeakArray value="Marine"/>
+        <GlossaryWeakArray value="Zergling"/>
+        <GlossaryWeakArray value="Zealot"/>
+        <HotkeyCategory value="Unit/Category/EquestrianUnits"/>
+        <KillDisplay value="Always"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="50"/>
+            <ChanceArray index="Idle" value="50"/>
+        </Fidget>
+        <Food value="-6"/>
+    </CUnit>
+    <CUnit id="Mage">
+        <DeathRevealRadius value="3"/>
+        <Race value="Eque"/>
+        <Mob value="Campaign"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <Attributes index="Psionic" value="1"/>
+        <LifeStart value="85"/>
+        <LifeMax value="85"/>
+        <LifeArmorName value="Unit/LifeArmorName/EquineArmor"/>
+        <Speed value="2.5"/>
+        <Acceleration value="1000"/>
+        <LateralAcceleration value="46"/>
+        <Sight value="11"/>
+        <AttackTargetPriority value="20"/>
+        <DamageDealtXP value="1"/>
+        <DamageTakenXP value="1"/>
+        <KillXP value="80"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="move"/>
+        <AbilArray Link="MagicalInfusion"/>
+        <AbilArray Link="MagicArmor"/>
+        <AbilArray Link="TelekineticJam"/>
+        <AbilArray Link="Glamour"/>
+        <CardLayouts>
+            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
+            <LayoutButtons Face="Glamour" Type="AbilCmd" AbilCmd="Glamour,Execute" Row="2" Column="1"/>
+            <LayoutButtons Face="TelekeneticJam" Type="AbilCmd" AbilCmd="TelekineticJam,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="MagicalInfusion" Type="AbilCmd" AbilCmd="MagicalInfusion,Execute" Row="2" Column="2"/>
+            <LayoutButtons Face="MagicArmor" Type="AbilCmd" AbilCmd="MagicArmor,Execute" Row="2" Column="3"/>
+        </CardLayouts>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <InnerRadius value="0.75"/>
+        <CargoSize value="1"/>
+        <ScoreKill value="1600"/>
+        <SubgroupPriority value="15"/>
+        <MinimapRadius value="1"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
+        <GlossaryCategory value="Unit/Category/EquestrianUnits"/>
+        <GlossaryPriority value="150"/>
+        <ReviveInfoBase>
+            <Charge Link="HybridReaver/Revive"/>
+            <Cooldown Link="HybridReaver/Revive"/>
+        </ReviveInfoBase>
+        <EnergyStart value="100"/>
+        <EnergyMax value="200"/>
+        <EnergyRegenRate value="0.5625"/>
+        <Food value="-2"/>
+        <HotkeyCategory value="Unit/Category/EquestrianUnits"/>
+    </CUnit>
+    <CUnit id="Militia">
+        <DeathRevealRadius value="3"/>
+        <Race value="Eque"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="50"/>
+        <LifeMax value="50"/>
+        <LifeArmorName value="Unit/LifeArmorName/EquineArmor"/>
+        <Speed value="2.5"/>
+        <Acceleration value="1000"/>
+        <LateralAcceleration value="46.0625"/>
+        <StationaryTurningRate value="999.8437"/>
+        <TurningRate value="999.8437"/>
+        <Sight value="8"/>
+        <CostCategory value="Army"/>
+        <AttackTargetPriority value="20"/>
+        <DamageDealtXP value="1"/>
+        <DamageTakenXP value="1"/>
+        <KillXP value="5"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="move"/>
+        <AbilArray Link="que1"/>
+        <WeaponArray Link="HeavyHorseshoes"/>
+        <CardLayouts>
+            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
+        </CardLayouts>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <CargoSize value="1"/>
+        <ScoreMake value="25"/>
+        <ScoreKill value="50"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="8"/>
+        <MinimapRadius value="0.375"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
+        <GlossaryCategory value="Unit/Category/EquestrianUnits"/>
+        <GlossaryPriority value="20"/>
+        <GlossaryStrongArray value="Marauder"/>
+        <GlossaryStrongArray value="Hydralisk"/>
+        <GlossaryWeakArray value="Firebat"/>
+        <GlossaryWeakArray value="Colossus"/>
+        <HotkeyCategory value="Unit/Category/EquestrianUnits"/>
+        <KillDisplay value="Always"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="33"/>
+            <ChanceArray index="Idle" value="33"/>
+            <ChanceArray index="Turn" value="33"/>
+        </Fidget>
+        <TauntDuration index="Cheer" value="5"/>
+        <TauntDuration index="Dance" value="5"/>
+        <Food value="-1"/>
+        <BehaviorArray Link="GrannySmithApples"/>
+    </CUnit>
+    <CUnit id="HydraMissile" parent="MISSILE">
+        <Race value="Eque"/>
+        <Mover value=""/>
+    </CUnit>
+    <CUnit id="GrannySmithApple" parent="MISSILE">
+        <Mover value="MissileDefault"/>
+        <Race value="Eque"/>
+    </CUnit>
+    <CUnit id="ParaspriteGround">
+        <DeathRevealRadius value="3"/>
+        <Race value="Eque"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="NoScore" value="1"/>
+        <FlagArray index="AILifetime" value="1"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="15"/>
+        <LifeMax value="30"/>
+        <LifeArmorName value="Unit/LifeArmorName/ZergGroundArmor"/>
+        <Speed value="3"/>
+        <Acceleration value="4"/>
+        <LateralAcceleration value="46.0625"/>
+        <StationaryTurningRate value="999.8437"/>
+        <TurningRate value="999.8437"/>
+        <Sight value="7"/>
+        <Height value="0.2"/>
+        <AttackTargetPriority value="20"/>
+        <DamageDealtXP value="1"/>
+        <DamageTakenXP value="1"/>
+        <KillXP value="5"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="move"/>
+        <AbilArray Link="ParaspriteFly"/>
+        <WeaponArray Link="NibbleGround"/>
+        <WeaponArray Link="NibbleGroundFriendlyFire"/>
+        <CardLayouts>
+            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
+            <LayoutButtons Face="UnhealthyAppetite" Type="Passive" AbilCmd="SpawnParasprite,0" Row="1" Column="0"/>
+            <LayoutButtons Face="ParaspriteFly" Type="AbilCmd" AbilCmd="ParaspriteFly,Execute" Row="2" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <InnerRadius value="0.375"/>
+        <SubgroupPriority value="14"/>
+        <MinimapRadius value="0.375"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
+        <AIEvalFactor value="0"/>
+        <GlossaryCategory value="Unit/Category/EquestrianUnits"/>
+        <GlossaryPriority value="65"/>
+        <ReviveInfoBase>
+            <Charge Link="Broodling/Revive"/>
+            <Cooldown Link="Broodling/Revive"/>
+        </ReviveInfoBase>
+        <BehaviorArray Link="UnhealthyAppetiteGround"/>
+        <HotkeyCategory value="Unit/Category/EquestrianUnits"/>
+    </CUnit>
+    <CUnit id="Pioneer">
+        <DeathRevealRadius value="3"/>
+        <ReviveType value="SCV"/>
+        <Race value="Eque"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="Worker" value="1"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <DefaultAcquireLevel value="Defensive"/>
+        <Response value="Flee"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="35"/>
+        <LifeMax value="35"/>
+        <LifeArmorName value="Unit/LifeArmorName/EquineArmor"/>
+        <Speed value="2.8125"/>
+        <Acceleration value="3"/>
+        <LateralAcceleration value="46"/>
+        <StationaryTurningRate value="999.8437"/>
+        <TurningRate value="999.8437"/>
+        <Sight value="8"/>
+        <CostCategory value="Economy"/>
+        <RepairTime value="16.667"/>
+        <AttackTargetPriority value="20"/>
+        <AIOverideTargetPriority value="10"/>
+        <DamageDealtXP value="1"/>
+        <DamageTakenXP value="1"/>
+        <KillXP value="10"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="move"/>
+        <AbilArray Link="Repair"/>
+        <AbilArray Link="SCVHarvest"/>
+        <AbilArray Link="EquestrianBuild"/>
+        <WeaponArray Link="UnshodHooves"/>
+        <CardLayouts>
+            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
+            <LayoutButtons Face="Repair" Type="AbilCmd" AbilCmd="Repair,Execute" Row="1" Column="0"/>
+            <LayoutButtons Face="GatherTerr" Type="AbilCmd" AbilCmd="SCVHarvest,Gather" Row="1" Column="1"/>
+            <LayoutButtons Face="ReturnCargo" Type="AbilCmd" AbilCmd="SCVHarvest,Return" Row="1" Column="2"/>
+            <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="TerranBuild,Halt" Row="2" Column="4"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="CancelTerrazineHarvest,255" Row="2" Column="4"/>
+            <LayoutButtons Face="RaiseStructure" Type="Submenu" SubmenuCardId="EBl1" Row="2" Column="0"/>
+            <LayoutButtons Face="RaiseAdvancedStructure" Type="Submenu" SubmenuCardId="EBl2" Row="2" Column="1"/>
+        </CardLayouts>
+        <CardLayouts CardId="EBl1">
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+            <LayoutButtons Face="RaiseOutpost" Type="AbilCmd" AbilCmd="EquestrianBuild,Build1" Row="0" Column="0"/>
+            <LayoutButtons Face="RaiseSmithy" Type="AbilCmd" AbilCmd="EquestrianBuild,Build5" Row="1" Column="1"/>
+            <LayoutButtons Face="RaiseCompressor" Type="AbilCmd" AbilCmd="EquestrianBuild,Build3" Row="0" Column="1"/>
+            <LayoutButtons Face="RaiseOrchard" Type="AbilCmd" AbilCmd="EquestrianBuild,Build2" Row="0" Column="2"/>
+            <LayoutButtons Face="AssembleGarrison" Type="AbilCmd" AbilCmd="EquestrianBuild,Build4" Row="1" Column="0"/>
+            <LayoutButtons Face="RaiseBattleTower" Type="AbilCmd" AbilCmd="EquestrianBuild,Build6" Row="1" Column="2"/>
+            <LayoutButtons Face="RaiseUniversity" Type="AbilCmd" AbilCmd="EquestrianBuild,Build7" Row="2" Column="0"/>
+        </CardLayouts>
+        <CardLayouts CardId="EBl2">
+            <LayoutButtons Face="RaiseCloudFort" Type="AbilCmd" AbilCmd="EquestrianBuild,Build10" Row="0" Column="0"/>
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" AbilCmd="TerranBuild,Build14" Row="2" Column="4"/>
+            <LayoutButtons Face="RaiseGlades" Type="AbilCmd" AbilCmd="EquestrianBuild,Build11" Row="0" Column="1"/>
+            <LayoutButtons Face="RaiseEmbassy" Type="AbilCmd" AbilCmd="EquestrianBuild,Build12" Row="0" Column="2"/>
+            <LayoutButtons Face="RaiseBestiary" Type="AbilCmd" AbilCmd="EquestrianBuild,Build14" Row="1" Column="0"/>
+            <LayoutButtons Face="RaiseAlicornSanctuary" Type="AbilCmd" AbilCmd="EquestrianBuild,Build13" Row="1" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <InnerRadius value="0.375"/>
+        <CargoSize value="1"/>
+        <ScoreMake value="50"/>
+        <ScoreKill value="100"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="6"/>
+        <MinimapRadius value="0.375"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
+        <TacticalAIThink value="AIThinkSCV"/>
+        <GlossaryCategory value="Unit/Category/EquestrianUnits"/>
+        <GlossaryPriority value="10"/>
+        <HotkeyCategory value="Unit/Category/EquestrianUnits"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="33"/>
+            <ChanceArray index="Idle" value="33"/>
+            <ChanceArray index="Turn" value="33"/>
+        </Fidget>
+        <ReviveInfoBase>
+            <Charge Link="SCV/Revive"/>
+            <Cooldown Link="SCV/Revive"/>
+        </ReviveInfoBase>
+        <Food value="-1"/>
+        <BehaviorArray Link="GalaApples"/>
+    </CUnit>
+    <CUnit id="Orchard">
+        <DeathRevealRadius value="3"/>
+        <Facing value="315"/>
+        <Race value="Eque"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="Turnable" value="0"/>
+        <FlagArray index="PreventDefeat" value="1"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="PenaltyRevealed" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="TownAlert" value="1"/>
+        <FlagArray index="NoPortraitTalk" value="1"/>
+        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
+        <FogVisibility value="Snapshot"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Burrow" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="RoachBurrow" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Structure" value="1"/>
+        <LifeStart value="400"/>
+        <LifeMax value="400"/>
+        <LifeArmor value="1"/>
+        <LifeArmorName value="Unit/LifeArmorName/EquestrianBuildingArmor"/>
+        <StationaryTurningRate value="719.4726"/>
+        <TurningRate value="719.4726"/>
+        <Sight value="9"/>
+        <Food value="8"/>
+        <CostCategory value="Economy"/>
+        <RepairTime value="30"/>
+        <AttackTargetPriority value="11"/>
+        <AbilArray Link="BuildInProgress"/>
+        <AbilArray Link="Nourish"/>
+        <CardLayouts>
+            <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="Nourish" Type="AbilCmd" AbilCmd="Nourish,Execute" Row="0" Column="0"/>
+            <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" Row="1" Column="3"/>
+        </CardLayouts>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <Footprint value="Footprint2x2Contour"/>
+        <PlacementFootprint value="Footprint2x2"/>
+        <ScoreMake value="50"/>
+        <ScoreKill value="150"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="1.25"/>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:Melee"/>
+        <GlossaryPriority value="246"/>
+        <HotkeyCategory value="Unit/Category/EquestrianUnits"/>
+        <EnergyStart value="50"/>
+        <EnergyMax value="200"/>
+        <EnergyRegenRate value="0.5625"/>
+        <GlossaryCategory value="Unit/Category/EquestrianUnits"/>
+    </CUnit>
+    <CUnit id="Outpost">
+        <DeathRevealRadius value="3"/>
+        <ReviveType value="Hatchery"/>
+        <Race value="Eque"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="Turnable" value="0"/>
+        <FlagArray index="PreventReveal" value="1"/>
+        <FlagArray index="PreventDefeat" value="1"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="TownAlert" value="1"/>
+        <FlagArray index="NoPortraitTalk" value="1"/>
+        <FlagArray index="TownCamera" value="1"/>
+        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
+        <ResourceDropOff index="Minerals" value="1"/>
+        <ResourceDropOff index="Vespene" value="1"/>
+        <ResourceDropOff index="Terrazine" value="1"/>
+        <ResourceDropOff index="Custom" value="1"/>
+        <FogVisibility value="Snapshot"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Burrow" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="RoachBurrow" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <Attributes index="Structure" value="1"/>
+        <LifeStart value="1500"/>
+        <LifeMax value="1500"/>
+        <LifeArmor value="1"/>
+        <LifeRegenRate value="0.2734"/>
+        <LifeArmorName value="Unit/LifeArmorName/EquestrianBuildingArmor"/>
+        <StationaryTurningRate value="719.4726"/>
+        <TurningRate value="719.4726"/>
+        <Sight value="10"/>
+        <Food value="10"/>
+        <CostCategory value="Economy"/>
+        <AttackTargetPriority value="11"/>
+        <AbilArray Link="BuildInProgress"/>
+        <AbilArray Link="que5"/>
+        <AbilArray Link="Rally"/>
+        <AbilArray Link="TrainPioneer"/>
+        <AbilArray Link="RenovateOutposttoHerdTown"/>
+        <CardLayouts>
+            <LayoutButtons Face="TrainPioneer" Type="AbilCmd" AbilCmd="TrainPioneer,Train1" Row="0" Column="0"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="RenovateOutposttoHerdTown,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="RenovateHerdTown" Type="AbilCmd" AbilCmd="RenovateOutposttoHerdTown,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="Rally,Rally1" Row="1" Column="4"/>
+            <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" Row="1" Column="3"/>
+            <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="3"/>
+        </CardLayouts>
+        <Radius value="2"/>
+        <SeparationRadius value="2"/>
+        <Footprint value="Footprint6x5DropOffCreepSourceContour"/>
+        <PlacementFootprint value="Footprint6x5DropOffCreepSource"/>
+        <ScoreMake value="300"/>
+        <ScoreKill value="900"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="2"/>
+        <MinimapRadius value="2.5"/>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:Melee"/>
+        <AIEvalFactor value="0"/>
+        <TechAliasArray value="Alias_Hatchery"/>
+        <TechAliasArray value="Alias_Hatchery"/>
+        <GlossaryPriority value="10"/>
+        <HotkeyCategory value="Unit/Category/EquestrianUnits"/>
+        <TechTreeProducedUnitArray value="Larva"/>
+        <TechTreeProducedUnitArray value="Queen"/>
+        <TechTreeProducedUnitArray value="Larva"/>
+        <TechTreeProducedUnitArray value="Queen"/>
+        <ReviveInfoBase>
+            <Charge Link="Hatchery/Revive"/>
+            <Cooldown Link="Hatchery/Revive"/>
+        </ReviveInfoBase>
+        <GlossaryCategory value="Unit/Category/EquestrianUnits"/>
+    </CUnit>
+    <CUnit id="PlaneWarper">
+        <DeathRevealRadius value="3"/>
+        <ReviveType value="Sentry"/>
+        <Race value="Eque"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <Attributes index="Psionic" value="1"/>
+        <LifeStart value="250"/>
+        <LifeMax value="250"/>
+        <LifeArmor value="1"/>
+        <LifeArmorName value="Unit/LifeArmorName/EquineArmor"/>
+        <EnergyStart value="50"/>
+        <EnergyMax value="200"/>
+        <EnergyRegenRate value="0.5625"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/ProtossPlasmaShields"/>
+        <Speed value="2.25"/>
+        <Acceleration value="1000"/>
+        <LateralAcceleration value="46"/>
+        <StationaryTurningRate value="999.8437"/>
+        <TurningRate value="999.8437"/>
+        <Sight value="10"/>
+        <CostCategory value="Army"/>
+        <AttackTargetPriority value="20"/>
+        <DamageDealtXP value="1"/>
+        <DamageTakenXP value="1"/>
+        <KillXP value="90"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="move"/>
+        <AbilArray Link="Warpable"/>
+        <AbilArray Link="ProgressRally"/>
+        <AbilArray Link="BuildInProgress"/>
+        <AbilArray Link="FieryWrath"/>
+        <AbilArray Link="MassTeleport"/>
+        <AbilArray Link="ParaspriteSwarm"/>
+        <WeaponArray Link="WarpBomb"/>
+        <CardLayouts>
+            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
+            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="FieryWrath" Type="AbilCmd" AbilCmd="FieryWrath,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="MassTeleport" Type="AbilCmd" AbilCmd="MassTeleport,Execute" Row="2" Column="1"/>
+            <LayoutButtons Face="ParaspriteSwarm" Type="AbilCmd" AbilCmd="ParaspriteSwarm,Execute" Row="2" Column="2"/>
+        </CardLayouts>
+        <SeparationRadius value="0.625"/>
+        <InnerRadius value="0.375"/>
+        <CargoSize value="2"/>
+        <ScoreMake value="400"/>
+        <ScoreKill value="800"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="16"/>
+        <MinimapRadius value="0.375"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
+        <TacticalAIThink value="AIThinkDisruptor"/>
+        <GlossaryCategory value="Unit/Category/EquestrianUnits"/>
+        <GlossaryPriority value="30"/>
+        <HotkeyCategory value="Unit/Category/EquestrianUnits"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="5"/>
+            <ChanceArray index="Idle" value="90"/>
+            <ChanceArray index="Turn" value="5"/>
+        </Fidget>
+        <ReviveInfoBase>
+            <Charge Link="Sentry/Revive"/>
+            <Cooldown Link="Sentry/Revive"/>
+        </ReviveInfoBase>
+        <Food value="-4"/>
+    </CUnit>
+    <CUnit id="PonyPalace">
+        <DeathRevealRadius value="3"/>
+        <ReviveType value="Hive"/>
+        <Race value="Eque"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="Turnable" value="0"/>
+        <FlagArray index="PreventReveal" value="1"/>
+        <FlagArray index="PreventDefeat" value="1"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="TownAlert" value="1"/>
+        <FlagArray index="NoPortraitTalk" value="1"/>
+        <FlagArray index="TownCamera" value="1"/>
+        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
+        <ResourceDropOff index="Minerals" value="1"/>
+        <ResourceDropOff index="Vespene" value="1"/>
+        <ResourceDropOff index="Terrazine" value="1"/>
+        <ResourceDropOff index="Custom" value="1"/>
+        <FogVisibility value="Snapshot"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Burrow" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="RoachBurrow" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <Attributes index="Structure" value="1"/>
+        <LifeStart value="2200"/>
+        <LifeMax value="2200"/>
+        <LifeArmor value="1"/>
+        <LifeRegenRate value="0.2734"/>
+        <LifeArmorName value="Unit/LifeArmorName/EquestrianBuildingArmor"/>
+        <StationaryTurningRate value="719.4726"/>
+        <TurningRate value="719.4726"/>
+        <Sight value="12"/>
+        <Food value="10"/>
+        <CostCategory value="Technology"/>
+        <AttackTargetPriority value="11"/>
+        <AbilArray Link="BuildInProgress"/>
+        <AbilArray Link="que5"/>
+        <AbilArray Link="RallyHatchery"/>
+        <AbilArray Link="TrainPioneer"/>
+        <CardLayouts>
+            <LayoutButtons Face="TrainPioneer" Type="AbilCmd" AbilCmd="TrainPioneer,Train1" Row="0" Column="0"/>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Face="SetRallyPoint2" Type="AbilCmd" AbilCmd="RallyHatchery,Rally1" Row="1" Column="4"/>
+        </CardLayouts>
+        <Radius value="2"/>
+        <SeparationRadius value="2"/>
+        <Footprint value="Footprint6x5DropOffCreepSourceContour"/>
+        <PlacementFootprint value="Footprint6x5DropOffCreepSource"/>
+        <ScoreMake value="150"/>
+        <ScoreKill value="1500"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="2"/>
+        <MinimapRadius value="2.5"/>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:Melee"/>
+        <AIEvalFactor value="0"/>
+        <TechAliasArray value="Alias_Hatchery"/>
+        <TechAliasArray value="Alias_Lair"/>
+        <TechAliasArray value="Alias_Hatchery"/>
+        <TechAliasArray value="Alias_Lair"/>
+        <GlossaryPriority value="18"/>
+        <HotkeyCategory value="Unit/Category/EquestrianUnits"/>
+        <ReviveInfoBase>
+            <Charge Link="Hive/Revive"/>
+            <Cooldown Link="Hive/Revive"/>
+        </ReviveInfoBase>
+        <CostResource index="Minerals" value="700"/>
+        <CostResource index="Vespene" value="250"/>
+        <GlossaryCategory value="Unit/Category/EquestrianUnits"/>
+    </CUnit>
+    <CUnit id="Skybolt">
+        <DeathRevealRadius value="3"/>
+        <ReviveType value="Phoenix"/>
+        <Race value="Eque"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <PlaneArray index="Air" value="1"/>
+        <Collide index="Flying" value="1"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="100"/>
+        <LifeMax value="100"/>
+        <LifeArmorName value="Unit/LifeArmorName/EquineArmor"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/ProtossPlasmaShields"/>
+        <Mover value="Fly"/>
+        <Speed value="4.5"/>
+        <Acceleration value="3.25"/>
+        <StationaryTurningRate value="1499.9414"/>
+        <TurningRate value="1499.9414"/>
+        <Sight value="10"/>
+        <Height value="3.75"/>
+        <VisionHeight value="4"/>
+        <CostCategory value="Army"/>
+        <RepairTime value="45"/>
+        <AttackTargetPriority value="20"/>
+        <DamageDealtXP value="1"/>
+        <DamageTakenXP value="1"/>
+        <KillXP value="50"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="move"/>
+        <WeaponArray Link="WindKick" Turret="Phoenix"/>
+        <CardLayouts>
+            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="GravitonBeam,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="Detector" Type="Passive" Behavior="Detector122" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="0.75"/>
+        <SeparationRadius value="0.75"/>
+        <ScoreMake value="350"/>
+        <ScoreKill value="700"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="15"/>
+        <MinimapRadius value="0.75"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
+        <AIEvalFactor value="0.7"/>
+        <GlossaryCategory value="Unit/Category/EquestrianUnits"/>
+        <GlossaryPriority value="120"/>
+        <GlossaryStrongArray value="Banshee"/>
+        <GlossaryWeakArray value="Battlecruiser"/>
+        <GlossaryWeakArray value="Corruptor"/>
+        <HotkeyCategory value="Unit/Category/EquestrianUnits"/>
+        <ReviveInfoBase>
+            <Charge Link="Phoenix/Revive"/>
+            <Cooldown Link="Phoenix/Revive"/>
+        </ReviveInfoBase>
+        <Food value="-2"/>
+        <BehaviorArray Link="Detector122"/>
+        <CostResource index="Minerals" value="100"/>
+        <CostResource index="Vespene" value="50"/>
+    </CUnit>
+    <CUnit id="Smithy">
+        <DeathRevealRadius value="3"/>
+        <ReviveType value="EngineeringBay"/>
+        <Facing value="315"/>
+        <Race value="Eque"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="Turnable" value="0"/>
+        <FlagArray index="PreventDefeat" value="1"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="PenaltyRevealed" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="TownAlert" value="1"/>
+        <FlagArray index="NoPortraitTalk" value="1"/>
+        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
+        <FogVisibility value="Snapshot"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Burrow" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="RoachBurrow" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Structure" value="1"/>
+        <LifeStart value="800"/>
+        <LifeMax value="800"/>
+        <LifeArmor value="1"/>
+        <LifeArmorName value="Unit/LifeArmorName/EquestrianBuildingArmor"/>
+        <StationaryTurningRate value="719.4726"/>
+        <TurningRate value="719.4726"/>
+        <Sight value="9"/>
+        <CostCategory value="Army"/>
+        <RepairTime value="35"/>
+        <AttackTargetPriority value="11"/>
+        <AbilArray Link="BuildInProgress"/>
+        <AbilArray Link="que5"/>
+        <AbilArray Link="SmithyResearch"/>
+        <CardLayouts>
+            <LayoutButtons Face="UpgradeEquineWeaponsLevel1" Type="AbilCmd" AbilCmd="SmithyResearch,Research3" Row="0" Column="0"/>
+            <LayoutButtons Face="UpgradeEquineWeaponsLevel2" Type="AbilCmd" AbilCmd="SmithyResearch,Research4" Row="0" Column="0"/>
+            <LayoutButtons Face="UpgradeEquineWeaponsLevel3" Type="AbilCmd" AbilCmd="SmithyResearch,Research5" Row="0" Column="0"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
+            <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" Row="1" Column="3"/>
+            <LayoutButtons Face="UpgradeEquineArmorLevel1" Type="AbilCmd" AbilCmd="SmithyResearch,Research7" Row="0" Column="1"/>
+            <LayoutButtons Face="UpgradeEquineArmorLevel2" Type="AbilCmd" AbilCmd="SmithyResearch,Research8" Row="0" Column="1"/>
+            <LayoutButtons Face="UpgradeEquineArmorLevel3" Type="AbilCmd" AbilCmd="SmithyResearch,Research9" Row="0" Column="1"/>
+            <LayoutButtons Face="ResearchAppleBucking" Type="AbilCmd" AbilCmd="SmithyResearch,Research10" Row="2" Column="0"/>
+            <LayoutButtons Face="ResearchShroudoftheMoon" Type="AbilCmd" AbilCmd="SmithyResearch,Research11" Row="2" Column="1"/>
+        </CardLayouts>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <Footprint value="Footprint3x3Contour"/>
+        <PlacementFootprint value="Footprint3x3"/>
+        <ScoreMake value="75"/>
+        <ScoreKill value="225"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="1.25"/>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:Melee"/>
+        <GlossaryPriority value="251"/>
+        <HotkeyCategory value="Unit/Category/EquestrianUnits"/>
+        <ReviveInfoBase>
+            <Charge Link="EngineeringBay/Revive"/>
+            <Cooldown Link="EngineeringBay/Revive"/>
+        </ReviveInfoBase>
+        <GlossaryCategory value="Unit/Category/EquestrianUnits"/>
+    </CUnit>
+    <CUnit id="StarDiver">
+        <DeathRevealRadius value="3"/>
+        <ReviveType value="Wraith"/>
+        <Race value="Eque"/>
+        <Mob value="Campaign"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="AIChangeling" value="1"/>
+        <PlaneArray index="Air" value="1"/>
+        <Collide index="Flying" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="180"/>
+        <LifeMax value="180"/>
+        <LifeArmorName value="Unit/LifeArmorName/EquineArmor"/>
+        <EnergyStart value="50"/>
+        <EnergyMax value="200"/>
+        <EnergyRegenRate value="0.5625"/>
+        <Mover value="Fly"/>
+        <Speed value="3.25"/>
+        <Acceleration value="2.625"/>
+        <Sight value="8"/>
+        <Height value="3.75"/>
+        <VisionHeight value="4"/>
+        <RepairTime value="42"/>
+        <AttackTargetPriority value="20"/>
+        <DamageDealtXP value="1"/>
+        <DamageTakenXP value="1"/>
+        <KillXP value="50"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="move"/>
+        <AbilArray Link="Aurora"/>
+        <AbilArray Link="SpectralNova"/>
+        <WeaponArray Link="CometLauncher"/>
+        <CardLayouts>
+            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="AcquireMove" Type="AbilCmd" AbilCmd="move,AcquireMove" Row="0" Column="4"/>
+            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
+            <LayoutButtons Face="Aurora" Type="AbilCmd" AbilCmd="Aurora,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="SpectralNovaEnable" Type="AbilCmd" AbilCmd="SpectralNova,On" Row="2" Column="1"/>
+            <LayoutButtons Face="SpectralNovaDisable" Type="AbilCmd" AbilCmd="SpectralNova,Off" Row="2" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.625"/>
+        <SeparationRadius value="0.625"/>
+        <ScoreMake value="400"/>
+        <ScoreKill value="800"/>
+        <SubgroupPriority value="14"/>
+        <MinimapRadius value="0.625"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
+        <GlossaryCategory value="Unit/Category/EquestrianUnits"/>
+        <GlossaryPriority value="180"/>
+        <GlossaryStrongArray value="Mutalisk"/>
+        <GlossaryStrongArray value="VoidRay"/>
+        <GlossaryStrongArray value="Battlecruiser"/>
+        <GlossaryWeakArray value="SporeCrawler"/>
+        <GlossaryWeakArray value="PhotonCannon"/>
+        <GlossaryWeakArray value="MissileTurret"/>
+        <HotkeyCategory value="Unit/Category/EquestrianUnits"/>
+        <ReviveInfoBase>
+            <Charge Link="Wraith/Revive"/>
+            <Cooldown Link="Wraith/Revive"/>
+        </ReviveInfoBase>
+        <LifeArmor value="1"/>
+        <Food value="-4"/>
+        <CostResource index="Minerals" value="200"/>
+        <CostResource index="Vespene" value="100"/>
+    </CUnit>
+    <CUnit id="Tornado">
+        <DeathRevealRadius value="3"/>
+        <ReviveType value=""/>
+        <Race value="Eque"/>
+        <Mob value="Campaign"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <PlaneArray index="Air" value="1"/>
+        <Collide index="Flying" value="1"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="100"/>
+        <LifeMax value="100"/>
+        <LifeArmor value="2"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranVehiclePlating"/>
+        <Speed value="2.75"/>
+        <Acceleration value="1000"/>
+        <StationaryTurningRate value="1499.9414"/>
+        <TurningRate value="1499.9414"/>
+        <Sight value="10"/>
+        <Food value="-2"/>
+        <RepairTime value="33.3332"/>
+        <AttackTargetPriority value="20"/>
+        <KillXP value="30"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="move"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="TornadoOff"/>
+        <CardLayouts>
+            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
+            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="AcquireMove" Type="AbilCmd" AbilCmd="move,AcquireMove" Row="0" Column="4"/>
+        </CardLayouts>
+        <Radius value="0.75"/>
+        <SeparationRadius value="0.75"/>
+        <ScoreMake value="300"/>
+        <ScoreKill value="600"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="8"/>
+        <MinimapRadius value="0.625"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
+        <GlossaryCategory value="Unit/Category/EquestrianUnits"/>
+        <GlossaryPriority value="130"/>
+        <GlossaryStrongArray value="Zergling"/>
+        <GlossaryStrongArray value="Zealot"/>
+        <GlossaryStrongArray value="Marine"/>
+        <GlossaryWeakArray value="Roach"/>
+        <GlossaryWeakArray value="Immortal"/>
+        <GlossaryWeakArray value="Thor"/>
+        <HotkeyCategory value="Unit/Category/EquestrianUnits"/>
+        <EnergyStart value="50"/>
+        <EnergyMax value="200"/>
+        <EnergyRegenRate value="0.5625"/>
+        <Mover value="Fly"/>
+        <CostResource index="Minerals" value="150"/>
+        <CostResource index="Vespene" value="200"/>
+        <BehaviorArray Link="TornadoTimer"/>
+    </CUnit>
+    <CUnit id="University">
+        <DeathRevealRadius value="3"/>
+        <ReviveType value="GhostAcademy"/>
+        <Facing value="315"/>
+        <Race value="Eque"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="Turnable" value="0"/>
+        <FlagArray index="PreventDefeat" value="1"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="PenaltyRevealed" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="TownAlert" value="1"/>
+        <FlagArray index="NoPortraitTalk" value="1"/>
+        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
+        <FogVisibility value="Snapshot"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Burrow" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="RoachBurrow" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Structure" value="1"/>
+        <LifeStart value="800"/>
+        <LifeMax value="800"/>
+        <LifeArmor value="1"/>
+        <LifeArmorName value="Unit/LifeArmorName/EquestrianBuildingArmor"/>
+        <StationaryTurningRate value="719.4726"/>
+        <TurningRate value="719.4726"/>
+        <Sight value="9"/>
+        <CostCategory value="Technology"/>
+        <RepairTime value="40"/>
+        <AttackTargetPriority value="11"/>
+        <AbilArray Link="BuildInProgress"/>
+        <AbilArray Link="que5"/>
+        <AbilArray Link="UniversityResearch"/>
+        <CardLayouts>
+            <LayoutButtons Face="UpgradeMonsterWeaponsLevel1" Type="AbilCmd" AbilCmd="UniversityResearch,Research1" Row="0" Column="0"/>
+            <LayoutButtons Face="UpgradeMonsterWeaponsLevel2" Type="AbilCmd" AbilCmd="UniversityResearch,Research2" Row="0" Column="0"/>
+            <LayoutButtons Face="UpgradeMonsterWeaponsLevel3" Type="AbilCmd" AbilCmd="UniversityResearch,Research3" Row="0" Column="0"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
+            <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" Row="1" Column="3"/>
+            <LayoutButtons Face="UpgradeMonsterArmorLevel1" Type="AbilCmd" AbilCmd="UniversityResearch,Research4" Row="0" Column="1"/>
+            <LayoutButtons Face="UpgradeMonsterArmorLevel2" Type="AbilCmd" AbilCmd="UniversityResearch,Research5" Row="0" Column="1"/>
+            <LayoutButtons Face="TerranVehiclePlatingLevel32" Type="AbilCmd" AbilCmd="UniversityResearch,Research6" Row="0" Column="1"/>
+            <LayoutButtons Face="ResearchMagicalInfusion" Type="AbilCmd" AbilCmd="UniversityResearch,Research10" Row="1" Column="1"/>
+            <LayoutButtons Face="ResearchMagicArmor" Type="AbilCmd" AbilCmd="UniversityResearch,Research11" Row="1" Column="2"/>
+            <LayoutButtons Face="ResearchSpellweaveCape" Type="AbilCmd" AbilCmd="UniversityResearch,Research12" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="1.5"/>
+        <SeparationRadius value="1.5"/>
+        <Footprint value="Footprint3x3Contour"/>
+        <PlacementFootprint value="Footprint3x3"/>
+        <ScoreMake value="125"/>
+        <ScoreKill value="375"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="1.5"/>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:Melee"/>
+        <TechAliasArray value="Alias_ShadowOps"/>
+        <TechAliasArray value="Alias_ShadowOps"/>
+        <GlossaryPriority value="268"/>
+        <HotkeyCategory value="Unit/Category/EquestrianUnits"/>
+        <TechTreeUnlockedUnitArray value="Ghost"/>
+        <TechTreeUnlockedUnitArray value="Spectre"/>
+        <TechTreeUnlockedUnitArray value="Ghost"/>
+        <TechTreeUnlockedUnitArray value="Spectre"/>
+        <ReviveInfoBase>
+            <Charge Link="GhostAcademy/Revive"/>
+            <Cooldown Link="GhostAcademy/Revive"/>
+        </ReviveInfoBase>
+        <GlossaryCategory value="Unit/Category/EquestrianUnits"/>
+    </CUnit>
+    <CUnit id="WeatherPony">
+        <DeathRevealRadius value="3"/>
+        <ReviveType value="Banshee"/>
+        <Race value="Eque"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <PlaneArray index="Air" value="1"/>
+        <Collide index="Flying" value="1"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="100"/>
+        <LifeMax value="100"/>
+        <LifeArmorName value="Unit/LifeArmorName/EquineArmor"/>
+        <EnergyStart value="50"/>
+        <EnergyMax value="200"/>
+        <EnergyRegenRate value="0.5625"/>
+        <Mover value="Fly"/>
+        <Speed value="2.75"/>
+        <Acceleration value="3.25"/>
+        <StationaryTurningRate value="1499.9414"/>
+        <TurningRate value="1499.9414"/>
+        <Sight value="10"/>
+        <Height value="3.75"/>
+        <VisionHeight value="4"/>
+        <CostCategory value="Army"/>
+        <AttackTargetPriority value="20"/>
+        <KillXP value="50"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="move"/>
+        <AbilArray Link="Rainfall"/>
+        <AbilArray Link="WeatherPonyTransport"/>
+        <AbilArray Link="TornadoOn"/>
+        <WeaponArray Link="LightningBolt"/>
+        <CardLayouts>
+            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
+            <LayoutButtons Face="Rainfall" Type="AbilCmd" AbilCmd="Rainfall,On" Row="2" Column="0"/>
+            <LayoutButtons Face="RainfallOff" Type="AbilCmd" AbilCmd="Rainfall,Off" Row="2" Column="0"/>
+            <LayoutButtons Face="MedivacLoad" Type="AbilCmd" AbilCmd="WeatherPonyTransport,Load" Row="2" Column="2"/>
+            <LayoutButtons Face="MedivacUnloadAll" Type="AbilCmd" AbilCmd="WeatherPonyTransport,UnloadAt" Row="2" Column="3"/>
+            <LayoutButtons Face="TornadoTornadoMode" Type="AbilCmd" AbilCmd="TornadoOn,Execute" Row="2" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.75"/>
+        <SeparationRadius value="0.75"/>
+        <ScoreMake value="350"/>
+        <ScoreKill value="700"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="11"/>
+        <MinimapRadius value="0.75"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
+        <GlossaryCategory value="Unit/Category/EquestrianUnits"/>
+        <GlossaryPriority value="220"/>
+        <GlossaryStrongArray value="Ultralisk"/>
+        <GlossaryStrongArray value="Colossus"/>
+        <GlossaryStrongArray value="SiegeTank"/>
+        <GlossaryWeakArray value="PhotonCannon"/>
+        <GlossaryWeakArray value="MissileTurret"/>
+        <GlossaryWeakArray value="Marine"/>
+        <HotkeyCategory value="Unit/Category/EquestrianUnits"/>
+        <ReviveInfoBase>
+            <Charge Link="Banshee/Revive"/>
+            <Cooldown Link="Banshee/Revive"/>
+        </ReviveInfoBase>
+        <CargoSize value="8"/>
+        <Food value="-2"/>
+        <CostResource index="Minerals" value="150"/>
+        <CostResource index="Vespene" value="200"/>
+    </CUnit>
+    <CUnit id="ZebraHerbalist">
+        <DeathRevealRadius value="3"/>
+        <ReviveType value="Infestor"/>
+        <Race value="Eque"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="AlwaysThreatens" value="1"/>
+        <FlagArray index="AIThreatGround" value="1"/>
+        <FlagArray index="AIThreatAir" value="1"/>
+        <FlagArray index="AISplash" value="1"/>
+        <FlagArray index="AIHighPrioTarget" value="1"/>
+        <FlagArray index="AICaster" value="1"/>
+        <FlagArray index="AIPressForwardDisabled" value="1"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Attributes index="Light" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <LifeStart value="150"/>
+        <LifeMax value="150"/>
+        <LifeArmorName value="Unit/LifeArmorName/EquineArmor"/>
+        <Speed value="2.5"/>
+        <SpeedMultiplierCreep value="1.3"/>
+        <Acceleration value="1000"/>
+        <LateralAcceleration value="46"/>
+        <StationaryTurningRate value="999.8437"/>
+        <TurningRate value="999.8437"/>
+        <Sight value="11"/>
+        <CostCategory value="Army"/>
+        <AttackTargetPriority value="20"/>
+        <DamageDealtXP value="1"/>
+        <DamageTakenXP value="1"/>
+        <KillXP value="40"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="move"/>
+        <AbilArray Link="HerbalRemedy"/>
+        <AbilArray Link="PoisonJoke"/>
+        <CardLayouts>
+            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Row="0" Column="0"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
+            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="AcquireMove" Type="AbilCmd" AbilCmd="move,AcquireMove" Row="0" Column="4"/>
+            <LayoutButtons Face="Detector" Type="Passive" Behavior="Detector10" Row="1" Column="0"/>
+            <LayoutButtons Face="HerbalRemedy" Type="AbilCmd" AbilCmd="HerbalRemedy,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="PoisonJoke" Type="AbilCmd" AbilCmd="PoisonJoke,Execute" Row="2" Column="1"/>
+        </CardLayouts>
+        <Radius value="0.75"/>
+        <InnerRadius value="0.5"/>
+        <CargoSize value="2"/>
+        <ScoreMake value="350"/>
+        <ScoreKill value="700"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="19"/>
+        <MinimapRadius value="0.75"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
+        <AIEvalFactor value="1.8"/>
+        <GlossaryCategory value="Unit/Category/EquestrianUnits"/>
+        <GlossaryPriority value="50"/>
+        <GlossaryStrongArray value="Marine"/>
+        <GlossaryStrongArray value="Immortal"/>
+        <GlossaryWeakArray value="Ghost"/>
+        <GlossaryWeakArray value="Ultralisk"/>
+        <GlossaryWeakArray value="HighTemplar"/>
+        <GlossaryWeakArray value="HighTemplar"/>
+        <HotkeyCategory value="Unit/Category/EquestrianUnits"/>
+        <KillDisplay value="Always"/>
+        <ReviveInfoBase>
+            <Charge Link="Infestor/Revive"/>
+            <Cooldown Link="Infestor/Revive"/>
+        </ReviveInfoBase>
+        <Food value="-2"/>
+        <BehaviorArray Link="Detector10"/>
+    </CUnit>
+</Catalog>

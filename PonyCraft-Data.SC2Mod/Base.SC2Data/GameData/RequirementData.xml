@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CRequirement id="HaveArmory10">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="CountUnitBeastiaryCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="HaveArmory2">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="CountUnitGarrisonCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="HaveArmory3">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="CountUnitSmithyCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="HaveArmory4">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="CountUnitUniversityCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="HaveArmory5">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="OrCountUnitHerdTownCompleteOnlyCountUnitPonyPalaceInProgressOrBetter"/>
+    </CRequirement>
+    <CRequirement id="HaveArmory6">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="CountUnitCloudFortCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="HaveArmory7">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="CountUnitEmbassyCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="HaveArmory8">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="CountUnitPonyPalaceCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="HaveArmory9">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="CountUnitAlicornSanctuaryCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="HaveAurora">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUpgradeAuroraCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveFilteredGoggles">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUpgradeFilteredGogglesCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HavePlow">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUpgradePlowCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="HaveMagicArmor">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUpgradeMagicArmorCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveMagicalInfusion">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUpgradeMagicalInfusionCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveDeepBreath">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeDeepBreathCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="HaveMassTeleport">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUpgradeMassTeleportCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="LearnPlow">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradePlowQueuedOrBetterTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="NotHavePlow">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="NotTechTreeCheatCountUpgradePlowCompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradePlowCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HaveSpectralNova">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUpgradeSpectralNovaCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="HaveWingTraining">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUpgradeWingTrainingCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="HaveHydraRegeneration">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUpgradeHydraRegenerationCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="LearnMassTeleport">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeMassTeleportQueuedOrBetterTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="LearnSpectralNova">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeSpectralNovaQueuedOrBetterTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="LearnWingTraining">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeWingTrainingQueuedOrBetterTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="UseShroudoftheMoon">
+        <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUpgradeShroudoftheMoonCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="LearnShroudoftheMoon2">
+        <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUnitUniversityCompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeShroudoftheMoonQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnSpellweaveCape">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeSpellweaveCapeQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnFilteredGoggles">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeFilteredGogglesQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnHydraRegeneration">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeHydraRegenerationQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnMagicArmor">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeMagicArmorQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnMagicalInfusion">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeMagicalInfusionQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnEquineArmor1">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="EqCountUpgradeEquineArmorLevel1QueuedOrBetter0"/>
+    </CRequirement>
+    <CRequirement id="LearnEquineArmor2">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEq3569156689CountUpgradeEquineArmorLevel1CompleteOnlyTechTreeCheat1OrCountUnitHerdTownCompleteOnlyCountUnitPonyPalaceInProgressOrBetter"/>
+        <NodeArray index="Show" Link="EqCountUpgradeEquineArmorLevel2QueuedOrBetterTechTreeCheat0"/>
+    </CRequirement>
+    <CRequirement id="LearnEquineArmor3">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEq419273267CountUpgradeEquineArmorLevel2CompleteOnlyTechTreeCheat1CountUnitPonyPalaceCompleteOnly"/>
+        <NodeArray index="Show" Link="EqCountUpgradeTerranInfantryArmorsLevel32QueuedOrBetterTechTreeCheat0"/>
+    </CRequirement>
+    <CRequirement id="LearnMonsterArmor1">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="EqCountUpgradeZergGroundArmorsLevel12QueuedOrBetter0"/>
+    </CRequirement>
+    <CRequirement id="LearnMonsterWeapon1">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="EqCountUpgradeMonsterWeaponsLevel1QueuedOrBetterTechTreeCheat0"/>
+    </CRequirement>
+    <CRequirement id="LearnMonsterArmor2">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEq1695466224CountUpgradeZergGroundArmorsLevel12CompleteOnlyTechTreeCheat1OrCountUnitHerdTownCompleteOnlyCountUnitPonyPalaceInProgressOrBetter"/>
+        <NodeArray index="Show" Link="EqCountUpgradeMonsterArmorLevel2QueuedOrBetterTechTreeCheat0"/>
+    </CRequirement>
+    <CRequirement id="LearnEquineWeapon1">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="EqCountUpgradeEquineWeaponsLevel1QueuedOrBetterTechTreeCheat0"/>
+    </CRequirement>
+    <CRequirement id="LearnMonsterWeapon2">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEq1695466224CountUpgradeMonsterWeaponsLevel1CompleteOnlyTechTreeCheat1OrCountUnitPonyPalaceInProgressOrBetterCountUnitHerdTownCompleteOnly"/>
+        <NodeArray index="Show" Link="EqCountUpgradeMonsterWeaponsLevel2QueuedOrBetterTechTreeCheat0"/>
+    </CRequirement>
+    <CRequirement id="LearnMonsterArmor3">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEq4090499265CountUpgradeMonsterArmorLevel2CompleteOnlyTechTreeCheat1CountUnitPonyPalaceCompleteOnly"/>
+        <NodeArray index="Show" Link="EqCountUpgradeMonsterArmorLevel3QueuedOrBetterTechTreeCheat0"/>
+    </CRequirement>
+    <CRequirement id="LearnEquineWeapon2">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEq1695466224CountUpgradeEquineWeaponsLevel1CompleteOnlyTechTreeCheat1OrCountUnitHerdTownCompleteOnlyCountUnitPonyPalaceCompleteOnly"/>
+        <NodeArray index="Show" Link="EqCountUpgradeEquineWeaponsLevel2QueuedOrBetterTechTreeCheat0"/>
+    </CRequirement>
+    <CRequirement id="LearnMonsterWeapon3">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEq4090499265CountUpgradeMonsterWeaponsLevel2CompleteOnlyTechTreeCheat1CountUnitPonyPalaceCompleteOnly"/>
+        <NodeArray index="Show" Link="EqCountUpgradeMonsterWeaponsLevel3QueuedOrBetterTechTreeCheat0"/>
+    </CRequirement>
+    <CRequirement id="LearnEquineWeapon3">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndEq4090499265CountUpgradeEquineWeaponsLevel2CompleteOnlyTechTreeCheat1CountUnitPonyPalaceCompleteOnly"/>
+        <NodeArray index="Show" Link="EqCountUpgradeEquineWeaponsLevel3QueuedOrBetterTechTreeCheat0"/>
+    </CRequirement>
+    <CRequirement id="LearnAurora">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeAuroraQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnParaspriteSwarm">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeParaspriteSwarmQueuedOrBetterTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="LearnSpikedTail">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeSpikedTailQueuedOrBetterTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="HaveParaspriteSwarm">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUpgradeParaspriteSwarmCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="LearnStrikeCannons2">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Show" Link="NotCountUpgradeAppleBuckingQueuedOrBetterTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="UseStrikeCannons2">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeAppleBuckingCompleteOnly3055499258TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="UseSpikedTail">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeSpikedTailCompleteOnly3055499258TechTreeCheat"/>
+    </CRequirement>
+</Catalog>

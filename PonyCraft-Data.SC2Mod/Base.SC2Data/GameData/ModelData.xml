@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CModel id="ChangelingDeathZergling2" parent="UnitDeath" Race="Zerg">
+        <Model value="Assets\Units\Zerg\ChangelingDeathZergling\ChangelingDeathZergling.m3"/>
+        <LowQualityModel value="ZergSmallUnitDeathLow"/>
+        <Lighting value=""/>
+        <Occlusion value="Show"/>
+    </CModel>
+    <CModel id="HallucinationDeath2" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Protoss\HallucinateDeath\HallucinateDeath.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Flags index="TeenSafe" value="1"/>
+    </CModel>
+    <CModel id="Invisible2">
+        <Model value="Assets\Units\Test\InvisibleUnit\InvisibleUnit.m3"/>
+        <EditorCategories value="Race:Neutral"/>
+        <Flags index="TeenSafe" value="1"/>
+        <Radius value="-1.000000"/>
+        <SelectionRadius value="0.000000"/>
+        <ShadowRadius value="0.000000"/>
+    </CModel>
+    <CModel id="ProtossSmallUnitDeathLow2" parent="UnitDeath" Race="Protoss">
+        <Model value="Assets\Effects\Protoss\ProtossUnitDeath\ProtossUnitDeath_Low.m3"/>
+        <Flags index="TeenSafe" value="1"/>
+        <ScaleMax value="1.250000,1.250000,1.250000"/>
+        <ScaleMin value="1.250000,1.250000,1.250000"/>
+        <SelectionRadius value="0.400000"/>
+        <ShadowRadius value="0.400000"/>
+    </CModel>
+    <CModel id="TerranSmallUnitDeathLow2" parent="UnitDeath" Race="Terran">
+        <Model value="Assets\Effects\Terran\TerranSmallUnitDeath\TerranSmallUnitDeath_Low.m3"/>
+        <Flags index="TeenSafe" value="1"/>
+        <ScaleMax value="1.100000,1.100000,1.100000"/>
+        <ScaleMin value="1.100000,1.100000,1.100000"/>
+        <SelectionRadius value="0.454300"/>
+        <ShadowRadius value="0.454300"/>
+    </CModel>
+    <CModel id="ZergSmallUnitDeathLow2" parent="UnitDeath" Race="Zerg">
+        <Model value="Assets\Effects\Zerg\ZergSmallUnitDeath\ZergSmallUnitDeath_low.m3"/>
+        <Flags index="TeenSafe" value="1"/>
+        <Occlusion value="Show"/>
+        <ScaleMax value="0.800000,0.800000,0.800000"/>
+        <ScaleMin value="0.800000,0.800000,0.800000"/>
+        <SelectionRadius value="0.625000"/>
+        <ShadowRadius value="0.625000"/>
+    </CModel>
+    <CModel id="ZerglingDeath2" parent="UnitDeath">
+        <Model value="Assets\Units\Zerg\ZerglingDeathEx1\ZerglingDeathEx1.m3"/>
+        <LowQualityModel value="ZergSmallUnitDeathLow"/>
+        <EditorCategories value="Race:Zerg"/>
+        <Occlusion value="Show"/>
+    </CModel>
+    <CModel id="ZerglingDeathAcid2" parent="UnitDeath" Race="Zerg">
+        <Model value="Assets\Units\Zerg\ZerglingDeathAcid\ZerglingDeathAcid.m3"/>
+        <LowQualityModel value="ZergSmallUnitDeathLow"/>
+        <Lighting value="ZerglingDeath"/>
+        <Occlusion value="Show"/>
+    </CModel>
+    <CModel id="ZerglingDeathEviscerate2" parent="UnitDeath" Race="Zerg">
+        <Model value="Assets\Units\Zerg\ZerglingDeathEviscerateEx1\ZerglingDeathEviscerateEx1.m3"/>
+        <LowQualityModel value="ZergSmallUnitDeathLow"/>
+        <Occlusion value="Show"/>
+        <VariationCount value="2"/>
+        <Variations Number="0" Probability="1"/>
+        <Variations Number="1" Probability="9"/>
+    </CModel>
+    <CModel id="ZerglingDeathFire2" parent="UnitDeath" Race="Zerg">
+        <Model value="Assets\Units\Zerg\ZerglingDeathFire\ZerglingDeathFire.m3"/>
+        <LowQualityModel value="ZergSmallUnitDeathLow"/>
+        <Lighting value="ZerglingDeath"/>
+        <Occlusion value="Show"/>
+    </CModel>
+    <CModel id="ZerglingDeathRagdoll2" parent="UnitDeathRagdoll" Race="Zerg">
+        <Model value="Assets\Units\Zerg\ZerglingDeathRagdoll\ZerglingDeathRagdoll.m3"/>
+    </CModel>
+    <CModel id="ZerglingPortrait2" parent="Portrait" Race="Zerg">
+        <Model value="Assets\Portraits\Zerg\ZerglingPortrait\ZerglingPortrait.m3"/>
+        <Image value="Assets\Textures\ZerglingPortrait_Static.dds"/>
+        <Lighting value="ZerglingPortrait"/>
+    </CModel>
+    <CModel id="ZerglingUpgradeDeath2" parent="UnitDeath">
+        <Model value="Assets\Units\Zerg\ZerglingUpgradeDeath\ZerglingUpgradeDeath.m3"/>
+        <LowQualityModel value="ZergSmallUnitDeathLow"/>
+        <EditorCategories value="Race:Zerg"/>
+        <Lighting value="ZerglingDeath"/>
+        <Occlusion value="Show"/>
+    </CModel>
+    <CModel id="ZerglingUpgradeDeathEviscerate2" parent="UnitDeath">
+        <Model value="Assets\Units\Zerg\ZerglingUpgradeDeathEviscerate\ZerglingUpgradeDeathEviscerate.m3"/>
+        <LowQualityModel value="ZergSmallUnitDeathLow"/>
+        <EditorCategories value="Race:Zerg"/>
+        <Lighting value="ZerglingDeath"/>
+        <Occlusion value="Show"/>
+        <VariationCount value="2"/>
+    </CModel>
+    <CModel id="ZerglingUpgradeDeathFire2" parent="UnitDeath">
+        <Model value="Assets\Units\Zerg\ZerglingUpgradeDeathFire\ZerglingUpgradeDeathFire.m3"/>
+        <LowQualityModel value="ZergSmallUnitDeathLow"/>
+        <EditorCategories value="Race:Zerg"/>
+        <Lighting value="ZerglingDeath"/>
+        <Occlusion value="Show"/>
+    </CModel>
+    <CModel id="CockatriceJumpLandDownModel" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Terran\ReaperJumpLandDown\ReaperJumpLandDown.m3"/>
+        <RadiusLoose value="0.500000"/>
+    </CModel>
+    <CModel id="CockatriceJumpLaunchModel" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Terran\ReaperJumpLaunch\ReaperJumpLaunch.m3"/>
+        <Radius value="0.350000"/>
+        <RadiusLoose value="0.350000"/>
+    </CModel>
+    <CModel id="SpitfireCone" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Terran\TerranBuildingFireMedium\TerranBuildingFireMedium.m3"/>
+    </CModel>
+    <CModel id="SpitfireBurning" parent="BuffFX">
+        <Model value="Assets\Effects\Terran\TerranBuildingFireSmall\TerranBuildingFireSmall.m3"/>
+    </CModel>
+    <CModel id="TelekineticJam" parent="Doodad">
+        <Model value="Assets\Doodads\THorner05SElectricalArcs\THorner05SElectricalArcs.m3"/>
+        <EditorCategories value=""/>
+    </CModel>
+    <CModel id="GrannySmithShape" parent="Unit">
+        <Model value="Assets\Doodads\Shapes\ShapeApple\ShapeApple.m3"/>
+        <ScaleMax value="0.300000,0.300000,0.300000"/>
+        <ScaleMin value="0.300000,0.300000,0.300000"/>
+        <EditorCategories value=""/>
+    </CModel>
+    <CModel id="WeatherPonyAttackImpact" parent="BattlecruiserAirAttackImpact">
+        <Model value="Assets\Effects\Terran\DiamondbackMissileImpact\DiamondbackMissileImpact.m3"/>
+        <EditorCategories value=""/>
+    </CModel>
+    <CModel id="MagicArmorModel" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Terran\BattlecruiserDefensiveMatrix\BattlecruiserDefensiveMatrix.m3"/>
+        <Radius value="2.000000"/>
+        <ScaleMax value="0.900000,0.900000,0.900000"/>
+        <ScaleMin value="0.900000,0.900000,0.900000"/>
+        <SelectionRadius value="0.555400"/>
+        <ShadowRadius value="0.555400"/>
+    </CModel>
+    <CModel id="WeatherPonyBeam">
+        <Model value="Assets\Effects\Protoss\ProbeBeam\ProbeBeam.m3"/>
+    </CModel>
+    <CModel id="HydraMissile" parent="MissileFX">
+        <Model value="Assets\Effects\Zerg\TentacleMissile\TentacleMissile.m3"/>
+    </CModel>
+    <CModel id="Parasprite" Race="Zerg">
+        <Model value="Assets\Units\Zerg\Symbiote\Symbiote.m3"/>
+        <Lighting value="Broodling"/>
+        <Occlusion value="Show"/>
+        <Radius value="0.250000"/>
+        <SquibTypeDefault value="Flesh"/>
+        <TechPurchaseCamera value="Star2CameraLow05"/>
+        <UnitGlossaryCamera value="Star2CameraLow05"/>
+        <PlanetPanelCamera value="Star2CameraLow05"/>
+        <SelectionRadius value="0.250000"/>
+        <ShadowRadius value="0.250000"/>
+    </CModel>
+    <CModel id="StarDiverAttackImpact" parent="ImpactFX">
+        <Model value="Assets\Effects\Protoss\PhoenixMissileImpact\PhoenixMissileImpact.m3"/>
+    </CModel>
+    <CModel id="WarpBombAttackDamage" parent="ImpactFX">
+        <Model value="Assets\Effects\Terran\FireImpact\FireImpact.m3"/>
+    </CModel>
+    <CModel id="WarpBombAttackImpact" parent="ImpactFX">
+        <Model value="Assets\Effects\Zerg\ZergBioEnergyMissileImpact\ZergBioEnergyMissileImpact.m3"/>
+    </CModel>
+    <CModel id="WarpBombAttackLaunch" parent="LaunchFX">
+        <Model value="Assets\Effects\Terran\SiegeTankWeaponLaunch\SiegeTankWeaponLaunch.m3"/>
+    </CModel>
+</Catalog>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CSound default="1" id="EquestrianAck" parent="Voice">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArrayTemplate>
+            <File value="LocalizedData\Sounds\VO\Equestrian\^TemplateParam2^.ogg"/>
+            <FacialAnim value="^TemplateParam1^"/>
+            <FacialGroup value="^TemplateParam1^"/>
+            <FacialFile value="LocalizedData\Sounds\VO\Equestrian\^TemplateParam1^.fxe"/>
+        </AssetArrayTemplate>
+    </CSound>
+    <CSound default="1" id="EquestrianCommAck" parent="Alert">
+        <EditorCategories value="Race:Terran"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound default="1" id="EquestrianDeath" parent="Death">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArrayTemplate>
+            <File value="LocalizedData\Sounds\VO\Equestrian\^TemplateParam2^.wav"/>
+            <FacialAnim value="^TemplateParam1^"/>
+            <FacialGroup value="^TemplateParam1^"/>
+            <FacialFile value="LocalizedData\Sounds\VO\Equestrian\^TemplateParam1^.fxe"/>
+        </AssetArrayTemplate>
+    </CSound>
+    <CSound default="1" id="EquestrianDeath_NP" parent="EquestrianAck">
+        <AssetArrayTemplate File="LocalizedData\Sounds\VO\Equestrian\^TemplateParam2^.wav"/>
+    </CSound>
+    <CSound default="1" id="EquestrianHelp" parent="Alert">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArrayTemplate>
+            <File value="LocalizedData\Sounds\VO\Equestrian\^TemplateParam2^.ogg"/>
+            <FacialAnim value="^TemplateParam1^"/>
+            <FacialGroup value="^TemplateParam1^"/>
+            <FacialFile value="LocalizedData\Sounds\VO\Equestrian\^TemplateParam1^.fxe"/>
+        </AssetArrayTemplate>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound default="1" id="EquestrianPissed" parent="EquestrianAck">
+        <Flags index="Download" value="0"/>
+        <Select value="Sequential"/>
+    </CSound>
+    <CSound default="1" id="EquestrianReady" parent="Ready">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArrayTemplate>
+            <File value="LocalizedData\Sounds\VO\Equestrian\^TemplateParam2^.ogg"/>
+            <FacialAnim value="^TemplateParam1^"/>
+            <FacialGroup value="^TemplateParam1^"/>
+            <FacialFile value="LocalizedData\Sounds\VO\Equestrian\^TemplateParam1^.fxe"/>
+        </AssetArrayTemplate>
+    </CSound>
+    <CSound id="GameMusicEque">
+        <AssetArray File="Assets/Music/Equestrian00.wav"/>
+    </CSound>
+    <CSound id="Pioneer_Death" parent="EquestrianDeath">
+        <AssetArray TemplateParam="Pioneer_Death00"/>
+    </CSound>
+    <CSound id="Pioneer_Attack" parent="EquestrianReady">
+        <AssetArray TemplateParam="Pioneer_Attack00"/>
+        <AssetArray TemplateParam="Pioneer_Attack01"/>
+        <AssetArray TemplateParam="Pioneer_Attack02"/>
+        <AssetArray TemplateParam="Pioneer_Attack03"/>
+    </CSound>
+    <CSound id="Pioneer_Help" parent="EquestrianHelp">
+        <AssetArray TemplateParam="Pioneer_Help00"/>
+        <AssetArray TemplateParam="Pioneer_Help01"/>
+    </CSound>
+    <CSound id="Pioneer_Yes" parent="EquestrianAck">
+        <AssetArray TemplateParam="Pioneer_Yes00"/>
+        <AssetArray TemplateParam="Pioneer_Yes01"/>
+        <AssetArray TemplateParam="Pioneer_Yes02"/>
+        <AssetArray TemplateParam="Pioneer_Yes03"/>
+        <AssetArray TemplateParam="Pioneer_Yes04"/>
+        <AssetArray TemplateParam="Pioneer_Yes05"/>
+        <AssetArray TemplateParam="Pioneer_Yes06"/>
+        <AssetArray TemplateParam="Pioneer_Yes07"/>
+    </CSound>
+    <CSound id="Pioneer_Ready" parent="EquestrianReady">
+        <AssetArray TemplateParam="Pioneer_Ready00"/>
+        <AssetArray TemplateParam="Pioneer_Ready01"/>
+    </CSound>
+    <CSound id="Pioneer_What" parent="EquestrianAck">
+        <AssetArray TemplateParam="Pioneer_What00"/>
+        <AssetArray TemplateParam="Pioneer_What01"/>
+        <AssetArray TemplateParam="Pioneer_What02"/>
+        <AssetArray TemplateParam="Pioneer_What03"/>
+    </CSound>
+</Catalog>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CSound id="MagicArmorBirth" parent="Spell">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Terran\Battlecruiser\Battlecruiser_DefensiveMatrixBirth0.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\Battlecruiser\Battlecruiser_DefensiveMatrixBirth1.wav"/>
+        <DupeDestroyCount value="8"/>
+        <DupeMuteCount value="8"/>
+    </CSound>
+    <CSound id="MagicArmorDeath" parent="Spell">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Terran\Battlecruiser\Battlecruiser_DefensiveMatrixDeath0.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\Battlecruiser\Battlecruiser_DefensiveMatrixDeath1.wav"/>
+        <DupeDestroyCount value="8"/>
+        <DupeMuteCount value="8"/>
+    </CSound>
+    <CSound id="Hydralisk_AttackImpactRanged2" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Hydralisk\Hydralisk_AttackImpactRanged0.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Hydralisk\Hydralisk_AttackImpactRanged1.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Hydralisk\Hydralisk_AttackImpactRanged2.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Hydralisk\Hydralisk_AttackImpactRanged3.wav"/>
+        <DupeDestroyCount value="3"/>
+        <Pitch value="0.000000,4.000000"/>
+        <Volume value="-24.000000,-24.000000"/>
+    </CSound>
+    <CSound id="Hydralisk_AttackImpactRanged22" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Hydralisk\Hydralisk_AttackImpactRanged0.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Hydralisk\Hydralisk_AttackImpactRanged1.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Hydralisk\Hydralisk_AttackImpactRanged2.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Hydralisk\Hydralisk_AttackImpactRanged3.wav"/>
+        <DupeDestroyCount value="3"/>
+        <Pitch value="0.000000,4.000000"/>
+        <Volume value="-24.000000,-24.000000"/>
+    </CSound>
+    <CSound id="Hydralisk_AttackImpactRanged23" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Hydralisk\Hydralisk_AttackImpactRanged0.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Hydralisk\Hydralisk_AttackImpactRanged1.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Hydralisk\Hydralisk_AttackImpactRanged2.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Hydralisk\Hydralisk_AttackImpactRanged3.wav"/>
+        <DupeDestroyCount value="3"/>
+        <Pitch value="0.000000,4.000000"/>
+        <Volume value="-24.000000,-24.000000"/>
+    </CSound>
+    <CSound id="Hydralisk_GroundAttackLaunch2" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Hydralisk\Hydralisk_AttackLaunchRanged0.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Hydralisk\Hydralisk_AttackLaunchRanged1.wav" Weight="50"/>
+        <AssetArray File="Assets\Sounds\Zerg\Hydralisk\Hydralisk_AttackLaunchRanged2.wav" Weight="33"/>
+        <AssetArray File="Assets\Sounds\Zerg\Hydralisk\Hydralisk_AttackLaunchRanged3.wav" Weight="25"/>
+        <DupeDestroyCount value="3"/>
+        <DupeMaximumMethod value="Replace"/>
+        <Pitch value="0.000000,4.000000"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="Hydralisk_GroundAttackLaunch22" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Hydralisk\Hydralisk_AttackLaunchRanged0.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Hydralisk\Hydralisk_AttackLaunchRanged1.wav" Weight="50"/>
+        <AssetArray File="Assets\Sounds\Zerg\Hydralisk\Hydralisk_AttackLaunchRanged2.wav" Weight="33"/>
+        <AssetArray File="Assets\Sounds\Zerg\Hydralisk\Hydralisk_AttackLaunchRanged3.wav" Weight="25"/>
+        <DupeDestroyCount value="3"/>
+        <DupeMaximumMethod value="Replace"/>
+        <Pitch value="0.000000,4.000000"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="Hydralisk_GroundAttackLaunch23" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Hydralisk\Hydralisk_AttackLaunchRanged0.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Hydralisk\Hydralisk_AttackLaunchRanged1.wav" Weight="50"/>
+        <AssetArray File="Assets\Sounds\Zerg\Hydralisk\Hydralisk_AttackLaunchRanged2.wav" Weight="33"/>
+        <AssetArray File="Assets\Sounds\Zerg\Hydralisk\Hydralisk_AttackLaunchRanged3.wav" Weight="25"/>
+        <DupeDestroyCount value="3"/>
+        <DupeMaximumMethod value="Replace"/>
+        <Pitch value="0.000000,4.000000"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="Phoenix_AirAttackImpact2" parent="Combat">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="Assets\Sounds\Protoss\Phoenix\Phoenix_AttackImpact0.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\Phoenix\Phoenix_AttackImpact1.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\Phoenix\Phoenix_AttackImpact2.wav"/>
+        <DupeDestroyCount value="6"/>
+        <DupeMuteCount value="32"/>
+        <OverlapPitchDelta value="0.500000"/>
+        <OverlapTimeDelta value="500"/>
+        <Pitch value="-0.890000,0.840000"/>
+        <Volume value="-6.120000,-6.120000"/>
+    </CSound>
+    <CSound id="Phoenix_AirAttackLaunch2" parent="Combat">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="Assets\Sounds\Protoss\Phoenix\Phoenix_AttackLaunch0.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\Phoenix\Phoenix_AttackLaunch1.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\Phoenix\Phoenix_AttackLaunch2.wav"/>
+        <DupeDestroyCount value="6"/>
+        <DupeMaximumMethod value="Replace"/>
+        <DupeMuteCount value="32"/>
+        <OverlapPitchDelta value="0.500000"/>
+        <OverlapTimeDelta value="500"/>
+        <Pitch value="-0.890000,0.840000"/>
+        <Volume value="-6.120000,-6.120000"/>
+    </CSound>
+    <CSound id="Pioneer_AttackLaunch" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Terran\SCV\SCV_AttackLaunch0.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\SCV\SCV_AttackLaunch1.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\SCV\SCV_AttackLaunch2.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\SCV\SCV_AttackLaunch3.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\SCV\SCV_AttackLaunch4.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\SCV\SCV_AttackLaunch5.wav"/>
+        <DupeDestroyCount value="3"/>
+        <DupeMaximumMethod value="Replace"/>
+        <Pitch value="-2.000000,0.000000"/>
+        <Volume value="-14.000000,-12.000000"/>
+    </CSound>
+    <CSound id="Militia_AttackImpact" parent="Zerg_AttackImpactSmallPierce"/>
+    <CSound id="Militia_AttackLaunch" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch0.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch1.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch10.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch11.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch12.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch13.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch14.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch15.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch2.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch3.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch4.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch5.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch6.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch7.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch8.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch9.wav"/>
+        <DupeDestroyCount value="4"/>
+        <Pitch value="-0.890000,0.840000"/>
+        <VariationMinimum value="8"/>
+        <Volume value="-4.560000,-4.560000"/>
+    </CSound>
+    <CSound id="Cockatrice_JumpLand" parent="Movement">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch3.wav" Pitch="-3.000000,-3.000000"/>
+        <DupeDestroyCount value="4"/>
+        <Pitch value="-0.890000,0.840000"/>
+        <Volume value="-6.000000,-6.000000"/>
+    </CSound>
+    <CSound id="Cockatrice_JumpLaunch" parent="Movement">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch1.wav" Pitch="-3.000000,-3.000000"/>
+        <DupeDestroyCount value="4"/>
+        <Pitch value="-1.000000,1.000000"/>
+        <Volume value="-7.000000,-7.000000"/>
+    </CSound>
+    <CSound id="SiegeTank_SiegedAttackImpact2" parent="Terran_ExplosionMedium">
+        <Volume value="-9.000000,-9.000000"/>
+    </CSound>
+    <CSound id="SiegeTank_SiegedAttackLaunch2" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Terran\SiegeTank\SiegeTank_SiegeAttackLaunch0.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\SiegeTank\SiegeTank_SiegeAttackLaunch1.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\SiegeTank\SiegeTank_SiegeAttackLaunch2.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\SiegeTank\SiegeTank_SiegeAttackLaunch3.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\SiegeTank\SiegeTank_SiegeAttackLaunch4.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\SiegeTank\SiegeTank_SiegeAttackLaunch5.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\SiegeTank\SiegeTank_SiegeAttackLaunch6.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\SiegeTank\SiegeTank_SiegeAttackLaunch7.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\SiegeTank\SiegeTank_SiegeAttackLaunch8.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\SiegeTank\SiegeTank_SiegeAttackLaunch9.wav"/>
+        <DupeDestroyCount value="8"/>
+        <DupeMaximumMethod value="Replace"/>
+        <Pitch value="-6.180000,-1.820000"/>
+        <Volume value="-2.520000,-1.460000"/>
+    </CSound>
+    <CSound id="Spectre_CloakOff3" parent="Terran_CloakOff"/>
+    <CSound id="Spectre_CloakOn3" parent="Terran_CloakOn"/>
+    <CSound id="SpitfireBurning" parent="Spell">
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\Fires\Terran_FireMedium0.wav" Pitch="15.000000,15.000000" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\Fires\Terran_FireMedium1.wav" Pitch="0.000000,15.000000" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\Fires\Terran_FireMedium2.wav" Pitch="0.000000,15.000000" FacialGroup=""/>
+    </CSound>
+    <CSound id="SpitfireCone" parent="Spell">
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\Fires\Terran_FireLarge0.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\Fires\Terran_FireLarge1.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\Fires\Terran_FireLarge2.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\Fires\Terran_FireMedium0.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\Fires\Terran_FireMedium1.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\Fires\Terran_FireMedium2.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\Fires\Terran_FireSmall0.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\Fires\Terran_FireSmall1.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\Fires\Terran_FireSmall2.wav" FacialGroup=""/>
+    </CSound>
+    <CSound id="Stalker_AttackImpact2" parent="Combat">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="Assets\Sounds\Protoss\Stalker\Stalker_AttackImpact0.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\Stalker\Stalker_AttackImpact1.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\Stalker\Stalker_AttackImpact2.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\Stalker\Stalker_AttackImpact3.wav"/>
+        <Volume value="-12.040000,-12.040000"/>
+    </CSound>
+    <CSound id="Stalker_AttackLaunch2" parent="Combat">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="Assets\Sounds\Protoss\Stalker\Stalker_AttackLaunch0.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\Stalker\Stalker_AttackLaunch1.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\Stalker\Stalker_AttackLaunch2.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\Stalker\Stalker_AttackLaunch3.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\Stalker\Stalker_AttackLaunch4.wav"/>
+        <Pitch value="-0.890000,0.840000"/>
+        <Volume value="-9.160000,-9.160000"/>
+    </CSound>
+    <CSound id="Zealot_AttackImpact2" parent="Protoss_AttackImpactMediumSlice"/>
+    <CSound id="Zealot_AttackImpact3" parent="Protoss_AttackImpactMediumSlice"/>
+    <CSound id="Zealot_AttackLaunch2" parent="Combat">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="Assets\Sounds\Protoss\Zealot\Zealot_AttackLaunch0.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\Zealot\Zealot_AttackLaunch1.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\Zealot\Zealot_AttackLaunch2.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\Zealot\Zealot_AttackLaunch3.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\Zealot\Zealot_AttackLaunch4.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\Zealot\Zealot_AttackLaunch5.wav"/>
+        <Pitch value="-0.890000,1.640000"/>
+        <VariationMinimum value="8"/>
+        <Volume value="-10.480000,-10.480000"/>
+    </CSound>
+    <CSound id="Zealot_AttackLaunch3" parent="Combat">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="Assets\Sounds\Protoss\Zealot\Zealot_AttackLaunch0.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\Zealot\Zealot_AttackLaunch1.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\Zealot\Zealot_AttackLaunch2.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\Zealot\Zealot_AttackLaunch3.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\Zealot\Zealot_AttackLaunch4.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\Zealot\Zealot_AttackLaunch5.wav"/>
+        <Pitch value="-0.890000,1.640000"/>
+        <VariationMinimum value="8"/>
+        <Volume value="-10.480000,-10.480000"/>
+    </CSound>
+    <CSound id="Zergling_AttackImpact2" parent="Zerg_AttackImpactSmallPierce"/>
+    <CSound id="Zergling_AttackImpact3" parent="Zerg_AttackImpactSmallPierce"/>
+    <CSound id="Zergling_AttackLaunch2" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch0.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch1.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch10.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch11.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch12.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch13.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch14.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch15.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch2.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch3.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch4.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch5.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch6.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch7.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch8.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch9.wav"/>
+        <DupeDestroyCount value="4"/>
+        <Pitch value="-0.890000,0.840000"/>
+        <VariationMinimum value="8"/>
+        <Volume value="-4.560000,-4.560000"/>
+    </CSound>
+    <CSound id="Zergling_AttackLaunch3" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch0.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch1.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch10.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch11.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch12.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch13.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch14.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch15.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch2.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch3.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch4.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch5.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch6.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch7.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch8.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch9.wav"/>
+        <DupeDestroyCount value="4"/>
+        <Pitch value="-0.890000,0.840000"/>
+        <VariationMinimum value="8"/>
+        <Volume value="-4.560000,-4.560000"/>
+    </CSound>
+</Catalog>

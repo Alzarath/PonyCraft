@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CRequirementAnd id="AndEq1695466224CountUpgradeEquineWeaponsLevel1CompleteOnlyTechTreeCheat1OrCountUnitHerdTownCompleteOnlyCountUnitPonyPalaceCompleteOnly">
+        <OperandArray value="Eq1695466224CountUpgradeEquineWeaponsLevel1CompleteOnlyTechTreeCheat1"/>
+        <OperandArray value="OrCountUnitHerdTownCompleteOnlyCountUnitPonyPalaceCompleteOnly"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndEq1695466224CountUpgradeMonsterWeaponsLevel1CompleteOnlyTechTreeCheat1OrCountUnitPonyPalaceInProgressOrBetterCountUnitHerdTownCompleteOnly">
+        <OperandArray value="Eq1695466224CountUpgradeMonsterWeaponsLevel1CompleteOnlyTechTreeCheat1"/>
+        <OperandArray value="OrCountUnitPonyPalaceInProgressOrBetterCountUnitHerdTownCompleteOnly"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndEq1695466224CountUpgradeZergGroundArmorsLevel12CompleteOnlyTechTreeCheat1OrCountUnitHerdTownCompleteOnlyCountUnitPonyPalaceInProgressOrBetter">
+        <OperandArray value="Eq1695466224CountUpgradeZergGroundArmorsLevel12CompleteOnlyTechTreeCheat1"/>
+        <OperandArray value="OrCountUnitHerdTownCompleteOnlyCountUnitPonyPalaceInProgressOrBetter"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndEq3569156689CountUpgradeEquineArmorLevel1CompleteOnlyTechTreeCheat1OrCountUnitHerdTownCompleteOnlyCountUnitPonyPalaceInProgressOrBetter">
+        <OperandArray value="Eq3569156689CountUpgradeEquineArmorLevel1CompleteOnlyTechTreeCheat1"/>
+        <OperandArray value="OrCountUnitHerdTownCompleteOnlyCountUnitPonyPalaceInProgressOrBetter"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndEq4090499265CountUpgradeEquineWeaponsLevel2CompleteOnlyTechTreeCheat1CountUnitPonyPalaceCompleteOnly">
+        <OperandArray value="Eq4090499265CountUpgradeEquineWeaponsLevel2CompleteOnlyTechTreeCheat1"/>
+        <OperandArray value="CountUnitPonyPalaceCompleteOnly"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndEq4090499265CountUpgradeMonsterArmorLevel2CompleteOnlyTechTreeCheat1CountUnitPonyPalaceCompleteOnly">
+        <OperandArray value="Eq4090499265CountUpgradeMonsterArmorLevel2CompleteOnlyTechTreeCheat1"/>
+        <OperandArray value="CountUnitPonyPalaceCompleteOnly"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndEq4090499265CountUpgradeMonsterWeaponsLevel2CompleteOnlyTechTreeCheat1CountUnitPonyPalaceCompleteOnly">
+        <OperandArray value="Eq4090499265CountUpgradeMonsterWeaponsLevel2CompleteOnlyTechTreeCheat1"/>
+        <OperandArray value="CountUnitPonyPalaceCompleteOnly"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndEq419273267CountUpgradeEquineArmorLevel2CompleteOnlyTechTreeCheat1CountUnitPonyPalaceCompleteOnly">
+        <OperandArray value="Eq419273267CountUpgradeEquineArmorLevel2CompleteOnlyTechTreeCheat1"/>
+        <OperandArray value="CountUnitPonyPalaceCompleteOnly"/>
+    </CRequirementAnd>
+    <CRequirementCountUnit id="CountUnitAlicornSanctuaryCompleteOnlyTechTreeCheat">
+        <Count Link="AlicornSanctuary" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitBeastiaryCompleteOnlyTechTreeCheat">
+        <Count Link="Beastiary" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitCloudFortCompleteOnlyTechTreeCheat">
+        <Count Link="CloudFort" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitEmbassyCompleteOnlyTechTreeCheat">
+        <Count Link="Embassy" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitGarrisonCompleteOnlyTechTreeCheat">
+        <Count Link="Garrison" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitHerdTownCompleteOnly">
+        <Count Link="HerdTown" State="CompleteOnly"/>
+        <Flags index="TechTreeCheat" value="0"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitPonyPalaceCompleteOnly">
+        <Count Link="PonyPalace" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitPonyPalaceCompleteOnlyTechTreeCheat">
+        <Count Link="PonyPalace" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitPonyPalaceInProgressOrBetter">
+        <Count Link="PonyPalace" State="InProgressOrBetter"/>
+        <Flags index="TechTreeCheat" value="0"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitSmithyCompleteOnlyTechTreeCheat">
+        <Count Link="Smithy" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitUniversityCompleteOnly">
+        <Count Link="University" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitUniversityCompleteOnlyTechTreeCheat">
+        <Count Link="University" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUpgrade id="CountUpgradeAppleBuckingCompleteOnly3055499258TechTreeCheat">
+        <Count Link="AppleBucking" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeAppleBuckingQueuedOrBetterTechTreeCheat">
+        <Count Link="AppleBucking" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeAuroraCompleteOnly">
+        <Count Link="Aurora" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeAuroraQueuedOrBetter">
+        <Count Link="Aurora" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeDeepBreathCompleteOnlyTechTreeCheat">
+        <Count Link="DeepBreath" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeEquineArmorLevel1CompleteOnlyTechTreeCheat">
+        <Count Link="EquineArmorLevel1" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeEquineArmorLevel1QueuedOrBetter">
+        <Count Link="EquineArmorLevel1" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeEquineArmorLevel2CompleteOnlyTechTreeCheat">
+        <Count Link="EquineArmorLevel2" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeEquineArmorLevel2QueuedOrBetterTechTreeCheat">
+        <Count Link="EquineArmorLevel2" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeEquineWeaponsLevel1CompleteOnlyTechTreeCheat">
+        <Count Link="EquineWeaponsLevel1" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeEquineWeaponsLevel1QueuedOrBetterTechTreeCheat">
+        <Count Link="EquineWeaponsLevel1" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeEquineWeaponsLevel2CompleteOnlyTechTreeCheat">
+        <Count Link="EquineWeaponsLevel2" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeEquineWeaponsLevel2QueuedOrBetterTechTreeCheat">
+        <Count Link="EquineWeaponsLevel2" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeEquineWeaponsLevel3QueuedOrBetterTechTreeCheat">
+        <Count Link="EquineWeaponsLevel3" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeFilteredGogglesCompleteOnly">
+        <Count Link="FilteredGoggles" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeFilteredGogglesQueuedOrBetter">
+        <Count Link="FilteredGoggles" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeHydraRegenerationCompleteOnly">
+        <Count Link="HydraRegeneration" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeHydraRegenerationQueuedOrBetter">
+        <Count Link="HydraRegeneration" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMagicArmorCompleteOnly">
+        <Count Link="MagicArmor" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMagicArmorQueuedOrBetter">
+        <Count Link="MagicArmor" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMagicalInfusionCompleteOnly">
+        <Count Link="MagicalInfusion" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMagicalInfusionQueuedOrBetter">
+        <Count Link="MagicalInfusion" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMassTeleportCompleteOnlyTechTreeCheat">
+        <Count Link="MassTeleport" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMassTeleportQueuedOrBetterTechTreeCheat">
+        <Count Link="MassTeleport" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMonsterArmorLevel2CompleteOnlyTechTreeCheat">
+        <Count Link="MonsterArmorLevel2" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMonsterArmorLevel2QueuedOrBetterTechTreeCheat">
+        <Count Link="MonsterArmorLevel2" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMonsterArmorLevel3QueuedOrBetterTechTreeCheat">
+        <Count Link="MonsterArmorLevel3" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMonsterWeaponsLevel1CompleteOnlyTechTreeCheat">
+        <Count Link="MonsterWeaponsLevel1" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMonsterWeaponsLevel1QueuedOrBetterTechTreeCheat">
+        <Count Link="MonsterWeaponsLevel1" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMonsterWeaponsLevel2CompleteOnlyTechTreeCheat">
+        <Count Link="MonsterWeaponsLevel2" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMonsterWeaponsLevel2QueuedOrBetterTechTreeCheat">
+        <Count Link="MonsterWeaponsLevel2" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMonsterWeaponsLevel3QueuedOrBetterTechTreeCheat">
+        <Count Link="MonsterWeaponsLevel3" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeParaspriteSwarmCompleteOnlyTechTreeCheat">
+        <Count Link="ParaspriteSwarm" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeParaspriteSwarmQueuedOrBetterTechTreeCheat">
+        <Count Link="ParaspriteSwarm" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradePlowCompleteOnly">
+        <Count Link="Plow" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradePlowCompleteOnlyTechTreeCheat">
+        <Flags index="TechTreeCheat" value="1"/>
+        <Count Link="Plow" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradePlowQueuedOrBetterTechTreeCheat">
+        <Flags index="TechTreeCheat" value="1"/>
+        <Count Link="Plow" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeShroudoftheMoonCompleteOnly">
+        <Count Link="ShroudoftheMoon" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeShroudoftheMoonQueuedOrBetter">
+        <Count Link="ShroudoftheMoon" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeSpectralNovaCompleteOnlyTechTreeCheat">
+        <Count Link="SpectralNova" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeSpectralNovaQueuedOrBetterTechTreeCheat">
+        <Count Link="SpectralNova" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeSpellweaveCapeQueuedOrBetter">
+        <Count Link="SpellweaveCape" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeSpikedTailCompleteOnly3055499258TechTreeCheat">
+        <Count Link="SpikedTail" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeSpikedTailQueuedOrBetterTechTreeCheat">
+        <Count Link="SpikedTail" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeTerranInfantryArmorsLevel32QueuedOrBetterTechTreeCheat">
+        <Count Link="TerranInfantryArmorsLevel32" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeWingTrainingCompleteOnlyTechTreeCheat">
+        <Count Link="WingTraining" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeWingTrainingQueuedOrBetterTechTreeCheat">
+        <Count Link="WingTraining" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZergGroundArmorsLevel12CompleteOnlyTechTreeCheat">
+        <Count Link="ZergGroundArmorsLevel12" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZergGroundArmorsLevel12QueuedOrBetter">
+        <Count Link="ZergGroundArmorsLevel12" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementEq id="Eq1695466224CountUpgradeEquineWeaponsLevel1CompleteOnlyTechTreeCheat1">
+        <OperandArray index="0" value="CountUpgradeEquineWeaponsLevel1CompleteOnlyTechTreeCheat"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="Eq1695466224CountUpgradeMonsterWeaponsLevel1CompleteOnlyTechTreeCheat1">
+        <OperandArray index="0" value="CountUpgradeMonsterWeaponsLevel1CompleteOnlyTechTreeCheat"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="Eq1695466224CountUpgradeZergGroundArmorsLevel12CompleteOnlyTechTreeCheat1">
+        <OperandArray index="0" value="CountUpgradeZergGroundArmorsLevel12CompleteOnlyTechTreeCheat"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="Eq3569156689CountUpgradeEquineArmorLevel1CompleteOnlyTechTreeCheat1">
+        <OperandArray index="0" value="CountUpgradeEquineArmorLevel1CompleteOnlyTechTreeCheat"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="Eq4090499265CountUpgradeEquineWeaponsLevel2CompleteOnlyTechTreeCheat1">
+        <OperandArray index="0" value="CountUpgradeEquineWeaponsLevel2CompleteOnlyTechTreeCheat"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="Eq4090499265CountUpgradeMonsterArmorLevel2CompleteOnlyTechTreeCheat1">
+        <OperandArray index="0" value="CountUpgradeMonsterArmorLevel2CompleteOnlyTechTreeCheat"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="Eq4090499265CountUpgradeMonsterWeaponsLevel2CompleteOnlyTechTreeCheat1">
+        <OperandArray index="0" value="CountUpgradeMonsterWeaponsLevel2CompleteOnlyTechTreeCheat"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="Eq419273267CountUpgradeEquineArmorLevel2CompleteOnlyTechTreeCheat1">
+        <OperandArray index="0" value="CountUpgradeEquineArmorLevel2CompleteOnlyTechTreeCheat"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeEquineArmorLevel1QueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeEquineArmorLevel1QueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeEquineArmorLevel2QueuedOrBetterTechTreeCheat0">
+        <OperandArray index="0" value="CountUpgradeEquineArmorLevel2QueuedOrBetterTechTreeCheat"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeEquineWeaponsLevel1QueuedOrBetterTechTreeCheat0">
+        <OperandArray index="0" value="CountUpgradeEquineWeaponsLevel1QueuedOrBetterTechTreeCheat"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeEquineWeaponsLevel2QueuedOrBetterTechTreeCheat0">
+        <OperandArray index="0" value="CountUpgradeEquineWeaponsLevel2QueuedOrBetterTechTreeCheat"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeEquineWeaponsLevel3QueuedOrBetterTechTreeCheat0">
+        <OperandArray index="0" value="CountUpgradeEquineWeaponsLevel3QueuedOrBetterTechTreeCheat"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeMonsterArmorLevel2QueuedOrBetterTechTreeCheat0">
+        <OperandArray index="0" value="CountUpgradeMonsterArmorLevel2QueuedOrBetterTechTreeCheat"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeMonsterArmorLevel3QueuedOrBetterTechTreeCheat0">
+        <OperandArray index="0" value="CountUpgradeMonsterArmorLevel3QueuedOrBetterTechTreeCheat"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeMonsterWeaponsLevel1QueuedOrBetterTechTreeCheat0">
+        <OperandArray index="0" value="CountUpgradeMonsterWeaponsLevel1QueuedOrBetterTechTreeCheat"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeMonsterWeaponsLevel2QueuedOrBetterTechTreeCheat0">
+        <OperandArray index="0" value="CountUpgradeMonsterWeaponsLevel2QueuedOrBetterTechTreeCheat"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeMonsterWeaponsLevel3QueuedOrBetterTechTreeCheat0">
+        <OperandArray index="0" value="CountUpgradeMonsterWeaponsLevel3QueuedOrBetterTechTreeCheat"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeTerranInfantryArmorsLevel32QueuedOrBetterTechTreeCheat0">
+        <OperandArray index="0" value="CountUpgradeTerranInfantryArmorsLevel32QueuedOrBetterTechTreeCheat"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeZergGroundArmorsLevel12QueuedOrBetter0">
+        <OperandArray index="0" value="CountUpgradeZergGroundArmorsLevel12QueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementNot id="NotCountUpgradeAppleBuckingQueuedOrBetterTechTreeCheat">
+        <OperandArray index="0" value="CountUpgradeAppleBuckingQueuedOrBetterTechTreeCheat"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeAuroraQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeAuroraQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeDeepBreathCompleteOnlyTechTreeCheat">
+        <OperandArray index="0" value="CountUpgradeDeepBreathCompleteOnlyTechTreeCheat"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeFilteredGogglesQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeFilteredGogglesQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeHydraRegenerationQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeHydraRegenerationQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeMagicArmorQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeMagicArmorQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeMagicalInfusionQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeMagicalInfusionQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeMassTeleportQueuedOrBetterTechTreeCheat">
+        <OperandArray index="0" value="CountUpgradeMassTeleportQueuedOrBetterTechTreeCheat"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeParaspriteSwarmQueuedOrBetterTechTreeCheat">
+        <OperandArray index="0" value="CountUpgradeParaspriteSwarmQueuedOrBetterTechTreeCheat"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradePlowCompleteOnly">
+        <OperandArray index="0" value="CountUpgradePlowCompleteOnly"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradePlowQueuedOrBetterTechTreeCheat">
+        <OperandArray index="0" value="CountUpgradePlowQueuedOrBetterTechTreeCheat"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeShroudoftheMoonQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeShroudoftheMoonQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeSpectralNovaQueuedOrBetterTechTreeCheat">
+        <OperandArray index="0" value="CountUpgradeSpectralNovaQueuedOrBetterTechTreeCheat"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeSpellweaveCapeQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeSpellweaveCapeQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeSpikedTailQueuedOrBetterTechTreeCheat">
+        <OperandArray index="0" value="CountUpgradeSpikedTailQueuedOrBetterTechTreeCheat"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeWingTrainingQueuedOrBetterTechTreeCheat">
+        <OperandArray index="0" value="CountUpgradeWingTrainingQueuedOrBetterTechTreeCheat"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotTechTreeCheatCountUpgradePlowCompleteOnly">
+        <Flags index="TechTreeCheat" value="1"/>
+        <OperandArray index="0" value="CountUpgradePlowCompleteOnly"/>
+    </CRequirementNot>
+    <CRequirementOr id="OrCountUnitHerdTownCompleteOnlyCountUnitPonyPalaceCompleteOnly">
+        <OperandArray value="CountUnitHerdTownCompleteOnly"/>
+        <OperandArray value="CountUnitPonyPalaceCompleteOnly"/>
+    </CRequirementOr>
+    <CRequirementOr id="OrCountUnitHerdTownCompleteOnlyCountUnitPonyPalaceInProgressOrBetter">
+        <OperandArray value="CountUnitHerdTownCompleteOnly"/>
+        <OperandArray value="CountUnitPonyPalaceInProgressOrBetter"/>
+    </CRequirementOr>
+    <CRequirementOr id="OrCountUnitPonyPalaceInProgressOrBetterCountUnitHerdTownCompleteOnly">
+        <OperandArray value="CountUnitPonyPalaceInProgressOrBetter"/>
+        <OperandArray value="CountUnitHerdTownCompleteOnly"/>
+    </CRequirementOr>
+</Catalog>

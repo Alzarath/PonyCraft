@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CModel id="Militia">
+        <Model value="Assets/Units/Equestrian/Militia/Militia.m3"/>
+    </CModel>
+    <CModel id="Pioneer">
+        <Model value="Assets/Units/Equestrian/Pioneer/Pioneer.m3"/>
+    </CModel>
+    <CModel id="Deadeye">
+        <Model value="Assets/Units/Equestrian/Deadeye/Deadeye.m3"/>
+    </CModel>
+</Catalog>

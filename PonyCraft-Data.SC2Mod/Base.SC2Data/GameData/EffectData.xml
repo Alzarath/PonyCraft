@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CEffectApplyBehavior id="CockatriceVenomApplyBehavior">
+        <EditorCategories value=""/>
+        <Behavior value="Poisoned"/>
+    </CEffectApplyBehavior>
+    <CEffectLaunchMissile id="CometLauncherLMLeft">
+        <ImpactEffect value="CometLauncherU2"/>
+        <Movers Link="MissileDefault" IfRangeLTE="1"/>
+        <Movers Link="IonCannonsWeaponLeft" IfRangeLTE="6"/>
+        <EditorCategories value=""/>
+        <AmmoUnit value="CometLauncherWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="CometLauncherLMRight">
+        <ImpactEffect value="CometLauncherU2"/>
+        <Movers Link="MissileDefault" IfRangeLTE="1"/>
+        <Movers Link="IonCannonsWeaponRight" IfRangeLTE="6"/>
+        <EditorCategories value=""/>
+        <AmmoUnit value="CometLauncherWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectEnumArea id="FieryWrathSearchArea">
+        <EditorCategories value=""/>
+        <AreaArray Radius="3" Effect="FieryWrathAreaDamage"/>
+    </CEffectEnumArea>
+    <CEffectSet id="FieryWrathSet">
+        <EditorCategories value=""/>
+        <EffectArray value="FieryWrathTargetDamage"/>
+        <EffectArray value="FieryWrathSearchArea"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="RamApplyBehavior">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="Ramming"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="RamDamage">
+        <EditorCategories value=""/>
+        <Amount value="15"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="RamSearchArea">
+        <EditorCategories value=""/>
+        <Chance value="0"/>
+        <ImpactLocation Value="CasterPoint"/>
+        <SearchFilters value="Ground;Self,Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="2" Effect="RamDamage"/>
+    </CEffectEnumArea>
+    <CEffectSet id="RamSet">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="MassTeleportInitialSet">
+        <ValidatorArray value="HasVision"/>
+        <EditorCategories value=""/>
+        <EffectArray value="MassTeleportSearchArea"/>
+        <TargetLocationType value="Point"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="PoisonJokeApplyWander">
+        <ValidatorArray index="0" value="PoisonJokeApplyBehaviorTargetFilters"/>
+        <EditorCategories value=""/>
+        <Behavior value="PoisonJokeWander"/>
+    </CEffectApplyBehavior>
+    <CEffectLaunchMissile id="PoisonJokeLaunchMissle">
+        <EditorCategories value=""/>
+        <ImpactEffect value="PoisonJokeApplyBehavior"/>
+        <AmmoUnit value="GlaiveWurmWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectRemoveBehavior id="PoisonJokeRemoveWander">
+        <EditorCategories value=""/>
+        <BehaviorLink value="PoisonJokeWander"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectApplyBehavior id="SpectralNovaApplyBehavior">
+        <EditorCategories value=""/>
+        <Behavior value="Immobilized"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="SpectralNovaSearchArea">
+        <EditorCategories value=""/>
+        <ImpactLocation Value="CasterPoint"/>
+        <SearchFilters value="Air;Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="5" Effect="SpectralNovaApplyBehavior"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="SpitfireApplyBurning">
+        <EditorCategories value=""/>
+        <Behavior value="Burning"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="SpitfireApplyDamageProtection">
+        <EditorCategories value=""/>
+        <Behavior value="SpitfireMultipleDamageProtection"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="SpitfireBurningDamage">
+        <EditorCategories value=""/>
+        <AttributeBonus index="Structure" value="5"/>
+        <ArmorReduction value="1"/>
+        <Amount value="2"/>
+        <Death value="Fire"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="SpitfireCreatePersistent">
+        <EditorCategories value=""/>
+        <PeriodCount value="5"/>
+        <PeriodicEffectArray value="SpitfireSearchArea"/>
+        <PeriodicPeriodArray value="0.02"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="SpitfireDamage">
+        <EditorCategories value=""/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <AttributeBonus index="Structure" value="15"/>
+        <ArmorReduction value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="30"/>
+        <Death value="Fire"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="SpitfireCreatePersistentCone">
+        <EditorCategories value=""/>
+        <WhichLocation Value="CasterUnit"/>
+        <PeriodCount value="28"/>
+        <PeriodicEffectArray value="SpitfireCreatePersistent"/>
+        <PeriodicOffsetArray value="0,-0.5,-0.5"/>
+        <PeriodicOffsetArray value="0.5,-1.5,-1"/>
+        <PeriodicOffsetArray value="-0.5,-1.5,-1"/>
+        <PeriodicOffsetArray value="1,-2.5,-1.5"/>
+        <PeriodicOffsetArray value="0,-2.5,-1.5"/>
+        <PeriodicOffsetArray value="-1,-2.5,-1.5"/>
+        <PeriodicOffsetArray value="1.5,-3.5,-2"/>
+        <PeriodicOffsetArray value="0.5,-3.5,-2"/>
+        <PeriodicOffsetArray value="-0.5,-3.5,-2"/>
+        <PeriodicOffsetArray value="-1.5,-3.5,-2"/>
+        <PeriodicOffsetArray value="2,-4.5,-2.5"/>
+        <PeriodicOffsetArray value="1,-4.5,-2.5"/>
+        <PeriodicOffsetArray value="0,-4.5,-2.5"/>
+        <PeriodicOffsetArray value="-1,-4.5,-2.5"/>
+        <PeriodicOffsetArray value="-2,-4.5,-2.5"/>
+        <PeriodicOffsetArray value="2.5,-5.5,-3"/>
+        <PeriodicOffsetArray value="1.5,-5.5,-3"/>
+        <PeriodicOffsetArray value="0.5,-5.5,-3"/>
+        <PeriodicOffsetArray value="-0.5,-5.5,-3"/>
+        <PeriodicOffsetArray value="-1.5,-5.5,-3"/>
+        <PeriodicOffsetArray value="-2.5,-5.5,-3"/>
+        <PeriodicOffsetArray value="-3,-6.5,-3.5"/>
+        <PeriodicOffsetArray value="-2,-6.5,-3.5"/>
+        <PeriodicOffsetArray value="-1,-6.5,-3.5"/>
+        <PeriodicOffsetArray value="0,-6.5,-3.5"/>
+        <PeriodicOffsetArray value="1,-6.5,-3.5"/>
+        <PeriodicOffsetArray value="2,-6.5,-3.5"/>
+        <PeriodicOffsetArray value="3,-6.5,-3.5"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="SpitfireSearchArea">
+        <EditorCategories value=""/>
+        <ExcludeArray/>
+        <IncludeArray Effect="SpitfireCreatePersistentCone" Value="Target"/>
+        <SearchFilters value="Ground;Player,Ally,Stasis,Dead,Invulnerable"/>
+        <AreaArray Radius="0.75" Effect="SpitfireSet"/>
+    </CEffectEnumArea>
+    <CEffectSet id="SpitfireSet">
+        <EditorCategories value=""/>
+        <EffectArray value="SpitfireApplyBurning"/>
+        <EffectArray value="SpitfireApplyDamageProtection"/>
+    </CEffectSet>
+    <CEffectDamage id="SteelCannonDamage">
+        <EditorCategories value=""/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <ArmorReduction value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="20"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="OffsetByUnitRadius" value="1"/>
+        <SearchFlags index="OffsetAreaByAngle" value="1"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="HerbalRemedyApplyBehavior">
+        <ValidatorArray index="0" value="LifeNotFull"/>
+        <ValidatorArray value="NotParaspriteAir"/>
+        <ValidatorArray value="NotParaspriteGround"/>
+        <EditorCategories value=""/>
+        <Behavior value="HerbalRemedy"/>
+    </CEffectApplyBehavior>
+    <CEffectModifyUnit id="HerbalRemedyModifyUnit">
+        <EditorCategories value=""/>
+        <VitalArray index="Life" Change="1"/>
+    </CEffectModifyUnit>
+    <CEffectApplyBehavior id="MassTeleportApplyPreTeleportation">
+        <ValidatorArray index="0" value="NotLarvaEgg"/>
+        <ValidatorArray value="NotLarva"/>
+        <ValidatorArray value="HasVision"/>
+        <EditorCategories value=""/>
+        <Behavior value="MassTeleportPreTeleportation"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="MassTeleportApplyPostTeleportation">
+        <ValidatorArray index="0" value=""/>
+        <EditorCategories value=""/>
+        <Behavior value="MassTeleportPostTeleportation"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="AuroraApplyBehavior">
+        <ValidatorArray index="0" value="NotHeroic"/>
+        <EditorCategories value=""/>
+        <Behavior value="Aurora"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="FieryWrathTargetDamage">
+        <EditorCategories value=""/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Amount value="50"/>
+        <Death value="Fire"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="OffsetByUnitRadius" value="1"/>
+        <SearchFlags index="OffsetAreaByAngle" value="1"/>
+        <ImpactLocation Value="TargetUnit"/>
+    </CEffectDamage>
+    <CEffectDamage id="FieryWrathAreaDamage">
+        <EditorCategories value=""/>
+        <Kind value="Splash"/>
+        <Amount value="15"/>
+        <Death value="Fire"/>
+        <ExcludeArray Value="Target"/>
+        <ImpactUnitValidator value="EnemyTarget"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+    </CEffectDamage>
+    <CEffectDamage id="GalaApplesDamage">
+        <EditorCategories value=""/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <ArmorReduction value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="2"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="OffsetByUnitRadius" value="1"/>
+        <SearchFlags index="OffsetAreaByAngle" value="1"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="GalaApple">
+        <EditorCategories value=""/>
+        <ImpactEffect value="GalaApplesDamage"/>
+        <AmmoUnit value="GalaApple"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="NibbleFriendlyDamage">
+        <EditorCategories value=""/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Melee"/>
+        <Amount value="2"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="OffsetByUnitRadius" value="1"/>
+        <SearchFlags index="OffsetAreaByAngle" value="1"/>
+    </CEffectDamage>
+    <CEffectModifyUnit id="Nourish">
+        <ValidatorArray value="NotMaxHP"/>
+        <ValidatorArray value="NotParaspriteAir"/>
+        <ValidatorArray value="NotParaspriteGround"/>
+        <EditorCategories value=""/>
+        <VitalArray index="Life" Change="5"/>
+    </CEffectModifyUnit>
+    <CEffectApplyBehavior id="PoisonJokeApplyBehavior">
+        <EditorCategories value=""/>
+        <Behavior value="PoisonJoke"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="RainfallSearchArea">
+        <EditorCategories value=""/>
+        <SearchFilters value="Mechanical;Player,Ally,Neutral"/>
+        <AreaArray Radius="5" Effect="RainfallApplyBehavior"/>
+    </CEffectEnumArea>
+    <CEffectCreatePersistent id="TalonsCreatePersistent">
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="2"/>
+        <PeriodicEffectArray value="TalonsDamage"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.28"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="TornadoHeavyGalesDamage">
+        <EditorCategories value=""/>
+        <AttributeBonus index="Structure" value="1"/>
+        <Amount value="2"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+    </CEffectDamage>
+    <CEffectModifyUnit id="UnhealthyAppetiteAirModifyCasterUnit">
+        <EditorCategories value=""/>
+        <ImpactUnit Effect="UnhealthyAppetiteAir" Value="Caster"/>
+        <VitalArray index="Life" Change="-15"/>
+    </CEffectModifyUnit>
+    <CEffectCreateUnit id="UnhealthyAppetiteAir">
+        <ValidatorArray value="CasterLifeFull"/>
+        <EditorCategories value=""/>
+        <SpawnEffect value="UnhealthyAppetiteAirModifyCasterUnit"/>
+        <SpawnUnit value="ParaspriteAir"/>
+    </CEffectCreateUnit>
+    <CEffectModifyUnit id="UnhealthyAppetiteGroundModifyCasterUnit">
+        <EditorCategories value=""/>
+        <ImpactUnit Effect="UnhealthyAppetiteGround" Value="Caster"/>
+        <VitalArray index="Life" Change="-15"/>
+    </CEffectModifyUnit>
+    <CEffectIssueOrder id="TornadoDeactivate">
+        <EditorCategories value=""/>
+        <Abil value="TornadoOff"/>
+    </CEffectIssueOrder>
+    <CEffectDamage id="WarpBombBlast">
+        <AttributeBonus index="Mechanical" value="15"/>
+        <Amount value="10"/>
+        <AreaArray Radius="1" Fraction="1"/>
+        <AreaArray Radius="2" Fraction="0.5"/>
+        <AreaArray Radius="3" Fraction="0.25"/>
+        <EditorCategories value=""/>
+        <SearchFilters value="Ground;Self,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="YorkImperialApple">
+        <EditorCategories value=""/>
+        <ImpactEffect value="YorkImperialApplesDamage"/>
+        <AmmoUnit value="YorkImperialApple"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="SnapJawDamage">
+        <EditorCategories value=""/>
+        <AttributeBonus index="Light" value="20"/>
+        <Amount value="10"/>
+        <ArmorReduction value="1"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="SnapJawLaunchMissile">
+        <EditorCategories value=""/>
+        <ImpactEffect value="SnapJawDamage"/>
+        <Flags index="Return" value="1"/>
+        <AmmoUnit value="HydraMissile"/>
+        <ReturnMovers Link="StalkerWeapon"/>
+        <Movers Link="StalkerWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectCreatePersistent id="SnapJawCreatePersistent">
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="4"/>
+        <PeriodicEffectArray value="SnapJawLaunchMissile"/>
+        <PeriodicPeriodArray value="0.5"/>
+    </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="MagicArmor">
+        <ValidatorArray index="0" value="DefensiveMatrixApplyBehaviorTargetFilters"/>
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectTeleport id="MassTeleport">
+        <EditorCategories value=""/>
+        <PlacementArc value="360"/>
+        <PlacementAround Effect="MassTeleportSearchArea"/>
+        <SourceLocation Effect="MassTeleportSearchArea" Value="CasterPoint"/>
+        <TargetLocation Effect="MassTeleportSearchArea" Value="TargetPoint"/>
+        <ValidatorArray value="HasVision"/>
+    </CEffectTeleport>
+    <CEffectSet id="MassTeleportSet">
+        <ValidatorArray value="NotLarvaEgg"/>
+        <ValidatorArray value="NotLarva"/>
+        <EditorCategories value=""/>
+        <EffectArray value="MassTeleport"/>
+        <EffectArray value="MassTeleportApplyPostTeleportation"/>
+    </CEffectSet>
+    <CEffectDamage id="MilitiaGrannySmithApplesDamage" parent="DU_WEAP_MISSILE">
+        <EditorCategories value=""/>
+        <Amount value="4"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="GrannySmithApple">
+        <EditorCategories value=""/>
+        <ImpactEffect value="MilitiaGrannySmithApplesDamage"/>
+        <AmmoUnit value="GrannySmithApple"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="NibbleDamage">
+        <EditorCategories value=""/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Melee"/>
+        <Amount value="2"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="OffsetByUnitRadius" value="1"/>
+        <SearchFlags index="OffsetAreaByAngle" value="1"/>
+        <LeechFraction index="Life" value="1"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="RainfallApplyBehavior">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+        <Behavior value="Rusty"/>
+    </CEffectApplyBehavior>
+    <CEffectCreateUnit id="ParaspriteSwarm">
+        <EditorCategories value=""/>
+        <SpawnUnit value="ParaspriteGround"/>
+        <SpawnCount value="8"/>
+    </CEffectCreateUnit>
+    <CEffectCreateUnit id="UnhealthyAppetiteGround">
+        <EditorCategories value=""/>
+        <SpawnUnit value="ParaspriteGround"/>
+        <ValidatorArray value="CasterLifeFull"/>
+        <SpawnEffect value="UnhealthyAppetiteGroundModifyCasterUnit"/>
+    </CEffectCreateUnit>
+    <CEffectEnumArea id="TornadoHeavyGalesSearch">
+        <EditorCategories value=""/>
+        <ImpactLocation Value="SourceUnit"/>
+        <SearchFilters value="-;Self,Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Invulnerable"/>
+        <AreaArray Radius="4" Effect="TornadoHeavyGalesDamage"/>
+        <ExcludeArray Value="Target"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="ShroudoftheMoonApplyBehavior">
+        <EditorCategories value=""/>
+        <Behavior value="ShroudoftheMoon"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="LightningBoltU" parent="DU_WEAP_MISSILE">
+        <EditorCategories value=""/>
+        <AttributeBonus index="Biological" value="4"/>
+        <Visibility value="Visible"/>
+        <Amount value="8"/>
+        <Death value="Fire"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+    </CEffectDamage>
+    <CEffectDamage id="Claws2" parent="DU_WEAP">
+        <EditorCategories value=""/>
+        <AttributeBonus index="Armored" value="6"/>
+        <Amount value="10"/>
+    </CEffectDamage>
+    <CEffectSet id="CockatriceVenomSet">
+        <EditorCategories value=""/>
+        <EffectArray value="CockatriceVenomApplyBehavior"/>
+        <EffectArray value="EnvenomedBeakDamage"/>
+    </CEffectSet>
+    <CEffectDamage id="WarpBombDummy" parent="DU_WEAP">
+        <EditorCategories value=""/>
+        <AttributeBonus index="Mechanical" value="15"/>
+        <Kind value="Splash"/>
+        <Amount value="10"/>
+        <Death value="Blast"/>
+    </CEffectDamage>
+    <CEffectDamage id="CockatriceVenomDamage">
+        <EditorCategories value=""/>
+        <ImpactLocation Value="TargetUnit"/>
+        <AttributeBonus index="Biological" value="4"/>
+        <Amount value="2"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="CometLauncher">
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetUnit"/>
+        <PeriodCount value="2"/>
+        <PeriodicEffectArray value="CometLauncherLMRight"/>
+        <PeriodicEffectArray value="CometLauncherLMLeft"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="CometLauncherDummy">
+        <EditorCategories value=""/>
+    </CEffectDamage>
+    <CEffectDamage id="CometLauncherU2" parent="DU_WEAP_MISSILE">
+        <EditorCategories value=""/>
+        <Visibility value="Visible"/>
+        <AttributeBonus index="Armored" value="6"/>
+        <Amount value="10"/>
+        <Death value="Blast"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="-;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CEffectDamage>
+    <CEffectDamage id="TalonsDamage" parent="DU_WEAP">
+        <EditorCategories value=""/>
+        <AttributeBonus index="Armored" value="4"/>
+        <Amount value="6"/>
+        <Death value="Eviscerate"/>
+    </CEffectDamage>
+    <CEffectModifyUnit id="MagicalInfusion">
+        <ValidatorArray value="NotMaxEnergy"/>
+        <EditorCategories value=""/>
+        <VitalArray index="Energy" Change="50"/>
+        <SalvageFactor Cooldown="30"/>
+        <Cost CooldownTimeUse="30">
+            <Fraction>
+                <Vital index="Energy" value="25"/>
+            </Fraction>
+        </Cost>
+    </CEffectModifyUnit>
+    <CEffectApplyBehavior id="TelekineticJamApplyBehavior">
+        <ValidatorArray index="0" value="ContaminateApplyBehaviorTargetFilters"/>
+        <EditorCategories value=""/>
+        <Behavior value="TelekineticJam"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="GlamourApplyBehavior">
+        <ValidatorArray index="0" value="ContaminateApplyBehaviorTargetFilters"/>
+        <EditorCategories value=""/>
+        <Behavior value="Glamour"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="AuroraDamage">
+        <EditorCategories value=""/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <Flags index="Notification" value="1"/>
+        <Amount value="5"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="SameCliff" value="0"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="StoneEyeApplyBehavior">
+        <EditorCategories value=""/>
+        <Behavior value="StoneEye"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="MassTeleportSearchArea">
+        <EditorCategories value=""/>
+        <ImpactLocation Value="CasterPoint"/>
+        <SearchFilters value="-;Ally,Neutral,Enemy,Structure,Missile,Item,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="6" Effect="MassTeleportApplyPreTeleportation"/>
+    </CEffectEnumArea>
+    <CEffectDamage id="WarpBombEnemyDamageUnnamed" parent="DU_WEAP">
+        <ValidatorArray value="TargetRadiusSmall"/>
+        <ValidatorArray value="HasShapedBlast"/>
+        <EditorCategories value=""/>
+        <ImpactUnitValidator value="EnemyTarget"/>
+        <AttributeBonus index="Mechanical" value="15"/>
+        <Kind value="Splash"/>
+        <Amount value="10"/>
+        <Death value="Blast"/>
+        <AreaArray Radius="0.4687" Fraction="1"/>
+        <AreaArray Radius="0.7812" Fraction="0.5"/>
+        <AreaArray Radius="1.25" Fraction="0.25"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Ground;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFlags index="OffsetByUnitRadius" value="0"/>
+    </CEffectDamage>
+    <CEffectDamage id="WarpBombFriendlyDamageUnnamed" parent="DU_WEAP">
+        <ValidatorArray value="TargetRadiusSmall"/>
+        <ValidatorArray value="HasShapedBlast"/>
+        <EditorCategories value=""/>
+        <ImpactUnitValidator value="FriendlyOrNeutralTarget"/>
+        <AttributeBonus index="Mechanical" value="3"/>
+        <Kind value="Splash"/>
+        <Amount value="2"/>
+        <Death value="Blast"/>
+        <AreaArray Radius="0.4687" Fraction="1"/>
+        <AreaArray Radius="0.7812" Fraction="0.5"/>
+        <AreaArray Radius="1.25" Fraction="0.25"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Ground;Self,Enemy,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFlags index="OffsetByUnitRadius" value="0"/>
+    </CEffectDamage>
+    <CEffectDamage id="EnvenomedBeakDamage" parent="DU_WEAP">
+        <EditorCategories value=""/>
+        <Amount value="8"/>
+    </CEffectDamage>
+    <CEffectDamage id="HeavyHorseshoesDamage" parent="DU_WEAP">
+        <EditorCategories value=""/>
+        <Amount value="7"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="FilteredGoggles">
+        <EditorCategories value=""/>
+        <Behavior value="Detector12"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="WindKickDamage" parent="DU_WEAP">
+        <EditorCategories value=""/>
+        <AttributeBonus index="Armored" value="2"/>
+        <Amount value="8"/>
+        <Death value="Eviscerate"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="WindKick">
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="2"/>
+        <PeriodicEffectArray value="WindKickDamage"/>
+        <PeriodicPeriodArray value="0"/>
+    </CEffectCreatePersistent>
+    <CEffectLaunchMissile id="PsychicArrowSet">
+        <ValidatorArray index="0" value="StalkerTargetFilters"/>
+        <ValidatorArray value=""/>
+        <EditorCategories value=""/>
+        <ImpactEffect value="PsychicArrowDamage"/>
+        <AmmoUnit value="StalkerWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="PsychicArrowDamage" parent="DU_WEAP_MISSILE">
+        <EditorCategories value=""/>
+        <AttributeBonus index="Armored" value="4"/>
+        <Amount value="10"/>
+    </CEffectDamage>
+    <CEffectDamage id="UnshodHoovesDamage" parent="DU_WEAP">
+        <EditorCategories value=""/>
+        <Amount value="5"/>
+    </CEffectDamage>
+    <CEffectDamage id="TailSpikesDamage" parent="DU_WEAP">
+        <EditorCategories value=""/>
+        <AttributeBonus index="Light" value="30"/>
+        <Amount value="30"/>
+        <Death value="Impact"/>
+    </CEffectDamage>
+    <CEffectDamage id="YorkImperialApplesDamage">
+        <EditorCategories value=""/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <AttributeBonus index="Armored" value="3"/>
+        <ArmorReduction value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="5"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="OffsetByUnitRadius" value="1"/>
+        <SearchFlags index="OffsetAreaByAngle" value="1"/>
+    </CEffectDamage>
+</Catalog>

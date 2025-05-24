@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CValidatorUnitCompareVital id="EnergyUnit">
+        <ResultFailed value="MustTargetUnitWithEnergy"/>
+        <Compare value="LT"/>
+        <Value value="200"/>
+        <Vital value="Energy"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorUnitType id="NotParaspriteAir">
+        <Value value="ParaspriteAir"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="NotParaspriteGround">
+        <Value value="ParaspriteGround"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="TargetNotHealing">
+        <Behavior value="HerbalRemedy"/>
+    </CValidatorUnitCompareBehaviorCount>
+</Catalog>

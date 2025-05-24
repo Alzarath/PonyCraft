@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CUpgrade id="AppleBucking">
+        <Race value="Eque"/>
+        <EditorCategories value="UpgradeType:Talents"/>
+        <AffectedUnitArray value="Militia"/>
+        <AffectedUnitArray value="GreatCharger"/>
+        <AffectedUnitArray value="Pioneer"/>
+        <Icon value="Assets/Textures/btn-ability-terran-bombardmentstrike-color.dds"/>
+    </CUpgrade>
+    <CUpgrade id="Aurora">
+        <Race value="Eque"/>
+        <EditorCategories value="UpgradeType:SpellResearch"/>
+        <AffectedUnitArray value="StarDiver"/>
+        <Alert value="ResearchComplete"/>
+    </CUpgrade>
+    <CUpgrade id="Plow">
+        <Icon value="Assets\Textures\btn-ability-protoss-charge-color.dds"/>
+        <Alert value="ResearchComplete"/>
+        <Race value="Eque"/>
+        <EffectArray Operation="Set" Reference="Effect,RamSearchArea,Chance[0]" Value="1"/>
+        <EditorCategories value="UpgradeType:SpellResearch"/>
+        <AffectedUnitArray value="GreatCharger"/>
+    </CUpgrade>
+    <CUpgrade id="SpectralNova">
+        <Race value="Eque"/>
+        <EditorCategories value="UpgradeType:SpellResearch"/>
+        <AffectedUnitArray value="StarDiver"/>
+        <Alert value="ResearchComplete"/>
+    </CUpgrade>
+    <CUpgrade id="EquineArmorLevel1" parent="TerranInfantryArmors">
+        <Name value="Upgrade/Name/EquineArmorLevel1"/>
+        <InfoTooltipPriority value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds"/>
+        <ScoreAmount value="200"/>
+        <EffectArray index="0" Operation="Set" Reference="Actor,Pioneer,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds"/>
+        <EffectArray index="1" Reference="Unit,Pioneer,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray index="2" Reference="Unit,GreatCharger,LifeArmor[0]" Value="1"/>
+        <EffectArray index="3" Operation="Set" Reference="Actor,Militia,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds"/>
+        <EffectArray index="4" Operation="Set" Reference="Actor,GreatCharger,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds"/>
+        <EffectArray index="5" Operation="Set" Reference="Actor,Deadeye,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds"/>
+        <EffectArray index="6" Operation="Set" Reference="Actor,Mage,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds"/>
+        <EffectArray index="7" Operation="Set" Reference="Actor,PlaneWarper,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds"/>
+        <EffectArray index="8" Operation="Set" Reference="Actor,Skybolt,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds"/>
+        <EffectArray index="9" Operation="Set" Reference="Actor,WeatherPony,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds"/>
+        <EffectArray index="10" Operation="Set" Reference="Actor,StarDiver,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds"/>
+        <EffectArray index="11" Operation="Set" Reference="Actor,ZebraHerbalist,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds"/>
+        <EffectArray Reference="Unit,Militia,LifeArmor[0]" Value="1"/>
+        <EffectArray Reference="Unit,GreatCharger,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray Reference="Unit,Mage,LifeArmor[0]" Value="1"/>
+        <EffectArray Reference="Unit,Mage,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray Reference="Unit,Deadeye,LifeArmor[0]" Value="1"/>
+        <EffectArray Reference="Unit,Deadeye,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray Reference="Unit,PlaneWarper,LifeArmor[0]" Value="1"/>
+        <EffectArray Reference="Unit,PlaneWarper,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray Reference="Unit,Skybolt,LifeArmor[0]" Value="1"/>
+        <EffectArray Reference="Unit,Skybolt,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray Reference="Unit,Militia,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray Reference="Unit,WeatherPony,LifeArmor[0]" Value="1"/>
+        <EffectArray Reference="Unit,WeatherPony,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray Reference="Unit,StarDiver,LifeArmor[0]" Value="1"/>
+        <EffectArray Reference="Unit,StarDiver,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray Reference="Unit,ZebraHerbalist,LifeArmor[0]" Value="1"/>
+        <EffectArray Reference="Unit,ZebraHerbalist,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray Reference="Unit,Pioneer,LifeArmor[0]" Value="1"/>
+        <EffectArray Reference="Abil,SmithyResearch,InfoArray[Research1].Charge[0].CountMax[0]" Value="1"/>
+        <AffectedUnitArray index="0" value="Pioneer"/>
+        <AffectedUnitArray index="1" value="Militia"/>
+        <AffectedUnitArray index="2" value="GreatCharger"/>
+        <AffectedUnitArray index="3" value="Deadeye"/>
+        <AffectedUnitArray index="4" value="Mage"/>
+        <AffectedUnitArray value="PlaneWarper"/>
+        <AffectedUnitArray value="Skybolt"/>
+        <AffectedUnitArray value="WeatherPony"/>
+        <AffectedUnitArray value="StarDiver"/>
+        <AffectedUnitArray value="ZebraHerbalist"/>
+        <Race value="Eque"/>
+        <EditorCategories value="UpgradeType:ArmorBonus"/>
+    </CUpgrade>
+    <CUpgrade id="EquineArmorLevel2" parent="TerranInfantryArmors">
+        <Name value="Upgrade/Name/EquineArmorLevel2"/>
+        <InfoTooltipPriority value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel2.dds"/>
+        <ScoreAmount value="350"/>
+        <EffectArray index="0" Operation="Set" Reference="Actor,Pioneer,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel2.dds"/>
+        <EffectArray index="1" Reference="Unit,Pioneer,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray index="2" Reference="Unit,GreatCharger,LifeArmor[0]" Value="1"/>
+        <EffectArray index="3" Operation="Set" Reference="Actor,Militia,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel2.dds"/>
+        <EffectArray index="4" Operation="Set" Reference="Actor,GreatCharger,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel2.dds"/>
+        <EffectArray index="5" Operation="Set" Reference="Actor,Deadeye,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel2.dds"/>
+        <EffectArray index="6" Operation="Set" Reference="Actor,Mage,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel2.dds"/>
+        <EffectArray index="7" Operation="Set" Reference="Actor,PlaneWarper,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel2.dds"/>
+        <EffectArray index="8" Operation="Set" Reference="Actor,Skybolt,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel2.dds"/>
+        <EffectArray index="9" Operation="Set" Reference="Actor,WeatherPony,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel2.dds"/>
+        <EffectArray index="10" Operation="Set" Reference="Actor,StarDiver,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel2.dds"/>
+        <EffectArray index="11" Operation="Set" Reference="Actor,ZebraHerbalist,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel2.dds"/>
+        <EffectArray Reference="Unit,Militia,LifeArmor[0]" Value="1"/>
+        <EffectArray Reference="Unit,GreatCharger,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray Reference="Unit,Mage,LifeArmor[0]" Value="1"/>
+        <EffectArray Reference="Unit,Mage,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray Reference="Unit,Deadeye,LifeArmor[0]" Value="1"/>
+        <EffectArray Reference="Unit,Deadeye,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray Reference="Unit,PlaneWarper,LifeArmor[0]" Value="1"/>
+        <EffectArray Reference="Unit,PlaneWarper,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray Reference="Unit,Skybolt,LifeArmor[0]" Value="1"/>
+        <EffectArray Reference="Unit,Skybolt,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray Reference="Unit,Militia,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray Reference="Unit,WeatherPony,LifeArmor[0]" Value="1"/>
+        <EffectArray Reference="Unit,WeatherPony,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray Reference="Unit,StarDiver,LifeArmor[0]" Value="1"/>
+        <EffectArray Reference="Unit,StarDiver,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray Reference="Unit,ZebraHerbalist,LifeArmor[0]" Value="1"/>
+        <EffectArray Reference="Unit,ZebraHerbalist,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray Reference="Unit,Pioneer,LifeArmor[0]" Value="1"/>
+        <EffectArray Reference="Abil,SmithyResearch,InfoArray[Research1].Charge[0].CountMax[0]" Value="1"/>
+        <AffectedUnitArray index="0" value="Pioneer"/>
+        <AffectedUnitArray index="1" value="Militia"/>
+        <AffectedUnitArray index="2" value="GreatCharger"/>
+        <AffectedUnitArray index="3" value="Deadeye"/>
+        <AffectedUnitArray index="4" value="Mage"/>
+        <AffectedUnitArray value="PlaneWarper"/>
+        <AffectedUnitArray value="Skybolt"/>
+        <AffectedUnitArray value="WeatherPony"/>
+        <AffectedUnitArray value="StarDiver"/>
+        <AffectedUnitArray value="ZebraHerbalist"/>
+        <Race value="Eque"/>
+        <EditorCategories value="UpgradeType:ArmorBonus"/>
+    </CUpgrade>
+    <CUpgrade id="FilteredGoggles">
+        <EditorCategories value="UpgradeType:SpellResearch"/>
+        <AffectedUnitArray value="Skybolt"/>
+        <Alert value="ResearchComplete"/>
+        <Race value="Eque"/>
+        <WebPriority value="0"/>
+        <Icon value="Assets/Textures/btn-status-detector.dds"/>
+    </CUpgrade>
+    <CUpgrade id="HydraRegeneration">
+        <Flags index="UpgradeCheat" value="0"/>
+        <Icon value="Assets/Textures/btn-upgrade-zerg-groovedspines.dds"/>
+        <Race value="Eque"/>
+        <ScoreAmount value="200"/>
+        <ScoreResult value="BuildOrder"/>
+        <EffectArray Reference="Unit,Hydra,LifeRegenRate[0]" Value="16.000000"/>
+        <EditorCategories value="UpgradeType:Talents"/>
+        <AffectedUnitArray value="Hydra"/>
+    </CUpgrade>
+    <CUpgrade id="DeepBreath">
+        <Icon value="Assets\Textures\btn-tips-walloffire.dds"/>
+        <Race value="Eque"/>
+        <ScoreAmount value="200"/>
+        <ScoreResult value="BuildOrder"/>
+        <EffectArray Reference="Effect,SpitfireBurningDamage,Amount[0]" Value="1"/>
+        <EffectArray Operation="Subtract" Reference="Weapon,Spitfire,Period[0]" Value="1.000000"/>
+        <EffectArray Reference="Effect,SpitfireBurningDamage,AttributeBonus[Structure]" Value="3"/>
+        <EffectArray Operation="Subtract" Reference="Behavior,Burning,Duration[0]" Value="1.000000"/>
+        <EditorCategories value="UpgradeType:Talents"/>
+        <AffectedUnitArray value="Dragon"/>
+    </CUpgrade>
+    <CUpgrade id="MagicArmor">
+        <Icon value="Assets/Textures/btn-ability-terran-heal-color.dds"/>
+        <EffectArray Operation="Set" Reference="Abil,MagicArmor,AutoCastRange[0]" Value="0"/>
+        <EditorCategories value="UpgradeType:SpellResearch"/>
+        <AffectedUnitArray value="Mage"/>
+        <Race value="Eque"/>
+        <Alert value="ResearchComplete"/>
+    </CUpgrade>
+    <CUpgrade id="MagicalInfusion">
+        <Icon value="Assets/Textures/btn-ability-zerg-transfusion-color.dds"/>
+        <EffectArray Operation="Set" Reference="Abil,MagicalInfusion,AutoCastRange[0]" Value="0"/>
+        <EditorCategories value="UpgradeType:SpellResearch"/>
+        <AffectedUnitArray value="Mage"/>
+        <Race value="Eque"/>
+        <Alert value="ResearchComplete"/>
+    </CUpgrade>
+    <CUpgrade id="ParaspriteSwarm">
+        <Icon value="Assets\Textures\btn-ability-zerg-swarmseeds-color.dds"/>
+        <EditorCategories value="UpgradeType:SpellResearch"/>
+        <AffectedUnitArray value="PlaneWarper"/>
+        <Race value="Eque"/>
+        <Alert value="ResearchComplete"/>
+    </CUpgrade>
+    <CUpgrade id="MassTeleport">
+        <Icon value="Assets/Textures/btn-ability-protoss-prismaticbeam-color.dds"/>
+        <Race value="Eque"/>
+        <EditorCategories value="UpgradeType:SpellResearch"/>
+        <AffectedUnitArray value="PlaneWarper"/>
+        <Alert value="ResearchComplete"/>
+    </CUpgrade>
+    <CUpgrade id="ShroudoftheMoon">
+        <EditorCategories value="UpgradeType:SpellResearch"/>
+        <AffectedUnitArray value="Deadeye"/>
+        <Race value="Eque"/>
+        <Alert value="ResearchComplete"/>
+    </CUpgrade>
+    <CUpgrade id="SpellweaveCape">
+        <Flags index="UpgradeCheat" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-khaydarinamulet.dds"/>
+        <Race value="Eque"/>
+        <ScoreAmount value="300"/>
+        <ScoreResult value="BuildOrder"/>
+        <EffectArray Reference="Unit,Mage,EnergyStart[0]" Value="25"/>
+        <EditorCategories value="UpgradeType:Talents"/>
+        <AffectedUnitArray value="Mage"/>
+    </CUpgrade>
+    <CUpgrade id="SpikedTail">
+        <Icon value="Assets/Textures/btn-techupgrade-terran-tenstenspikes.dds"/>
+        <EditorCategories value="UpgradeType:Talents"/>
+        <AffectedUnitArray value="Dragon"/>
+        <Race value="Eque"/>
+    </CUpgrade>
+    <CUpgrade id="TerranInfantryArmorsLevel32" parent="TerranInfantryArmors">
+        <Name value="Upgrade/Name/TerranInfantryArmorsLevel32"/>
+        <InfoTooltipPriority value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel3.dds"/>
+        <ScoreAmount value="500"/>
+        <EffectArray index="0" Operation="Set" Reference="Actor,Pioneer,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel3.dds"/>
+        <EffectArray index="1" Reference="Unit,Pioneer,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray index="2" Reference="Unit,GreatCharger,LifeArmor[0]" Value="1"/>
+        <EffectArray index="3" Operation="Set" Reference="Actor,Militia,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel3.dds"/>
+        <EffectArray index="4" Operation="Set" Reference="Actor,GreatCharger,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel3.dds"/>
+        <EffectArray index="5" Operation="Set" Reference="Actor,Deadeye,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel3.dds"/>
+        <EffectArray index="6" Operation="Set" Reference="Actor,Mage,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel3.dds"/>
+        <EffectArray index="7" Operation="Set" Reference="Actor,PlaneWarper,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel3.dds"/>
+        <EffectArray index="8" Operation="Set" Reference="Actor,Skybolt,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel3.dds"/>
+        <EffectArray index="9" Operation="Set" Reference="Actor,WeatherPony,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel3.dds"/>
+        <EffectArray index="10" Operation="Set" Reference="Actor,StarDiver,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel3.dds"/>
+        <EffectArray index="11" Operation="Set" Reference="Actor,ZebraHerbalist,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel3.dds"/>
+        <EffectArray Reference="Unit,Militia,LifeArmor[0]" Value="1"/>
+        <EffectArray Reference="Unit,GreatCharger,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray Reference="Unit,Mage,LifeArmor[0]" Value="1"/>
+        <EffectArray Reference="Unit,Mage,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray Reference="Unit,Deadeye,LifeArmor[0]" Value="1"/>
+        <EffectArray Reference="Unit,Deadeye,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray Reference="Unit,PlaneWarper,LifeArmor[0]" Value="1"/>
+        <EffectArray Reference="Unit,PlaneWarper,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray Reference="Unit,Skybolt,LifeArmor[0]" Value="1"/>
+        <EffectArray Reference="Unit,Skybolt,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray Reference="Unit,Militia,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray Reference="Unit,WeatherPony,LifeArmor[0]" Value="1"/>
+        <EffectArray Reference="Unit,WeatherPony,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray Reference="Unit,StarDiver,LifeArmor[0]" Value="1"/>
+        <EffectArray Reference="Unit,StarDiver,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray Reference="Unit,ZebraHerbalist,LifeArmor[0]" Value="1"/>
+        <EffectArray Reference="Unit,ZebraHerbalist,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray Reference="Unit,Pioneer,LifeArmor[0]" Value="1"/>
+        <EffectArray Reference="Abil,SmithyResearch,InfoArray[Research1].Charge[0].CountMax[0]" Value="1"/>
+        <AffectedUnitArray index="0" value="Pioneer"/>
+        <AffectedUnitArray index="1" value="Militia"/>
+        <AffectedUnitArray index="2" value="GreatCharger"/>
+        <AffectedUnitArray index="3" value="Deadeye"/>
+        <AffectedUnitArray index="4" value="Mage"/>
+        <AffectedUnitArray value="PlaneWarper"/>
+        <AffectedUnitArray value="Skybolt"/>
+        <AffectedUnitArray value="WeatherPony"/>
+        <AffectedUnitArray value="StarDiver"/>
+        <AffectedUnitArray value="ZebraHerbalist"/>
+        <Race value="Eque"/>
+        <EditorCategories value="UpgradeType:ArmorBonus"/>
+    </CUpgrade>
+    <CUpgrade id="EquineWeaponsLevel1" parent="TerranInfantryWeapons">
+        <Name value="Upgrade/Name/EquineWeaponsLevel1"/>
+        <InfoTooltipPriority value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel1.dds"/>
+        <ScoreAmount value="200"/>
+        <EffectArray index="0" Operation="Set" Reference="Weapon,HoofBoots,Icon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel1.dds"/>
+        <EffectArray index="1" Operation="Set" Reference="Weapon,HeavyHorseshoes,Icon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel1.dds"/>
+        <EffectArray index="2" Operation="Set" Reference="Weapon,WarpBomb,Icon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel1.dds"/>
+        <EffectArray index="3" Operation="Set" Reference="Weapon,WindKick,Icon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel1.dds"/>
+        <EffectArray index="4" Operation="Set" Reference="Weapon,CometLauncher,Icon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel1.dds"/>
+        <EffectArray index="5" Operation="Set" Reference="Weapon,LightningBolt,Icon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel1.dds"/>
+        <EffectArray index="6" Operation="Set" Reference="Weapon,PsychicArrow,Icon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel1.dds"/>
+        <EffectArray index="7" Reference="Weapon,PsychicArrow,Level[0]" Value="1"/>
+        <EffectArray index="8" Reference="Weapon,HoofBoots,Level[0]" Value="1"/>
+        <EffectArray index="9" Reference="Weapon,HeavyHorseshoes,Level[0]" Value="1"/>
+        <EffectArray index="10" Reference="Weapon,WarpBomb,Level[0]" Value="1"/>
+        <EffectArray index="11" Reference="Weapon,WindKick,Level[0]" Value="1"/>
+        <EffectArray Reference="Weapon,CometLauncher,Level[0]" Value="1"/>
+        <EffectArray Reference="Weapon,LightningBolt,Level[0]" Value="1"/>
+        <EffectArray Reference="Effect,HeavyHorseshoesDamage,Amount[0]" Value="1"/>
+        <EffectArray Reference="Effect,Claws2,Amount[0]" Value="1"/>
+        <EffectArray Reference="Effect,WarpBombDummy,Amount[0]" Value="1"/>
+        <EffectArray Reference="Effect,WindKickDamage,Amount[0]" Value="1"/>
+        <EffectArray Reference="Effect,CometLauncherU2,Amount[0]" Value="1"/>
+        <EffectArray Reference="Effect,PsychicArrowDamage,Amount[0]" Value="1"/>
+        <EffectArray Reference="Effect,Claws2,AttributeBonus[Armored]" Value="1"/>
+        <EffectArray Reference="Effect,LightningBoltU,Amount[0]" Value="1"/>
+        <EffectArray Reference="Effect,MilitiaGrannySmithApplesDamage,Amount[0]" Value="1"/>
+        <EffectArray Reference="Effect,YorkImperialApplesDamage,Amount[0]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,YorkImperialApplesAir,Icon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel1.dds"/>
+        <EffectArray Reference="Weapon,YorkImperialApplesAir,Level[0]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,GrannySmithApplesAir,Icon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel1.dds"/>
+        <EffectArray Reference="Weapon,GrannySmithApplesAir,Level[0]" Value="1"/>
+        <AffectedUnitArray index="0" value="GreatCharger"/>
+        <AffectedUnitArray index="1" value="Deadeye"/>
+        <AffectedUnitArray index="2" value="PlaneWarper"/>
+        <AffectedUnitArray index="3" value="Skybolt"/>
+        <AffectedUnitArray value="WeatherPony"/>
+        <AffectedUnitArray value="StarDiver"/>
+        <AffectedUnitArray value="Militia"/>
+        <Race value="Eque"/>
+        <EditorCategories value="UpgradeType:AttackBonus"/>
+    </CUpgrade>
+    <CUpgrade id="EquineWeaponsLevel2" parent="TerranInfantryWeapons">
+        <Name value="Upgrade/Name/EquineWeaponsLevel2"/>
+        <InfoTooltipPriority value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel2.dds"/>
+        <ScoreAmount value="350"/>
+        <EffectArray index="0" Operation="Set" Reference="Weapon,HoofBoots,Icon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel2.dds"/>
+        <EffectArray index="1" Operation="Set" Reference="Weapon,HeavyHorseshoes,Icon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel2.dds"/>
+        <EffectArray index="2" Operation="Set" Reference="Weapon,WarpBomb,Icon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel2.dds"/>
+        <EffectArray index="3" Operation="Set" Reference="Weapon,WindKick,Icon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel2.dds"/>
+        <EffectArray index="4" Operation="Set" Reference="Weapon,CometLauncher,Icon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel2.dds"/>
+        <EffectArray index="5" Operation="Set" Reference="Weapon,LightningBolt,Icon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel2.dds"/>
+        <EffectArray index="6" Operation="Set" Reference="Weapon,PsychicArrow,Icon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel2.dds"/>
+        <EffectArray index="7" Reference="Weapon,PsychicArrow,Level[0]" Value="1"/>
+        <EffectArray index="8" Reference="Weapon,HoofBoots,Level[0]" Value="1"/>
+        <EffectArray index="9" Reference="Weapon,HeavyHorseshoes,Level[0]" Value="1"/>
+        <EffectArray index="10" Reference="Weapon,WarpBomb,Level[0]" Value="1"/>
+        <EffectArray index="11" Reference="Weapon,WindKick,Level[0]" Value="1"/>
+        <EffectArray Reference="Weapon,CometLauncher,Level[0]" Value="1"/>
+        <EffectArray Reference="Weapon,LightningBolt,Level[0]" Value="1"/>
+        <EffectArray Reference="Effect,HeavyHorseshoesDamage,Amount[0]" Value="1"/>
+        <EffectArray Reference="Effect,Claws2,Amount[0]" Value="1"/>
+        <EffectArray Reference="Effect,WarpBombDummy,Amount[0]" Value="1"/>
+        <EffectArray Reference="Effect,WindKickDamage,Amount[0]" Value="1"/>
+        <EffectArray Reference="Effect,CometLauncherU2,Amount[0]" Value="1"/>
+        <EffectArray Reference="Effect,PsychicArrowDamage,Amount[0]" Value="1"/>
+        <EffectArray Reference="Effect,Claws2,AttributeBonus[Armored]" Value="1"/>
+        <EffectArray Reference="Effect,LightningBoltU,Amount[0]" Value="1"/>
+        <EffectArray Reference="Effect,YorkImperialApplesDamage,Amount[0]" Value="1"/>
+        <EffectArray Reference="Effect,MilitiaGrannySmithApplesDamage,Amount[0]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,YorkImperialApplesAir,Icon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel2.dds"/>
+        <EffectArray Reference="Weapon,YorkImperialApplesAir,Level[0]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,GrannySmithApplesAir,Icon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel2.dds"/>
+        <EffectArray Reference="Weapon,GrannySmithApplesAir,Level[0]" Value="1"/>
+        <AffectedUnitArray index="0" value="GreatCharger"/>
+        <AffectedUnitArray index="1" value="Deadeye"/>
+        <AffectedUnitArray index="2" value="PlaneWarper"/>
+        <AffectedUnitArray index="3" value="Skybolt"/>
+        <AffectedUnitArray value="WeatherPony"/>
+        <AffectedUnitArray value="StarDiver"/>
+        <AffectedUnitArray value="Militia"/>
+        <Race value="Eque"/>
+        <EditorCategories value="UpgradeType:AttackBonus"/>
+    </CUpgrade>
+    <CUpgrade id="EquineWeaponsLevel3" parent="TerranInfantryWeapons">
+        <Name value="Upgrade/Name/EquineWeaponsLevel3"/>
+        <InfoTooltipPriority value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
+        <ScoreAmount value="500"/>
+        <EffectArray index="0" Operation="Set" Reference="Weapon,HoofBoots,Icon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
+        <EffectArray index="1" Operation="Set" Reference="Weapon,HeavyHorseshoes,Icon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
+        <EffectArray index="2" Operation="Set" Reference="Weapon,WarpBomb,Icon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
+        <EffectArray index="3" Operation="Set" Reference="Weapon,WindKick,Icon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
+        <EffectArray index="4" Operation="Set" Reference="Weapon,CometLauncher,Icon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
+        <EffectArray index="5" Operation="Set" Reference="Weapon,LightningBolt,Icon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
+        <EffectArray index="6" Operation="Set" Reference="Weapon,PsychicArrow,Icon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
+        <EffectArray index="7" Reference="Weapon,PsychicArrow,Level[0]" Value="1"/>
+        <EffectArray index="8" Reference="Weapon,HoofBoots,Level[0]" Value="1"/>
+        <EffectArray index="9" Reference="Weapon,HeavyHorseshoes,Level[0]" Value="1"/>
+        <EffectArray index="10" Reference="Weapon,WarpBomb,Level[0]" Value="1"/>
+        <EffectArray index="11" Reference="Weapon,WindKick,Level[0]" Value="1"/>
+        <EffectArray Reference="Weapon,CometLauncher,Level[0]" Value="1"/>
+        <EffectArray Reference="Weapon,LightningBolt,Level[0]" Value="1"/>
+        <EffectArray Reference="Effect,HeavyHorseshoesDamage,Amount[0]" Value="1"/>
+        <EffectArray Reference="Effect,Claws2,Amount[0]" Value="1"/>
+        <EffectArray Reference="Effect,WarpBombDummy,Amount[0]" Value="1"/>
+        <EffectArray Reference="Effect,WindKickDamage,Amount[0]" Value="1"/>
+        <EffectArray Reference="Effect,CometLauncherU2,Amount[0]" Value="1"/>
+        <EffectArray Reference="Effect,PsychicArrowDamage,Amount[0]" Value="1"/>
+        <EffectArray Reference="Effect,Claws2,AttributeBonus[Armored]" Value="1"/>
+        <EffectArray Reference="Effect,LightningBoltU,Amount[0]" Value="1"/>
+        <EffectArray Reference="Effect,YorkImperialApplesDamage,Amount[0]" Value="1"/>
+        <EffectArray Reference="Effect,MilitiaGrannySmithApplesDamage,Amount[0]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,YorkImperialApplesAir,Icon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
+        <EffectArray Reference="Weapon,YorkImperialApplesAir,Level[0]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,GrannySmithApplesAir,Icon[0]" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
+        <EffectArray Reference="Weapon,GrannySmithApplesAir,Level[0]" Value="1"/>
+        <AffectedUnitArray index="0" value="Militia"/>
+        <AffectedUnitArray index="1" value="GreatCharger"/>
+        <AffectedUnitArray index="2" value="Deadeye"/>
+        <AffectedUnitArray index="3" value="PlaneWarper"/>
+        <AffectedUnitArray value="Skybolt"/>
+        <AffectedUnitArray value="WeatherPony"/>
+        <AffectedUnitArray value="StarDiver"/>
+        <Race value="Eque"/>
+        <EditorCategories value="UpgradeType:AttackBonus"/>
+    </CUpgrade>
+    <CUpgrade id="WingTraining">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-metabolicboost.dds"/>
+        <EffectArray Operation="Set" Reference="Unit,Cockatrice,Mover[0]" Value="CliffJumper"/>
+        <AffectedUnitArray value="Cockatrice"/>
+        <Race value="Eque"/>
+        <EditorCategories value="UpgradeType:Talents"/>
+    </CUpgrade>
+    <CUpgrade id="ZergGroundArmorsLevel12" parent="ZergGroundArmors">
+        <Name value="Upgrade/Name/ZergGroundArmorsLevel12"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <ScoreAmount value="300"/>
+        <EffectArray index="0" Operation="Set" Reference="Actor,Featherstriker,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray index="1" Operation="Set" Reference="Actor,Hydra,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray index="2" Operation="Set" Reference="Actor,Dragon,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray index="3" Operation="Set" Reference="Actor,Cockatrice,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level1.dds"/>
+        <EffectArray index="4" Reference="Unit,Cockatrice,LifeArmor[0]" Value="1"/>
+        <EffectArray index="5" Reference="Unit,Cockatrice,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray index="6" Reference="Unit,Hydra,LifeArmor[0]" Value="1"/>
+        <EffectArray index="7" Reference="Unit,Hydra,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray index="8" Reference="Unit,Dragon,LifeArmor[0]" Value="1"/>
+        <EffectArray index="9" Reference="Unit,Dragon,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray index="10" Reference="Unit,Featherstriker,LifeArmor[0]" Value="1"/>
+        <EffectArray index="11" Reference="Unit,Featherstriker,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray index="12" removed="1"/>
+        <EffectArray index="13" removed="1"/>
+        <EffectArray index="14" removed="1"/>
+        <EffectArray index="15" removed="1"/>
+        <EffectArray index="16" removed="1"/>
+        <EffectArray index="17" removed="1"/>
+        <EffectArray index="18" removed="1"/>
+        <EffectArray index="19" removed="1"/>
+        <EffectArray index="20" removed="1"/>
+        <EffectArray index="21" removed="1"/>
+        <EffectArray index="22" removed="1"/>
+        <EffectArray index="23" removed="1"/>
+        <EffectArray index="24" removed="1"/>
+        <EffectArray index="25" removed="1"/>
+        <EffectArray index="26" removed="1"/>
+        <EffectArray index="27" removed="1"/>
+        <EffectArray index="28" removed="1"/>
+        <EffectArray index="29" removed="1"/>
+        <EffectArray index="30" removed="1"/>
+        <EffectArray index="31" removed="1"/>
+        <EffectArray index="32" removed="1"/>
+        <EffectArray index="33" removed="1"/>
+        <EffectArray index="34" removed="1"/>
+        <EffectArray index="35" removed="1"/>
+        <EffectArray index="36" removed="1"/>
+        <EffectArray index="37" removed="1"/>
+        <EffectArray index="38" removed="1"/>
+        <EffectArray index="39" removed="1"/>
+        <EditorCategories value="UpgradeType:ArmorBonus"/>
+        <AffectedUnitArray index="0" value="Featherstriker"/>
+        <AffectedUnitArray index="1" value="Hydra"/>
+        <AffectedUnitArray index="2" value="Cockatrice"/>
+        <AffectedUnitArray index="3" value="Dragon"/>
+        <AffectedUnitArray index="4" removed="1"/>
+        <AffectedUnitArray index="5" removed="1"/>
+        <AffectedUnitArray index="6" removed="1"/>
+        <AffectedUnitArray index="7" removed="1"/>
+        <AffectedUnitArray index="8" removed="1"/>
+        <AffectedUnitArray index="9" removed="1"/>
+        <AffectedUnitArray index="10" removed="1"/>
+        <AffectedUnitArray index="11" removed="1"/>
+        <AffectedUnitArray index="12" removed="1"/>
+        <AffectedUnitArray index="13" removed="1"/>
+        <AffectedUnitArray index="14" removed="1"/>
+        <AffectedUnitArray index="15" removed="1"/>
+        <AffectedUnitArray index="16" removed="1"/>
+        <Race value="Eque"/>
+    </CUpgrade>
+    <CUpgrade id="MonsterArmorLevel2" parent="ZergGroundArmors">
+        <Name value="Upgrade/Name/MonsterArmorLevel2"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <ScoreAmount value="450"/>
+        <EffectArray index="0" Operation="Set" Reference="Actor,Featherstriker,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray index="1" Operation="Set" Reference="Actor,Hydra,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray index="2" Operation="Set" Reference="Actor,Dragon,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray index="3" Operation="Set" Reference="Actor,Cockatrice,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level2.dds"/>
+        <EffectArray index="4" Reference="Unit,Cockatrice,LifeArmor[0]" Value="1"/>
+        <EffectArray index="5" Reference="Unit,Cockatrice,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray index="6" Reference="Unit,Hydra,LifeArmor[0]" Value="1"/>
+        <EffectArray index="7" Reference="Unit,Hydra,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray index="8" Reference="Unit,Dragon,LifeArmor[0]" Value="1"/>
+        <EffectArray index="9" Reference="Unit,Dragon,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray index="10" Reference="Unit,Featherstriker,LifeArmor[0]" Value="1"/>
+        <EffectArray index="11" Reference="Unit,Featherstriker,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray index="12" removed="1"/>
+        <EffectArray index="13" removed="1"/>
+        <EffectArray index="14" removed="1"/>
+        <EffectArray index="15" removed="1"/>
+        <EffectArray index="16" removed="1"/>
+        <EffectArray index="17" removed="1"/>
+        <EffectArray index="18" removed="1"/>
+        <EffectArray index="19" removed="1"/>
+        <EffectArray index="20" removed="1"/>
+        <EffectArray index="21" removed="1"/>
+        <EffectArray index="22" removed="1"/>
+        <EffectArray index="23" removed="1"/>
+        <EffectArray index="24" removed="1"/>
+        <EffectArray index="25" removed="1"/>
+        <EffectArray index="26" removed="1"/>
+        <EffectArray index="27" removed="1"/>
+        <EffectArray index="28" removed="1"/>
+        <EffectArray index="29" removed="1"/>
+        <EffectArray index="30" removed="1"/>
+        <EffectArray index="31" removed="1"/>
+        <EffectArray index="32" removed="1"/>
+        <EffectArray index="33" removed="1"/>
+        <EffectArray index="34" removed="1"/>
+        <EffectArray index="35" removed="1"/>
+        <EffectArray index="36" removed="1"/>
+        <EffectArray index="37" removed="1"/>
+        <EffectArray index="38" removed="1"/>
+        <EffectArray index="39" removed="1"/>
+        <EditorCategories value="UpgradeType:ArmorBonus"/>
+        <AffectedUnitArray index="0" value="Featherstriker"/>
+        <AffectedUnitArray index="1" value="Hydra"/>
+        <AffectedUnitArray index="2" value="Cockatrice"/>
+        <AffectedUnitArray index="3" value="Dragon"/>
+        <AffectedUnitArray index="4" removed="1"/>
+        <AffectedUnitArray index="5" removed="1"/>
+        <AffectedUnitArray index="6" removed="1"/>
+        <AffectedUnitArray index="7" removed="1"/>
+        <AffectedUnitArray index="8" removed="1"/>
+        <AffectedUnitArray index="9" removed="1"/>
+        <AffectedUnitArray index="10" removed="1"/>
+        <AffectedUnitArray index="11" removed="1"/>
+        <AffectedUnitArray index="12" removed="1"/>
+        <AffectedUnitArray index="13" removed="1"/>
+        <AffectedUnitArray index="14" removed="1"/>
+        <AffectedUnitArray index="15" removed="1"/>
+        <AffectedUnitArray index="16" removed="1"/>
+        <Race value="Eque"/>
+    </CUpgrade>
+    <CUpgrade id="MonsterArmorLevel3" parent="ZergGroundArmors">
+        <Name value="Upgrade/Name/MonsterArmorLevel3"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <ScoreAmount value="600"/>
+        <EffectArray index="0" Operation="Set" Reference="Actor,Featherstriker,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray index="1" Operation="Set" Reference="Actor,Hydra,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray index="2" Operation="Set" Reference="Actor,Dragon,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray index="3" Operation="Set" Reference="Actor,Cockatrice,LifeArmorIcon[0]" Value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level3.dds"/>
+        <EffectArray index="4" Reference="Unit,Cockatrice,LifeArmor[0]" Value="1"/>
+        <EffectArray index="5" Reference="Unit,Cockatrice,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray index="6" Reference="Unit,Hydra,LifeArmor[0]" Value="1"/>
+        <EffectArray index="7" Reference="Unit,Hydra,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray index="8" Reference="Unit,Dragon,LifeArmor[0]" Value="1"/>
+        <EffectArray index="9" Reference="Unit,Dragon,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray index="10" Reference="Unit,Featherstriker,LifeArmor[0]" Value="1"/>
+        <EffectArray index="11" Reference="Unit,Featherstriker,LifeArmorLevel[0]" Value="1"/>
+        <EffectArray index="12" removed="1"/>
+        <EffectArray index="13" removed="1"/>
+        <EffectArray index="14" removed="1"/>
+        <EffectArray index="15" removed="1"/>
+        <EffectArray index="16" removed="1"/>
+        <EffectArray index="17" removed="1"/>
+        <EffectArray index="18" removed="1"/>
+        <EffectArray index="19" removed="1"/>
+        <EffectArray index="20" removed="1"/>
+        <EffectArray index="21" removed="1"/>
+        <EffectArray index="22" removed="1"/>
+        <EffectArray index="23" removed="1"/>
+        <EffectArray index="24" removed="1"/>
+        <EffectArray index="25" removed="1"/>
+        <EffectArray index="26" removed="1"/>
+        <EffectArray index="27" removed="1"/>
+        <EffectArray index="28" removed="1"/>
+        <EffectArray index="29" removed="1"/>
+        <EffectArray index="30" removed="1"/>
+        <EffectArray index="31" removed="1"/>
+        <EffectArray index="32" removed="1"/>
+        <EffectArray index="33" removed="1"/>
+        <EffectArray index="34" removed="1"/>
+        <EffectArray index="35" removed="1"/>
+        <EffectArray index="36" removed="1"/>
+        <EffectArray index="37" removed="1"/>
+        <EffectArray index="38" removed="1"/>
+        <EffectArray index="39" removed="1"/>
+        <EditorCategories value="UpgradeType:ArmorBonus"/>
+        <AffectedUnitArray index="0" value="Featherstriker"/>
+        <AffectedUnitArray index="1" value="Hydra"/>
+        <AffectedUnitArray index="2" value="Cockatrice"/>
+        <AffectedUnitArray index="3" value="Dragon"/>
+        <AffectedUnitArray index="4" removed="1"/>
+        <AffectedUnitArray index="5" removed="1"/>
+        <AffectedUnitArray index="6" removed="1"/>
+        <AffectedUnitArray index="7" removed="1"/>
+        <AffectedUnitArray index="8" removed="1"/>
+        <AffectedUnitArray index="9" removed="1"/>
+        <AffectedUnitArray index="10" removed="1"/>
+        <AffectedUnitArray index="11" removed="1"/>
+        <AffectedUnitArray index="12" removed="1"/>
+        <AffectedUnitArray index="13" removed="1"/>
+        <AffectedUnitArray index="14" removed="1"/>
+        <AffectedUnitArray index="15" removed="1"/>
+        <AffectedUnitArray index="16" removed="1"/>
+        <Race value="Eque"/>
+    </CUpgrade>
+    <CUpgrade id="MonsterWeaponsLevel1" parent="ZergMeleeWeaponsLevel1">
+        <Name value="Upgrade/Name/MonsterWeaponsLevel1"/>
+        <EditorCategories value="UpgradeType:AttackBonus"/>
+        <EffectArray index="0" Operation="Set" Reference="Weapon,EnvenomedBeak,Icon[0]" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level1.dds"/>
+        <EffectArray index="1" Operation="Set" Reference="Weapon,FeatherStrikerTalons,Icon[0]" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level1.dds"/>
+        <EffectArray index="2" Operation="Set" Reference="Weapon,Snapjaw,Icon[0]" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level1.dds"/>
+        <EffectArray index="3" Operation="Set" Reference="Weapon,Spitfire,Icon[0]" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level1.dds"/>
+        <EffectArray index="4" Reference="Weapon,EnvenomedBeak,Level[0]"/>
+        <EffectArray index="5" Reference="Weapon,FeatherStrikerTalons,Level[0]" Value="1"/>
+        <EffectArray index="6" Reference="Weapon,Snapjaw,Level[0]" Value="1"/>
+        <EffectArray index="7" Reference="Weapon,Spitfire,Level[0]"/>
+        <EffectArray index="8" Reference="Effect,EnvenomedBeakDamage,Amount[0]" Value="1"/>
+        <EffectArray index="9" Reference="Effect,TalonsDamage,Amount[0]" Value="1"/>
+        <EffectArray index="10" Reference="Effect,SpitfireDamage,Amount[0]" Value="1"/>
+        <EffectArray index="11" Reference="Effect,SnapJawDamage,Amount[0]" Value="1"/>
+        <EffectArray index="12" Reference="Effect,TailSpikesDamage,Amount[0]"/>
+        <EffectArray index="13" Operation="Set" Reference="Weapon,SpikedTail,Icon[0]" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level1.dds"/>
+        <EffectArray index="14" Operation="Set" Reference="Weapon,SpikedTail,Level[0]" Value="1"/>
+        <EffectArray index="15" removed="1"/>
+        <EffectArray index="16" removed="1"/>
+        <EffectArray index="17" removed="1"/>
+        <EffectArray index="18" removed="1"/>
+        <EffectArray index="19" removed="1"/>
+        <EffectArray index="20" removed="1"/>
+        <AffectedUnitArray index="0" value="Cockatrice"/>
+        <AffectedUnitArray index="1" value="Featherstriker"/>
+        <AffectedUnitArray index="2" value="Hydra"/>
+        <AffectedUnitArray index="3" value="Dragon"/>
+        <AffectedUnitArray index="4" removed="1"/>
+        <AffectedUnitArray index="5" removed="1"/>
+        <AffectedUnitArray index="6" removed="1"/>
+        <AffectedUnitArray index="7" removed="1"/>
+        <Race value="Eque"/>
+    </CUpgrade>
+    <CUpgrade id="MonsterWeaponsLevel2" parent="ZergMeleeWeaponsLevel2">
+        <Name value="Upgrade/Name/MonsterWeaponsLevel2"/>
+        <EditorCategories value="UpgradeType:AttackBonus"/>
+        <EffectArray index="0" Operation="Set" Reference="Weapon,EnvenomedBeak,Icon[0]" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <EffectArray index="1" Operation="Set" Reference="Weapon,FeatherStrikerTalons,Icon[0]" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <EffectArray index="2" Reference="Effect,EnvenomedBeakDamage,Amount[0]"/>
+        <EffectArray index="3" Reference="Weapon,EnvenomedBeak,Level[0]" Value="1"/>
+        <EffectArray index="4" Operation="Set" Reference="Weapon,Spitfire,Icon[0]" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <EffectArray index="5" Operation="Set" Reference="Weapon,Snapjaw,Icon[0]" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <EffectArray index="6" Reference="Effect,SnapJawDamage,Amount[0]" Value="1"/>
+        <EffectArray index="7" Reference="Effect,TalonsDamage,Amount[0]"/>
+        <EffectArray index="8" Reference="Effect,SpitfireDamage,Amount[0]" Value="1"/>
+        <EffectArray index="9" Reference="Weapon,Spitfire,Level[0]" Value="1"/>
+        <EffectArray index="10" Reference="Weapon,Snapjaw,Level[0]" Value="1"/>
+        <EffectArray index="11" Reference="Weapon,FeatherStrikerTalons,Level[0]" Value="1"/>
+        <EffectArray index="12" Reference="Effect,TailSpikesDamage,Amount[0]"/>
+        <EffectArray index="13" Operation="Set" Reference="Weapon,SpikedTail,Icon[0]" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <EffectArray index="14" Operation="Set" Reference="Weapon,SpikedTail,Level[0]" Value="1"/>
+        <EffectArray index="15" removed="1"/>
+        <EffectArray index="16" removed="1"/>
+        <EffectArray index="17" removed="1"/>
+        <EffectArray index="18" removed="1"/>
+        <EffectArray index="19" removed="1"/>
+        <EffectArray index="20" removed="1"/>
+        <AffectedUnitArray index="0" value="Cockatrice"/>
+        <AffectedUnitArray index="1" value="Featherstriker"/>
+        <AffectedUnitArray index="2" value="Dragon"/>
+        <AffectedUnitArray index="3" value="Hydra"/>
+        <AffectedUnitArray index="4" removed="1"/>
+        <AffectedUnitArray index="5" removed="1"/>
+        <AffectedUnitArray index="6" removed="1"/>
+        <AffectedUnitArray index="7" removed="1"/>
+        <Race value="Eque"/>
+    </CUpgrade>
+    <CUpgrade id="MonsterWeaponsLevel3" parent="ZergMeleeWeaponsLevel3">
+        <Name value="Upgrade/Name/MonsterWeaponsLevel3"/>
+        <EditorCategories value="UpgradeType:AttackBonus"/>
+        <EffectArray index="0" Reference="Effect,EnvenomedBeakDamage,Amount[0]"/>
+        <EffectArray index="1" Reference="Effect,TalonsDamage,Amount[0]"/>
+        <EffectArray index="2" Reference="Effect,SnapJawDamage,Amount[0]"/>
+        <EffectArray index="3" Reference="Effect,SpitfireDamage,Amount[0]" Value="1"/>
+        <EffectArray index="4" Reference="Weapon,EnvenomedBeak,Level[0]"/>
+        <EffectArray index="5" Reference="Weapon,FeatherStrikerTalons,Level[0]" Value="1"/>
+        <EffectArray index="6" Reference="Weapon,Snapjaw,Level[0]" Value="1"/>
+        <EffectArray index="7" Reference="Weapon,Spitfire,Level[0]"/>
+        <EffectArray index="8" Operation="Set" Reference="Weapon,EnvenomedBeak,Icon[0]" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray index="9" Operation="Set" Reference="Weapon,Spitfire,Icon[0]" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray index="10" Operation="Set" Reference="Weapon,FeatherStrikerTalons,Icon[0]" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray index="11" Operation="Set" Reference="Weapon,Snapjaw,Icon[0]" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray index="12" Reference="Effect,TailSpikesDamage,Amount[0]"/>
+        <EffectArray index="13" Operation="Set" Reference="Weapon,SpikedTail,Icon[0]" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray index="14" Operation="Set" Reference="Weapon,SpikedTail,Level[0]" Value="1"/>
+        <EffectArray index="15" removed="1"/>
+        <EffectArray index="16" removed="1"/>
+        <EffectArray index="17" removed="1"/>
+        <EffectArray index="18" removed="1"/>
+        <EffectArray index="19" removed="1"/>
+        <EffectArray index="20" removed="1"/>
+        <AffectedUnitArray index="0" value="Cockatrice"/>
+        <AffectedUnitArray index="1" value="Featherstriker"/>
+        <AffectedUnitArray index="2" value="Dragon"/>
+        <AffectedUnitArray index="3" value="Hydra"/>
+        <AffectedUnitArray index="4" removed="1"/>
+        <AffectedUnitArray index="5" removed="1"/>
+        <AffectedUnitArray index="6" removed="1"/>
+        <AffectedUnitArray index="7" removed="1"/>
+        <Race value="Eque"/>
+    </CUpgrade>
+</Catalog>

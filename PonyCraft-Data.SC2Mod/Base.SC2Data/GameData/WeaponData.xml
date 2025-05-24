@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CWeaponLegacy id="GalaApplesAir">
+        <EditorCategories value=""/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="GalaApplesDamage"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="3"/>
+        <Cost>
+            <VitalFraction index="Energy" value="1"/>
+            <Cooldown Link="Weapon/MilitiaGrannySmithApples"/>
+        </Cost>
+        <Period value="1"/>
+        <Effect value="GalaApple"/>
+        <Options index="Hidden" value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="SteelCannon">
+        <EditorCategories value=""/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
+        <DisplayEffect value="SteelCannonDamage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Period value="1"/>
+        <Effect value="SteelCannonDamage"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="LightningBolt">
+        <EditorCategories value=""/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="LightningBoltU"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="0.6"/>
+        <Effect value="LightningBoltU"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="HeavyHorseshoes">
+        <EditorCategories value=""/>
+        <Options index="Melee" value="1"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="HeavyHorseshoesDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.1"/>
+        <Period value="0.72"/>
+        <Effect value="HeavyHorseshoesDamage"/>
+        <Backswing value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="EnvenomedBeak">
+        <EditorCategories value=""/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+        <DisplayEffect value="EnvenomedBeakDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.1"/>
+        <Period value="1.81"/>
+        <Effect value="CockatriceVenomSet"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="HoofBoots">
+        <EditorCategories value=""/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="Claws2"/>
+        <TargetFilters value="Ground,Visible;Air,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.1"/>
+        <Period value="1"/>
+        <Effect value="Claws2"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="GrannySmithApplesAir">
+        <EditorCategories value=""/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="MilitiaGrannySmithApplesDamage"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Cost>
+            <VitalFraction index="Energy" value="1"/>
+        </Cost>
+        <Period value="0.5"/>
+        <Effect value="GrannySmithApple"/>
+        <Options index="Hidden" value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NibbleGround">
+        <EditorCategories value=""/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+        <DisplayEffect value="NibbleDamage"/>
+        <TargetFilters value="Ground,Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="15"/>
+        <Range value="0.1"/>
+        <Period value="0.5"/>
+        <Effect value="NibbleDamage"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NibbleAir">
+        <EditorCategories value=""/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+        <DisplayEffect value="NibbleDamage"/>
+        <TargetFilters value="Air,Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="15"/>
+        <Range value="0.1"/>
+        <Marker Link="Weapon/Nibble"/>
+        <Cost>
+            <Cooldown Link="Weapon/Nibble"/>
+        </Cost>
+        <Period value="0.5"/>
+        <Effect value="NibbleDamage"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NibbleGroundFriendlyFire">
+        <EditorCategories value=""/>
+        <Options index="Hidden" value="1"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+        <DisplayEffect value="NibbleFriendlyDamage"/>
+        <TargetFilters value="Ground,Visible;Enemy,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="15"/>
+        <Range value="0.1"/>
+        <Marker Link="Weapon/Nibble"/>
+        <Cost>
+            <Cooldown Link="Weapon/Nibble"/>
+        </Cost>
+        <Period value="0.5"/>
+        <Effect value="NibbleFriendlyDamage"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NibbleAirFriendlyFire">
+        <EditorCategories value=""/>
+        <Options index="Hidden" value="1"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+        <DisplayEffect value="NibbleFriendlyDamage"/>
+        <TargetFilters value="Air,Visible;Enemy,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="15"/>
+        <Range value="0.1"/>
+        <Marker Link="Weapon/Nibble"/>
+        <Cost>
+            <Cooldown Link="Weapon/Nibble"/>
+        </Cost>
+        <Period value="0.5"/>
+        <Effect value="NibbleFriendlyDamage"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="SpikedTail">
+        <EditorCategories value=""/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+        <DisplayEffect value="TailSpikesDamage"/>
+        <DisplayAttackCount value="1"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="3"/>
+        <Period value="1"/>
+        <DamagePoint value="0"/>
+        <Effect value="TailSpikesDamage"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="WarpBomb">
+        <EditorCategories value=""/>
+        <Options index="DisplayCooldown" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="WarpBombDummy"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Period value="1.5"/>
+        <Effect value="WarpBombBlast"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="UnshodHooves">
+        <EditorCategories value=""/>
+        <Options index="Melee" value="1"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="UnshodHoovesDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.1"/>
+        <Period value="1.5"/>
+        <Effect value="UnshodHoovesDamage"/>
+        <Backswing value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CometLauncher">
+        <EditorCategories value=""/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="CometLauncherU2"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="4"/>
+        <Range value="6"/>
+        <Arc value="4.9987"/>
+        <ArcSlop value="0"/>
+        <Period value="1"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Snapjaw">
+        <EditorCategories value=""/>
+        <DisplayEffect value="SnapJawDamage"/>
+        <DisplayAttackCount value="4"/>
+        <Period value="3"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="SnapJawCreatePersistent"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="3"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="PsychicArrow">
+        <EditorCategories value=""/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="PsychicArrowDamage"/>
+        <TargetFilters value="Ground,Visible;Air,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="1"/>
+        <Effect value="PsychicArrowSet"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Spitfire">
+        <EditorCategories value=""/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-missileattacks-level0.dds"/>
+        <DisplayEffect value="SpitfireDamage"/>
+        <TargetFilters value="Ground,Visible;Self,Air,RawResource,HarvestableResource,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Period value="4"/>
+        <Effect value="SpitfireCreatePersistentCone"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="FeatherStrikerTalons">
+        <EditorCategories value=""/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+        <DisplayEffect value="TalonsDamage"/>
+        <DisplayAttackCount value="2"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.1"/>
+        <Period value="0.4"/>
+        <DamagePoint value="0"/>
+        <AllowedMovement value="Slowing"/>
+        <Effect value="TalonsCreatePersistent"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="WindKick">
+        <EditorCategories value=""/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="WindKickDamage"/>
+        <DisplayAttackCount value="2"/>
+        <TargetFilters value="Air,Visible;Ground,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.1"/>
+        <Period value="0.75"/>
+        <DamagePoint value="0"/>
+        <AllowedMovement value="Slowing"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="YorkImperialApplesAir">
+        <EditorCategories value=""/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <DisplayEffect value="YorkImperialApplesDamage"/>
+        <DisplayAttackCount value="1"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Cost>
+            <VitalFraction index="Energy" value="1"/>
+            <Cooldown Link="Weapon/MilitiaGrannySmithApples"/>
+        </Cost>
+        <Period value="0.7"/>
+        <Effect value="YorkImperialApple"/>
+        <Options index="Hidden" value="1"/>
+    </CWeaponLegacy>
+</Catalog>

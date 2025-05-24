@@ -1,0 +1,355 @@
+﻿Abil/Name/AlicornSanctuaryResearch=Research
+Abil/Name/Aurora=Aurora
+Abil/Name/BeastiaryResearch=Research
+Abil/Name/CloudFortTrain=Train
+Abil/Name/DeadeyeCloak=Cloak
+Abil/Name/EquestrianBuild=Build
+Abil/Name/FieryWrath=Fiery Wrath
+Abil/Name/ForestGladesTrain=Train
+Abil/Name/GarrisonTrain=Train
+Abil/Name/Glamour=Glamour
+Abil/Name/HerbalRemedy=Herbal Remedy
+Abil/Name/MagicArmor=Magic Armor
+Abil/Name/MagicalInfusion=Magical Infusion
+Abil/Name/MassTeleport=Mass Teleport
+Abil/Name/Nourish=Nourish
+Abil/Name/ParaspriteFly=Fly
+Abil/Name/ParaspriteHover=Hover
+Abil/Name/ParaspriteSwarm=Parasprite Swarm
+Abil/Name/PoisonJoke=Poison Joke
+Abil/Name/Rainfall=Rainfall
+Abil/Name/Ram=Ram
+Abil/Name/RamPlow=Ram
+Abil/Name/RenovateHerdTowntoPonyPalace=Renovate
+Abil/Name/RenovateOutposttoHerdTown=Renovate
+Abil/Name/ResearchFilteredGoggles=Research Filtered Goggles
+Abil/Name/SmithyResearch=Research
+Abil/Name/SpectralNova=Spectral Nova
+Abil/Name/StoneEye=Stone Eye
+Abil/Name/TelekineticJam=Telekinetic Jam
+Abil/Name/Teleport=Teleport
+Abil/Name/TornadoOff=Tornado
+Abil/Name/TornadoOn=Tornado
+Abil/Name/TrainPioneer=Train Pioneer
+Abil/Name/UniversityResearch=Research
+Abil/Name/UnknownAbility=Magic Armor
+Abil/Name/WeatherPonyTransport=Transport
+Behavior/Name/Aurora=Aurora
+Behavior/Name/Burning=Burning
+Behavior/Name/DeadeyeCloak=Cloak
+Behavior/Name/Detector122=Detector (13)
+Behavior/Name/GalaApples=Gala Apples
+Behavior/Name/Glamour=Glamour
+Behavior/Name/GrannySmithApples=Granny Smith Apples
+Behavior/Name/HerbalRemedy=Herbal Remedy
+Behavior/Name/Immobilized=Immobilized
+Behavior/Name/MagicArmor=Magic Armor
+Behavior/Name/MassTeleportPostTeleportation=Mass Teleport
+Behavior/Name/MassTeleportPreTeleportation=Mass Teleport
+Behavior/Name/PoisonJoke=Poison Joke
+Behavior/Name/PoisonJokeWander=Poison Joke Wander
+Behavior/Name/Poisoned=Poisoned
+Behavior/Name/Rainfall=Rainfall
+Behavior/Name/Ramming=Ramming
+Behavior/Name/Rusty=Rusty
+Behavior/Name/ShroudoftheMoon=Shroud of the Moon
+Behavior/Name/SpectralNova=Spectral Nova
+Behavior/Name/SpikedTail=Spiked Tail
+Behavior/Name/SpitfireMultipleDamageProtection=Spitfire
+Behavior/Name/StalkerIcon=Default Behavior (CBehaviorBuff)
+Behavior/Name/StoneEye=Stone Eye
+Behavior/Name/TelekineticJam=Telekinetic Jam
+Behavior/Name/TornadoTimer=Tornado Timer
+Behavior/Name/UnhealthyAppetiteAir=Unhealthy Appetite
+Behavior/Name/UnhealthyAppetiteGround=Unhealthy Appetite
+Behavior/Name/WingTraining=Wing Training
+Behavior/Name/YorkImperialApples=York Imperial Apples
+Behavior/Tooltip/Aurora=This unit is being damaged.
+Behavior/Tooltip/DeadeyeCloak=This unit is cloaked and will only be revealed by detectors or effects.
+Behavior/Tooltip/Detector122=This unit can detect cloaked or burrowed units within its sight range.
+Behavior/Tooltip/HerbalRemedy=This unit is being healed.
+Behavior/Tooltip/Immobilized=This unit can't move.
+Behavior/Tooltip/MagicArmor=Magic armor increases the armor of an ally by 4
+Behavior/Tooltip/Poisoned=This unit is poisoned.
+Behavior/Tooltip/Rainfall=This unit is slowing nearby mechanical enemies.
+Behavior/Tooltip/Rusty=This unit is slowed.
+Behavior/Tooltip/SpectralNova=This unit can move faster.
+Button/Name/AssembleGarrison=Raise Garrison
+Button/Name/Aurora=Aurora
+Button/Name/CloakOnDeadeye=Cloak
+Button/Name/DeadeyePermanentlyCloaked=Permanently Cloaked
+Button/Name/DragonBreath=Dragon Breath
+Button/Name/FieryWrath=Fiery Wrath
+Button/Name/Glamour=Glamour 
+Button/Name/HerbalRemedy=Herbal Remedy
+Button/Name/HydraRegeneration=Hydra Regeneration
+Button/Name/MagicArmor=Magic Armor
+Button/Name/MagicalInfusion=Magical Infusion
+Button/Name/MassTeleport=Mass Teleport
+Button/Name/Nourish=Nourish
+Button/Name/ParaspriteFly=Fly
+Button/Name/ParaspriteHover=Hover
+Button/Name/ParaspriteSwarm=Parasprite Swarm
+Button/Name/PoisonJoke=Poison Joke
+Button/Name/Rainfall=Rainfall
+Button/Name/RainfallOff=Rainfall
+Button/Name/RaiseAdvancedStructure=Raise Advanced Structure
+Button/Name/RaiseAlicornSanctuary=Raise Alicorn Sanctuary
+Button/Name/RaiseBattleTower=Raise Battle Tower
+Button/Name/RaiseBestiary=Raise Bestiary
+Button/Name/RaiseCloudFort=Raise Cloud Fort
+Button/Name/RaiseCompressor=Raise Compressor
+Button/Name/RaiseEmbassy=Raise Embassy
+Button/Name/RaiseGlades=Raise Glades
+Button/Name/RaiseOrchard=Raise Orchard
+Button/Name/RaiseOutpost=Raise Outpost
+Button/Name/RaiseSmithy=Raise Smithy
+Button/Name/RaiseStructure=Raise Structure
+Button/Name/RaiseUniversity=Raise University
+Button/Name/Ram=Ram
+Button/Name/RamPlowUpgrade=Ram
+Button/Name/RenovateHerdTown=Renovate
+Button/Name/RenovatePonyPalace=Renovate
+Button/Name/ResearchAppleBucking=Research Apple Bucking
+Button/Name/ResearchAurora=Research Aurora
+Button/Name/ResearchDeepBreath=Research Deep Breath
+Button/Name/ResearchFilteredGoggles=Research Filtered Goggles
+Button/Name/ResearchHydraRegeneration=Research Hydra Regeneration
+Button/Name/ResearchMagicArmor=Research Magic Armor
+Button/Name/ResearchMagicalInfusion=Research Magical Infusion
+Button/Name/ResearchMassTeleport=Research Mass Teleport
+Button/Name/ResearchParaspriteSwarm=Research Parasprite Swarm
+Button/Name/ResearchPlow=Research Plow
+Button/Name/ResearchShroudoftheMoon=Research Shroud of the Moon
+Button/Name/ResearchSpectralNova=Research Spectral Nova
+Button/Name/ResearchSpellweaveCape=Research Spellweave Cape
+Button/Name/ResearchWingTraining=Research Wing Training
+Button/Name/SpectralNovaDisable=Spectral Nova
+Button/Name/SpectralNovaEnable=Spectral Nova
+Button/Name/StoneEye=Stone Eye
+Button/Name/TailSpikes=Tail Spikes
+Button/Name/TelekeneticJam=Telekinetic Jam
+Button/Name/TerranVehiclePlatingLevel32=Upgrade Monster Armor Level 3
+Button/Name/TornadoTornadoMode=Tornado
+Button/Name/TrainCockatrice=Train Cockatrice
+Button/Name/TrainDeadeye=Train Deadeye
+Button/Name/TrainDragon=Train Dragon
+Button/Name/TrainFeatherstriker=Train Featherstriker
+Button/Name/TrainGreatCharger=Train Great Charger
+Button/Name/TrainHydra=Train Hydra
+Button/Name/TrainMage=Train Mage
+Button/Name/TrainMilitia=Train Militia
+Button/Name/TrainPioneer=Train Pioneer
+Button/Name/TrainPlaneWarper=Train Plane Warper
+Button/Name/TrainSkybolt=Train Skybolt
+Button/Name/TrainStarDiver=Train Star Diver
+Button/Name/TrainWeatherPony=Train Weather Pony
+Button/Name/TrainZebraHerbalist=Train Zebra Herbalist
+Button/Name/UnhealthyAppetite=Unhealthy Appetite
+Button/Name/UpgradeEquineArmorLevel1=Upgrade Equine Armor Level 1
+Button/Name/UpgradeEquineArmorLevel2=Upgrade Equine Armor Level 2
+Button/Name/UpgradeEquineArmorLevel3=Upgrade Equine Armor Level 3
+Button/Name/UpgradeEquineWeaponsLevel1=Upgrade Equine Weapons Level 1
+Button/Name/UpgradeEquineWeaponsLevel2=Upgrade Equine Weapons Level 2
+Button/Name/UpgradeEquineWeaponsLevel3=Upgrade Equine Weapons Level 3
+Button/Name/UpgradeMonsterArmorLevel1=Upgrade Monster Armor Level 1
+Button/Name/UpgradeMonsterArmorLevel2=Upgrade Monster Armor Level 2
+Button/Name/UpgradeMonsterWeaponsLevel1=Upgrade Monster Weapons Level 1
+Button/Name/UpgradeMonsterWeaponsLevel2=Upgrade Monster Weapons Level 2
+Button/Name/UpgradeMonsterWeaponsLevel3=Upgrade Monster Weapons Level 3
+Button/Name/WingTraining=Wing Training
+Button/Tooltip/AssembleGarrison=Trains Equestrian Infantry.<n/><n/><c val="ffff8a">Enables:</c><n/>- Militia
+Button/Tooltip/Aurora=Deals <d ref="Effect,AuroraDamage,Amount*Effect,AuroraCreatePersistent,PeriodCount"/> damage to a mechanical unit over <d ref="Effect,AuroraCreatePersistent,PeriodCount"/> seconds,
+Button/Tooltip/CloakOnDeadeye=Cloaks the unit, preventing enemy units from seeing or attacking it. A cloaked unit will only be revealed by detectors or effects.<n/><n/><c val="f078ff">Drains <d ref="-1 * (Behavior,DeadeyeCloak,Modification.VitalRegenArray[2] + Unit,Deadeye,EnergyRegenRate)" precision="1"/> energy per second.</c>
+Button/Tooltip/DeadeyePermanentlyCloaked=The Deadeye is permanently cloaked.
+Button/Tooltip/DragonBreath=The Dragon's attacks light the enemy on fire, dealing <d ref="(Behavior,Burning,Duration / Behavior,Burning,Period) * Effect,SpitfireBurningDamage,Amount"/> (<d ref="(Behavior,Burning,Duration / Behavior,Burning,Period) * (Effect,SpitfireBurningDamage,AttributeBonus[Structure] + Effect,SpitfireBurningDamage,Amount)"/> vs Structure) over <d ref="Behavior,Burning,Duration"/> seconds.
+Button/Tooltip/FieryWrath=Deals <d ref="Effect,FieryWrathTargetDamage,Amount"/> damage to a psionic unit and <d ref="Effect,FieryWrathAreaDamage,Amount"/> damage to all surrounding units,
+Button/Tooltip/Glamour=Disable target unit's detection capabilities for <d ref="Behavior,Glamour,Duration"/> seconds.
+Button/Tooltip/HerbalRemedy=Heal a biological unit for <d ref="Effect,HerbalRemedyModifyUnit,VitalArray[0].Change*Behavior,HerbalRemedy,PeriodCount"/> health over <d ref="Behavior,HerbalRemedy,Duration"/> seconds.
+Button/Tooltip/HydraRegeneration=The Hydra regenerates at <d ref="Upgrade,HydraRegeneration,EffectArray[0].Value"/> health per second.
+Button/Tooltip/MagicArmor=Gives the target unit <d ref="Behavior,MagicArmor,Modification.LifeArmorBonus"/> armor for <d ref="Behavior,MagicArmor,Duration"/> seconds
+Button/Tooltip/MagicalInfusion=Gives an allied unit <d ref="Effect,MagicalInfusion,VitalArray[2].Change"/> energy.
+Button/Tooltip/MassTeleport=Teleports all your nearby units to target location.
+Button/Tooltip/Nourish=Feeds a friendly biological target, healing it for <d ref="Effect,Nourish,VitalArray[0].Change"/> life.
+Button/Tooltip/ParaspriteFly=The Parasprite flies into the air, allowing it to attack air units and cross over steep terrain.
+Button/Tooltip/ParaspriteHover=The Parasprite hovers close to the ground, enabling it to attack ground enemies.
+Button/Tooltip/ParaspriteSwarm=The Plane Warper ports a small swarm of <d ref="Effect,ParaspriteSwarm,SpawnCount"/> tamed Parasprites that last <d ref="Behavior,ParaspriteTimer,Duration"/> seconds each to assist him in combat.
+Button/Tooltip/PoisonJoke=Poisons the target enemy unit, causing it to go against any player for <d ref="Behavior,PoisonJoke,Duration"/> seconds.
+Button/Tooltip/Rainfall=Slows all mechanical units in a large area around the Weather Pony by <d ref="(Behavior,Rusty,Modification.MoveSpeedMultiplier * 100)"/>%.<n/><n/><c val="f078ff">Drains <d ref="-1 * (Behavior,Rainfall,Modification.VitalRegenArray[2] + Unit,WeatherPony,EnergyRegenRate)" precision="1"/> energy per second.</c>
+Button/Tooltip/RainfallOff=Turn Rainfall off.
+Button/Tooltip/RaiseAdvancedStructure=A list of advanced structures.
+Button/Tooltip/RaiseAlicornSanctuary=<c val="ffff8a">Enables:</c><n/>- Great Chargers from Garrison<n/>- Planewarpers from Garrison<n/>- Star Divers from Cloud Fort
+Button/Tooltip/RaiseBattleTower=Primary defensive structure.<n/><n/><c val="ffff8a">Can attack ground and air units.</c><n/><c val="FFE303">Detector</c>
+Button/Tooltip/RaiseBestiary=<c val="ffff8a">Enables:</c><n/>- Dragons at Glades<n/>- Hydras at Glades
+Button/Tooltip/RaiseCloudFort=Trains Equestrian air-units. <n/><n/><c val="ffff8a">Enables:</c><n/>- Skybolts<n/>- Weather Ponies
+Button/Tooltip/RaiseCompressor=Raised over a Vespene Geyser to allow harvesting of vespene gas.
+Button/Tooltip/RaiseEmbassy=<c val="ffff8a">Enables:</c><n/>- Featherstrikers at Cloud Fort<n/>- Zebra Herbalists at Glades
+Button/Tooltip/RaiseGlades=Trains Equestrian wilderness units. <n/><n/><c val="ffff8a">Enables:</c><n/>- Cockatrices
+Button/Tooltip/RaiseOrchard=Provides supply.<n/>Supply allows you to create more units.<n/>Orchards can feed organic units to restore health and energy.
+Button/Tooltip/RaiseOutpost=Primary structure. Can train Pioneers and receive gathered resources.<n/><n/><c val="ffff8a">Enables:</c><n/>- Pioneers
+Button/Tooltip/RaiseSmithy=Contains weapon and armor upgrades for equine units.<n/><n/><c val="ffff8a">Enables:</c><n/>- Battle Towers from Pioneers
+Button/Tooltip/RaiseStructure=A list of basic structures.
+Button/Tooltip/RaiseUniversity=Contains weapon and armor upgrades for non-equine units.<n/><n/><c val="ffff8a">Enables:</c><n/>- Deadeyes at the Garrison<n/>- Mages at Garrison
+Button/Tooltip/Ram=The Great Charger sprints at an enemy unit.
+Button/Tooltip/RamPlowUpgrade=The Great Charger sprints at an enemy unit, dealing <d ref="Effect,RamDamage,Amount" /> damage to nearby units.
+Button/Tooltip/RenovateHerdTown=Renovates the Outpost to a Herd Town, enabling further research options.
+Button/Tooltip/RenovatePonyPalace=Renovates the Herd Town to a Pony Palace, enabling further research options.
+Button/Tooltip/ResearchAppleBucking=Grants Pioneers, Militia and Great Chargers the ability to buck apples at air units.
+Button/Tooltip/ResearchAurora=Allows the Star Diver to cast Aurora, dealing damage to an enemy mechanical unit over time.
+Button/Tooltip/ResearchDeepBreath=Decreases the Dragon's attack cooldown by <d ref="Upgrade,DeepBreath,EffectArray[3].Value"/> second and increases the burning damage dealt to <d ref="((Behavior,Burning,Duration - Upgrade,DeepBreath,EffectArray[0].Value) / Behavior,Burning,Period) * (Effect,SpitfireBurningDamage,Amount + Upgrade,DeepBreath,EffectArray[1].Value)"/> (<d ref="(Behavior,Burning,Duration - Upgrade,DeepBreath,EffectArray[0].Value) / Behavior,Burning,Period * (Effect,SpitfireBurningDamage,AttributeBonus[Structure] + Upgrade,DeepBreath,EffectArray[2].Value + (Effect,SpitfireBurningDamage,Amount + Upgrade,DeepBreath,EffectArray[1].Value))"/> vs Structure) over <d ref="Behavior,Burning,Duration - Upgrade,DeepBreath,EffectArray[0].Value"/> seconds.
+Button/Tooltip/ResearchFilteredGoggles=Allows the Skybolt to detect invisible units
+Button/Tooltip/ResearchHydraRegeneration=Gives the Hydra <d ref="Upgrade,HydraRegeneration,EffectArray[0].Value"/> health regeneration.
+Button/Tooltip/ResearchMagicArmor=Allows the Mage to cast Magic Armor, giving a target unit <d ref="Behavior,MagicArmor,Modification.LifeArmorBonus"/> armor for <d ref="Behavior,MagicArmor,Duration"/> seconds.
+Button/Tooltip/ResearchMagicalInfusion=Allows the mage to transfer energy to allies.
+Button/Tooltip/ResearchMassTeleport=Allows the Plane Warper to cast Mass Teleport, moving all nearby units to a target location.
+Button/Tooltip/ResearchParaspriteSwarm=Allows the Plane Warper to cast Parasprite Swarm, summoning reproducing Parasprites to assist him in combat.
+Button/Tooltip/ResearchPlow=Makes the Great Charger deal <d ref="Effect,RamDamage,Amount" /> damage to nearby units after charging.
+Button/Tooltip/ResearchShroudoftheMoon=Gives the Deadeye permanent cloaking capabilities.
+Button/Tooltip/ResearchSpectralNova=Allows the Star Diver to case Spectral Nova, increasing speed, disabling it's attack and afterwards stunning nearby enemies.
+Button/Tooltip/ResearchSpellweaveCape=Increases the starting energy of Mages by <d ref="Upgrade,SpellweaveCape,EffectArray[0].Value"/>.
+Button/Tooltip/ResearchWingTraining=Allows Cocaktrice to jump up and down cliffs.
+Button/Tooltip/SpectralNovaDisable=Deactivates Spectral Nova prematurely, immobilizing nearby units.
+Button/Tooltip/SpectralNovaEnable=Increases the Star Diver's speed, disabling it's attack. Once finished, a large burst is shot outwards, temporarily stunning nearby enemies,
+Button/Tooltip/StoneEye=Turns the enemy to stone, preventing it from taking any action for <d ref="Behavior,StoneEye,Duration"/> seconds.
+Button/Tooltip/TailSpikes=Equips the dragon with a tail mounted weapon which can be swung at air units.
+Button/Tooltip/TelekeneticJam=Disrupts the target mechanical unit, making it unresponsive for <d ref="Behavior,TelekineticJam,Duration"/> seconds.
+Button/Tooltip/TerranVehiclePlatingLevel32=Maximizes the armor of monster units.
+Button/Tooltip/TornadoTornadoMode=The Weather Pony spins violently, causing massive damage to surrounding units for <d ref="Behavior,TornadoTimer,Duration"/> seconds.
+Button/Tooltip/TrainCockatrice=A serpentine spell caster.  <n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/TrainDeadeye=A unicorn specialist. <n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/TrainDragon=Powerful assault beast. <n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/TrainFeatherstriker=Gryphon flyer.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/TrainGreatCharger=Powerful earth pony fighter. <n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
+Button/Tooltip/TrainHydra=Heavy assault beast. <n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/TrainMage=Unicorn fighter. <n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/TrainMilitia=Earth Pony Fighter. <n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
+Button/Tooltip/TrainPioneer=Basic worker unit. Can gather resources and raise Equestrian structures.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c><n/>
+Button/Tooltip/TrainPlaneWarper=Powerful Unicorn spell caster.
+Button/Tooltip/TrainSkybolt=Pegasus anti-air flyer.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c>
+Button/Tooltip/TrainStarDiver=Powerful pegasus flyer. <n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/TrainWeatherPony=Pegasus support flyer. <n/><n/><c val="#ColorAttackInfo">Can attack ground  units.</c>
+Button/Tooltip/TrainZebraHerbalist=Zebra support fighter. <n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
+Button/Tooltip/UnhealthyAppetite=The Parasprite splits into two whenever it consumes enough and acquires full health.
+Button/Tooltip/UpgradeEquineArmorLevel1=Upgrades the armor of equine units.
+Button/Tooltip/UpgradeEquineArmorLevel2=Further upgrades the armor of equine units.
+Button/Tooltip/UpgradeEquineArmorLevel3=Maximizes the armor of equine units.
+Button/Tooltip/UpgradeEquineWeaponsLevel1=Upgrades the damage dealt by equine units.
+Button/Tooltip/UpgradeEquineWeaponsLevel2=Further upgrades the damage dealt by equine units.
+Button/Tooltip/UpgradeEquineWeaponsLevel3=Maximizes the damage dealt by equine units.
+Button/Tooltip/UpgradeMonsterArmorLevel1=Upgrades the armor of monster units.
+Button/Tooltip/UpgradeMonsterArmorLevel2=Further upgrades the armor of monster units.
+Button/Tooltip/UpgradeMonsterWeaponsLevel1=Upgrades the damage dealt by monster units.
+Button/Tooltip/UpgradeMonsterWeaponsLevel2=Further upgrades the damage dealt by monster units.
+Button/Tooltip/UpgradeMonsterWeaponsLevel3=Maximizes the damage dealt by monster units.
+Button/Tooltip/WingTraining=The Cocaktrice can jump up and down cliffs.
+DocInfo/Author=Redwings
+DocInfo/DescLong=Dependency mod adding PonyCraft data.
+DocInfo/Name=PonyCraft - Data Mod
+NoMechanicalUnits=No mechanical units in range
+Race/Name/Eque=Equestrian
+RequirementNode/Tooltip/CountUpgradeAppleBuckingCompleteOnly3055499258TechTreeCheat=Research 250mm Strike Cannons at the Factory Tech Lab
+RequirementNode/Tooltip/CountUpgradeSpikedTailCompleteOnly3055499258TechTreeCheat=Research 250mm Strike Cannons at the Factory Tech Lab
+RequirementNode/Tooltip/Eq1695466224CountUpgradeEquineWeaponsLevel1CompleteOnlyTechTreeCheat1=Zerg Ground Carapace Level 1
+RequirementNode/Tooltip/Eq1695466224CountUpgradeMonsterWeaponsLevel1CompleteOnlyTechTreeCheat1=Zerg Ground Carapace Level 1
+RequirementNode/Tooltip/Eq1695466224CountUpgradeZergGroundArmorsLevel12CompleteOnlyTechTreeCheat1=Zerg Ground Carapace Level 1
+RequirementNode/Tooltip/Eq3569156689CountUpgradeEquineArmorLevel1CompleteOnlyTechTreeCheat1=Protoss Ground Armor Level 1
+RequirementNode/Tooltip/Eq4090499265CountUpgradeEquineWeaponsLevel2CompleteOnlyTechTreeCheat1=Zerg Ground Carapace Level 2
+RequirementNode/Tooltip/Eq4090499265CountUpgradeMonsterArmorLevel2CompleteOnlyTechTreeCheat1=Zerg Ground Carapace Level 2
+RequirementNode/Tooltip/Eq4090499265CountUpgradeMonsterWeaponsLevel2CompleteOnlyTechTreeCheat1=Zerg Ground Carapace Level 2
+RequirementNode/Tooltip/Eq419273267CountUpgradeEquineArmorLevel2CompleteOnlyTechTreeCheat1=Protoss Ground Armor Level 2
+Unit/Category/EquestrianUnits=Equestrian
+Unit/LifeArmorName/EquestrianBuildingArmor=Equestrian Building Armor
+Unit/LifeArmorName/EquineArmor=Equine Armor
+Unit/LifeArmorName/MonsterArmor=Monster Armor
+Unit/LifeArmorName/None=
+Unit/Name/AlicornSanctuary=Alicorn Sanctuary
+Unit/Name/BattleTower=Battle Tower
+Unit/Name/Beastiary=Beastiary
+Unit/Name/CloudFort=Cloud Fort
+Unit/Name/Cockatrice=Cockatrice
+Unit/Name/CometLauncherWeapon=Comet Launcher
+Unit/Name/Compressor=Compressor
+Unit/Name/Deadeye=Deadeye
+Unit/Name/Dragon=Dragon
+Unit/Name/Embassy=Embassy
+Unit/Name/Featherstriker=Featherstriker
+Unit/Name/GalaApple=Gala Apple
+Unit/Name/Garrison=Garrison
+Unit/Name/Glades=Glades
+Unit/Name/GrannySmithApple=Granny Smith Apple
+Unit/Name/GreatCharger=Great Charger
+Unit/Name/HerdTown=Herd Town
+Unit/Name/Hydra=Hydra
+Unit/Name/HydraMissile=Hydra Missile
+Unit/Name/Mage=Mage
+Unit/Name/Militia=Militia
+Unit/Name/NeedleSpinesWeapon=Hydralisk Attack Missile
+Unit/Name/Orchard=Orchard
+Unit/Name/Outpost=Outpost
+Unit/Name/ParaspriteAir=Parasprite
+Unit/Name/ParaspriteGround=Parasprite
+Unit/Name/Pioneer=Pioneer
+Unit/Name/PlaneWarper=Plane Warper
+Unit/Name/PonyPalace=Pony Palace
+Unit/Name/Skybolt=Skybolt
+Unit/Name/Smithy=Smithy
+Unit/Name/StarDiver=Star Diver
+Unit/Name/Tornado=Tornado
+Unit/Name/University=University
+Unit/Name/WeatherPony=Weather Pony
+Unit/Name/YorkImperialApple=York Imperial Apple
+Unit/Name/ZebraHerbalist=Zebra Herbalist
+Unit/Rank/Alicorn=Alicorn
+Unit/Rank/Colt=Colt
+Unit/Rank/Foal=Foal
+Unit/Rank/Stallion=Stallion
+Unit/Rank/Yearling=Yearling
+Upgrade/Name/AppleBucking=Apple Bucking
+Upgrade/Name/Aurora=Aurora
+Upgrade/Name/DeepBreath=Deep Breath
+Upgrade/Name/EquineArmorLevel1=Equine Armor Level 1
+Upgrade/Name/EquineArmorLevel2=Equine Armor Level 2
+Upgrade/Name/EquineWeaponsLevel1=Equine Weapons Level 1
+Upgrade/Name/EquineWeaponsLevel2=Equine Weapons Level 2
+Upgrade/Name/EquineWeaponsLevel3=Equine Weapons Level 3
+Upgrade/Name/FilteredGoggles=Filtered Goggles
+Upgrade/Name/HydraRegeneration=Hydra Regeneration
+Upgrade/Name/MagicArmor=Magic Armor
+Upgrade/Name/MagicalInfusion=Magical Infusion
+Upgrade/Name/MassTeleport=Mass Teleport
+Upgrade/Name/MonsterArmorLevel2=Monster Armor Level 2
+Upgrade/Name/MonsterArmorLevel3=Monster Armor Level 3
+Upgrade/Name/MonsterWeaponsLevel1=Monster Weapons Level 1
+Upgrade/Name/MonsterWeaponsLevel2=Monster Weapons Level 2
+Upgrade/Name/MonsterWeaponsLevel3=Monster Weapons Level 3
+Upgrade/Name/ParaspriteSwarm=Parasprite Swarm
+Upgrade/Name/Plow=Plow
+Upgrade/Name/ShroudoftheMoon=Shroud of the Moon
+Upgrade/Name/SpectralNova=Spectral Nova
+Upgrade/Name/SpellweaveCape=Spellweave Cape
+Upgrade/Name/SpikedTail=Spiked Tail
+Upgrade/Name/TerranInfantryArmorsLevel32=Equine Armor Level 3
+Upgrade/Name/WingTraining=Wing Training
+Upgrade/Name/ZergGroundArmorsLevel12=Monster Armor Level 1
+Weapon/Name/CometLauncher=Comet Launcher
+Weapon/Name/EnvenomedBeak=Envenomed Beak
+Weapon/Name/FeatherStrikerTalons=Talons
+Weapon/Name/GalaApplesAir=Gala Apples
+Weapon/Name/GrannySmithApplesAir=Granny Smith Apples
+Weapon/Name/HeavyHorseshoes=Heavy Horseshoes
+Weapon/Name/HoofBoots=Hoof Boots
+Weapon/Name/LightningBolt=Lightning Bolt
+Weapon/Name/NibbleAir=Nibble
+Weapon/Name/NibbleAirFriendlyFire=Nibble
+Weapon/Name/NibbleGround=Nibble
+Weapon/Name/NibbleGroundFriendlyFire=Nibble
+Weapon/Name/PsychicArrow=Psychic Arrow
+Weapon/Name/Snapjaw=Snapjaw
+Weapon/Name/SpikedTail=Spiked Tail
+Weapon/Name/Spitfire=Spitfire
+Weapon/Name/SteelCannon=Steel Cannon
+Weapon/Name/UnshodHooves=Unshod Hooves
+Weapon/Name/WarpBomb=Warp Bomb
+Weapon/Name/WindKick=Wind Kick
+Weapon/Name/YorkImperialApplesAir=York Imperial Apples
+Weapon/Tip/Talons3=

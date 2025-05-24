@@ -1,0 +1,926 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CAbilEffectTarget id="Aurora">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="AuroraApplyBehavior"/>
+        <Cost>
+            <Vital index="Energy" value="75"/>
+        </Cost>
+        <TargetFilters value="Massive,Visible;Self,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Aurora" Requirements="HaveAurora"/>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+    </CAbilEffectTarget>
+    <CAbilResearch id="BeastiaryResearch">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoArray index="Research1" Time="90" Upgrade="HydraRegeneration">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="ResearchHydraRegeneration" Requirements="LearnHydraRegeneration"/>
+        </InfoArray>
+        <InfoArray index="Research2" Time="80" Upgrade="SpikedTail">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="TailSpikes" Requirements="LearnSpikedTail"/>
+        </InfoArray>
+        <InfoArray index="Research3" Time="120" Upgrade="DeepBreath">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="ResearchDeepBreath"/>
+        </InfoArray>
+        <InfoArray index="Research4" Time="60" Upgrade="WingTraining">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ResearchWingTraining" Requirements="LearnWingTraining"/>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilBehavior id="DeadeyeCloak">
+        <AbilSetId value="Clok"/>
+        <CmdButtonArray index="On" DefaultButtonFace="CloakOnDeadeye">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="Off" DefaultButtonFace="CloakOff">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <Flags index="Toggle" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="25"/>
+            <Charge Link="Abil/GhostCloak"/>
+            <Cooldown Link="Abil/GhostCloak"/>
+        </Cost>
+        <BehaviorArray value="DeadeyeCloak"/>
+    </CAbilBehavior>
+    <CAbilAugment id="Ram">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Ram" Requirements="NotHavePlow"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <AbilCmd value="attack,Execute"/>
+        <Cost>
+            <Cooldown Location="Unit" TimeUse="8"/>
+        </Cost>
+        <Effect value="RamApplyBehavior"/>
+        <AutoCastValidatorArray value="CasterNotHoldingPosition"/>
+    </CAbilAugment>
+    <CAbilEffectTarget id="FieryWrath">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="FieryWrathSet"/>
+        <Cost>
+            <Vital index="Energy" value="50"/>
+            <Charge Link="Abil/Snipe"/>
+            <Cooldown Link="Abil/Snipe"/>
+        </Cost>
+        <TargetFilters value="Psionic,Visible;Self,Ally,Structure,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="10"/>
+        <Marker>
+            <MatchFlags index="Link" value="0"/>
+            <MatchFlags index="CasterUnit" value="1"/>
+        </Marker>
+        <AINotifyEffect value=""/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="FieryWrath"/>
+        <CursorEffect value="FieryWrathSearchArea"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="Glamour">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="GlamourApplyBehavior"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="25"/>
+            <Charge Link=""/>
+            <Cooldown Link=""/>
+        </Cost>
+        <TargetFilters value="Visible,Detector;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="9"/>
+        <Marker Link="Abil/Contaminate"/>
+        <AINotifyEffect value=""/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Glamour"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="HerbalRemedy">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="5"/>
+        </Cost>
+        <TargetFilters value="Biological,Visible;Self,Neutral,Enemy,Missile,UnderConstruction,Dead,Hidden,Invulnerable"/>
+        <Range value="4"/>
+        <UninterruptibleArray index="Finish" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="HerbalRemedy"/>
+        <Effect index="0" value="HerbalRemedyApplyBehavior"/>
+        <AutoCastRange value="6"/>
+        <AINotifyEffect value="HerbalRemedyApplyBehavior"/>
+        <AutoCastFilters value="Visible;Neutral,Enemy"/>
+        <AutoCastValidatorArray value="TargetNotHealing"/>
+    </CAbilEffectTarget>
+    <CAbilMorph id="ParaspriteHover">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ParaspriteHover"/>
+        <Flags index="IgnoreFacing" value="1"/>
+        <Flags index="IgnorePlacement" value="0"/>
+        <Flags index="WaitUntilStopped" value="0"/>
+        <InfoArray Unit="ParaspriteGround"/>
+    </CAbilMorph>
+    <CAbilMorph id="ParaspriteFly">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ParaspriteFly"/>
+        <ActorKey value="HoverFly"/>
+        <Flags index="IgnorePlacement" value="0"/>
+        <Flags index="WaitUntilStopped" value="0"/>
+        <InfoArray Unit="ParaspriteAir"/>
+    </CAbilMorph>
+    <CAbilEffectTarget id="MagicalInfusion">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="25"/>
+            <Charge Link="Abil/Transfusion"/>
+            <Cooldown TimeUse="30"/>
+        </Cost>
+        <Cost>
+            <Charge Link=""/>
+            <Cooldown Link=""/>
+        </Cost>
+        <Cost>
+            <Charge Link=""/>
+            <Cooldown Link=""/>
+        </Cost>
+        <Cost>
+            <Charge Link=""/>
+            <Cooldown Link=""/>
+        </Cost>
+        <Cost>
+            <Charge Link=""/>
+            <Cooldown Link=""/>
+        </Cost>
+        <Cost>
+            <Charge Link=""/>
+            <Cooldown Link=""/>
+        </Cost>
+        <Cost>
+            <Charge Link=""/>
+            <Cooldown Link=""/>
+        </Cost>
+        <Cost>
+            <Charge Link=""/>
+            <Cooldown Link=""/>
+        </Cost>
+        <Cost>
+            <Charge Link=""/>
+            <Cooldown Link=""/>
+        </Cost>
+        <Cost>
+            <Charge Link=""/>
+            <Cooldown Link=""/>
+        </Cost>
+        <Cost>
+            <Charge Link=""/>
+            <Cooldown Link=""/>
+        </Cost>
+        <Cost>
+            <Charge Link=""/>
+            <Cooldown Link=""/>
+        </Cost>
+        <Cost>
+            <Charge Link=""/>
+            <Cooldown Link=""/>
+        </Cost>
+        <Cost>
+            <Charge Link=""/>
+            <Cooldown Link=""/>
+        </Cost>
+        <Cost>
+            <Charge Link=""/>
+            <Cooldown Link=""/>
+        </Cost>
+        <Cost>
+            <Charge Link=""/>
+            <Cooldown Link=""/>
+        </Cost>
+        <Cost>
+            <Charge Link=""/>
+            <Cooldown Link=""/>
+        </Cost>
+        <Cost>
+            <Charge Link=""/>
+            <Cooldown Link=""/>
+        </Cost>
+        <Cost>
+            <Charge Link=""/>
+            <Cooldown Link=""/>
+        </Cost>
+        <Cost>
+            <Charge Link=""/>
+            <Cooldown Link=""/>
+        </Cost>
+        <Cost>
+            <Charge Link=""/>
+            <Cooldown Link=""/>
+        </Cost>
+        <Cost>
+            <Charge Link=""/>
+            <Cooldown Link=""/>
+        </Cost>
+        <Cost>
+            <Charge Link=""/>
+            <Cooldown Link=""/>
+        </Cost>
+        <Cost>
+            <Charge Link=""/>
+            <Cooldown Link=""/>
+        </Cost>
+        <Cost>
+            <Charge Link=""/>
+            <Cooldown Link=""/>
+        </Cost>
+        <Cost>
+            <Charge Link=""/>
+            <Cooldown Link=""/>
+        </Cost>
+        <TargetFilters value="Visible,HasEnergy;Self,Neutral,Enemy,Missile,UnderConstruction,Dead,Hidden,Invulnerable"/>
+        <Range value="9"/>
+        <CastIntroTime value="0.2"/>
+        <FinishTime value="0.8"/>
+        <Marker Link="MagicalInfusion"/>
+        <UninterruptibleArray index="Finish" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MagicalInfusion" Requirements="HaveMagicalInfusion"/>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="MagicalInfusion"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="MassTeleport">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="MassTeleportInitialSet"/>
+        <Cost>
+            <Vital index="Energy" value="100"/>
+        </Cost>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MassTeleport" Requirements="HaveMassTeleport"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="Nourish">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="25"/>
+            <Cooldown TimeUse="5"/>
+        </Cost>
+        <TargetFilters value="Biological;Enemy,Structure,Missile,Stasis,Dead"/>
+        <Range value="4"/>
+        <AutoCastFilters value="Visible;Neutral,Enemy"/>
+        <AutoCastRange value="4"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Nourish"/>
+        <Arc value="360"/>
+        <UseMarkerArray index="Approach" value="0"/>
+        <ValidatedArray index="Approach" value="0"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="PoisonJoke">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="PoisonJokeLaunchMissle"/>
+        <Flags index="AbortOnAllianceChange" value="0"/>
+        <Cost>
+            <Cooldown TimeUse="30"/>
+        </Cost>
+        <TargetFilters value="Visible;Player,Ally,Neutral,Robotic,Structure,Missile,Stasis,Dead,Invulnerable"/>
+        <Range value="8"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PoisonJoke"/>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+    </CAbilEffectTarget>
+    <CAbilBehavior id="Rainfall">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <CmdButtonArray index="On" DefaultButtonFace="Rainfall"/>
+        <CmdButtonArray index="Off" DefaultButtonFace="RainfallOff"/>
+        <BehaviorArray value="Rainfall"/>
+        <Flags index="Toggle" value="1"/>
+    </CAbilBehavior>
+    <CAbilAugment id="RamPlow">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="RamPlowUpgrade" Requirements="HavePlow"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <AbilCmd value="attack,Execute"/>
+        <Cost>
+            <Cooldown Location="Unit" TimeUse="8"/>
+        </Cost>
+        <Effect value="RamApplyBehavior"/>
+        <AutoCastValidatorArray value="CasterNotHoldingPosition"/>
+    </CAbilAugment>
+    <CAbilMorph id="RenovateHerdTowntoPonyPalace">
+        <EditorCategories value="AbilityorEffectType:MorphsandBurrows"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="RenovatePonyPalace" Requirements="HaveArmory7"/>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+        <ActorKey value="HiveUpgrade"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="Birth" value="1"/>
+        <Flags index="DisableAbils" value="1"/>
+        <Flags index="FastBuild" value="1"/>
+        <Flags index="Interruptible" value="1"/>
+        <Flags index="IgnoreUnitCost" value="1"/>
+        <Flags index="Produce" value="1"/>
+        <Flags index="ShowProgress" value="1"/>
+        <Cost>
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="100"/>
+        </Cost>
+        <InfoArray Score="1" Unit="PonyPalace">
+            <SectionArray index="Abils">
+                <DurationArray index="Delay" value="80"/>
+            </SectionArray>
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="80"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Delay" value="80"/>
+            </SectionArray>
+        </InfoArray>
+        <Alert value="MorphComplete_Zerg"/>
+    </CAbilMorph>
+    <CAbilMorph id="RenovateOutposttoHerdTown">
+        <EditorCategories value="AbilityorEffectType:MorphsandBurrows"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="RenovateHerdTown" Requirements="HaveArmory4"/>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+        <ActorKey value="LairUpgrade"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="Birth" value="1"/>
+        <Flags index="DisableAbils" value="1"/>
+        <Flags index="FastBuild" value="1"/>
+        <Flags index="Interruptible" value="1"/>
+        <Flags index="IgnoreUnitCost" value="1"/>
+        <Flags index="Produce" value="1"/>
+        <Flags index="ShowProgress" value="1"/>
+        <Cost>
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="100"/>
+        </Cost>
+        <InfoArray Score="1" Unit="HerdTown">
+            <SectionArray index="Abils">
+                <DurationArray index="Delay" value="60"/>
+            </SectionArray>
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="60"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Delay" value="60"/>
+            </SectionArray>
+        </InfoArray>
+        <Alert value="MorphComplete_Zerg"/>
+    </CAbilMorph>
+    <CAbilResearch id="AlicornSanctuaryResearch">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoArray index="Research1" Time="80" Upgrade="Aurora">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ResearchAurora" Requirements="LearnAurora"/>
+        </InfoArray>
+        <InfoArray index="Research2" Time="80" Upgrade="SpectralNova">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="ResearchSpectralNova" Requirements="LearnSpectralNova"/>
+        </InfoArray>
+        <InfoArray index="Research3" Time="80" Upgrade="ParaspriteSwarm">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ResearchParaspriteSwarm" Requirements="LearnParaspriteSwarm"/>
+        </InfoArray>
+        <InfoArray index="Research4" Time="80" Upgrade="MassTeleport">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="ResearchMassTeleport" Requirements="LearnMassTeleport"/>
+        </InfoArray>
+        <InfoArray index="Research5" Time="100" Upgrade="Plow">
+            <Resource index="Minerals" value="50"/>
+            <Resource index="Vespene" value="50"/>
+            <Button DefaultButtonFace="ResearchPlow" Requirements="LearnPlow"/>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilResearch id="ResearchFilteredGoggles">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoArray index="Research1" Time="60" Upgrade="FilteredGoggles">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="Detector" Requirements="LearnFilteredGoggles">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilResearch id="SmithyResearch" parent="EngineeringBayResearch">
+        <Name value="Abil/Name/SmithyResearch"/>
+        <InfoArray index="Research1" Upgrade="">
+            <Charge Link="Abil/SmithyResearch"/>
+            <Cooldown Link="Abil/SmithyResearch"/>
+            <Button DefaultButtonFace=""/>
+        </InfoArray>
+        <InfoArray index="Research2" Upgrade="">
+            <Charge Link="Abil/SmithyResearch"/>
+            <Cooldown Link="Abil/SmithyResearch"/>
+            <Button DefaultButtonFace=""/>
+        </InfoArray>
+        <InfoArray index="Research3" Upgrade="EquineWeaponsLevel1">
+            <Charge Link="Abil/SmithyResearch"/>
+            <Cooldown Link="Abil/SmithyResearch"/>
+            <Button DefaultButtonFace="UpgradeEquineWeaponsLevel1" Requirements="LearnEquineWeapon1"/>
+        </InfoArray>
+        <InfoArray index="Research4" Upgrade="EquineWeaponsLevel2">
+            <Charge Link="Abil/SmithyResearch"/>
+            <Cooldown Link="Abil/SmithyResearch"/>
+            <Button DefaultButtonFace="UpgradeEquineWeaponsLevel2" Requirements="LearnEquineWeapon2"/>
+        </InfoArray>
+        <InfoArray index="Research5" Upgrade="EquineWeaponsLevel3">
+            <Charge Link="Abil/SmithyResearch"/>
+            <Cooldown Link="Abil/SmithyResearch"/>
+            <Button DefaultButtonFace="UpgradeEquineWeaponsLevel3" Requirements="LearnEquineWeapon3"/>
+        </InfoArray>
+        <InfoArray index="Research6" Upgrade="">
+            <Charge Link="Abil/SmithyResearch"/>
+            <Cooldown Link="Abil/SmithyResearch"/>
+            <Button DefaultButtonFace=""/>
+        </InfoArray>
+        <InfoArray index="Research7" Upgrade="EquineArmorLevel1">
+            <Charge Link="Abil/SmithyResearch"/>
+            <Cooldown Link="Abil/SmithyResearch"/>
+            <Button DefaultButtonFace="UpgradeEquineArmorLevel1" Requirements="LearnEquineArmor1"/>
+        </InfoArray>
+        <InfoArray index="Research8" Upgrade="EquineArmorLevel2">
+            <Charge Link="Abil/SmithyResearch"/>
+            <Cooldown Link="Abil/SmithyResearch"/>
+            <Button DefaultButtonFace="UpgradeEquineArmorLevel2" Requirements="LearnEquineArmor2"/>
+        </InfoArray>
+        <InfoArray index="Research9" Upgrade="TerranInfantryArmorsLevel32">
+            <Charge Link="Abil/SmithyResearch"/>
+            <Cooldown Link="Abil/SmithyResearch"/>
+            <Button DefaultButtonFace="UpgradeEquineArmorLevel3" Requirements="LearnEquineArmor3"/>
+        </InfoArray>
+        <InfoArray index="Research10" Time="100" Upgrade="AppleBucking">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Charge Link="Abil/SmithyResearch"/>
+            <Cooldown Link="Abil/SmithyResearch"/>
+            <Button DefaultButtonFace="ResearchAppleBucking" State="Restricted" Requirements="LearnStrikeCannons2"/>
+        </InfoArray>
+        <InfoArray index="Research11" Time="130" Upgrade="ShroudoftheMoon">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Charge Link="Abil/SmithyResearch"/>
+            <Cooldown Link="Abil/SmithyResearch"/>
+            <Button DefaultButtonFace="ResearchShroudoftheMoon" State="Restricted" Requirements="LearnShroudoftheMoon2"/>
+        </InfoArray>
+        <InfoArray index="Research12">
+            <Charge Link="Abil/SmithyResearch"/>
+            <Cooldown Link="Abil/SmithyResearch"/>
+        </InfoArray>
+        <InfoArray index="Research13">
+            <Charge Link="Abil/SmithyResearch"/>
+            <Cooldown Link="Abil/SmithyResearch"/>
+        </InfoArray>
+        <InfoArray index="Research14">
+            <Charge Link="Abil/SmithyResearch"/>
+            <Cooldown Link="Abil/SmithyResearch"/>
+        </InfoArray>
+        <InfoArray index="Research15">
+            <Charge Link="Abil/SmithyResearch"/>
+            <Cooldown Link="Abil/SmithyResearch"/>
+        </InfoArray>
+        <InfoArray index="Research16">
+            <Charge Link="Abil/SmithyResearch"/>
+            <Cooldown Link="Abil/SmithyResearch"/>
+        </InfoArray>
+        <InfoArray index="Research17">
+            <Charge Link="Abil/SmithyResearch"/>
+            <Cooldown Link="Abil/SmithyResearch"/>
+        </InfoArray>
+        <InfoArray index="Research18">
+            <Charge Link="Abil/SmithyResearch"/>
+            <Cooldown Link="Abil/SmithyResearch"/>
+        </InfoArray>
+        <InfoArray index="Research19">
+            <Charge Link="Abil/SmithyResearch"/>
+            <Cooldown Link="Abil/SmithyResearch"/>
+        </InfoArray>
+        <InfoArray index="Research20">
+            <Charge Link="Abil/SmithyResearch"/>
+            <Cooldown Link="Abil/SmithyResearch"/>
+        </InfoArray>
+        <InfoArray index="Research21">
+            <Charge Link="Abil/SmithyResearch"/>
+            <Cooldown Link="Abil/SmithyResearch"/>
+        </InfoArray>
+        <InfoArray index="Research22">
+            <Charge Link="Abil/SmithyResearch"/>
+            <Cooldown Link="Abil/SmithyResearch"/>
+        </InfoArray>
+        <InfoArray index="Research23">
+            <Charge Link="Abil/SmithyResearch"/>
+            <Cooldown Link="Abil/SmithyResearch"/>
+        </InfoArray>
+        <InfoArray index="Research24">
+            <Charge Link="Abil/SmithyResearch"/>
+            <Cooldown Link="Abil/SmithyResearch"/>
+        </InfoArray>
+        <InfoArray index="Research25">
+            <Charge Link="Abil/SmithyResearch"/>
+            <Cooldown Link="Abil/SmithyResearch"/>
+        </InfoArray>
+        <InfoArray index="Research26">
+            <Charge Link="Abil/SmithyResearch"/>
+            <Cooldown Link="Abil/SmithyResearch"/>
+        </InfoArray>
+        <InfoArray index="Research27">
+            <Charge Link="Abil/SmithyResearch"/>
+            <Cooldown Link="Abil/SmithyResearch"/>
+        </InfoArray>
+        <InfoArray index="Research28">
+            <Charge Link="Abil/SmithyResearch"/>
+            <Cooldown Link="Abil/SmithyResearch"/>
+        </InfoArray>
+        <InfoArray index="Research29">
+            <Charge Link="Abil/SmithyResearch"/>
+            <Cooldown Link="Abil/SmithyResearch"/>
+        </InfoArray>
+        <InfoArray index="Research30">
+            <Charge Link="Abil/SmithyResearch"/>
+            <Cooldown Link="Abil/SmithyResearch"/>
+        </InfoArray>
+        <EditorCategories value="AbilityorEffectType:Structures"/>
+    </CAbilResearch>
+    <CAbilTrain id="GarrisonTrain">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoArray index="Train1" Time="20">
+            <Resource index="Minerals" value="40"/>
+            <Button DefaultButtonFace="TrainMilitia"/>
+            <Unit value="Militia"/>
+        </InfoArray>
+        <InfoArray index="Train2" Time="35">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="50"/>
+            <Button DefaultButtonFace="TrainDeadeye" Requirements="HaveArmory4"/>
+            <Unit value="Deadeye"/>
+        </InfoArray>
+        <InfoArray index="Train3" Time="45">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="TrainMage" Requirements="HaveArmory4"/>
+            <Unit value="Mage"/>
+        </InfoArray>
+        <InfoArray index="Train4" Time="35">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="75"/>
+            <Button DefaultButtonFace="TrainGreatCharger" Requirements="HaveArmory9"/>
+            <Unit value="GreatCharger"/>
+        </InfoArray>
+        <InfoArray index="Train5" Time="60">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button DefaultButtonFace="TrainPlaneWarper" Requirements="HaveArmory9"/>
+            <Unit value="PlaneWarper"/>
+        </InfoArray>
+    </CAbilTrain>
+    <CAbilTrain id="CloudFortTrain">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoArray index="Train1" Time="40">
+            <Button DefaultButtonFace="TrainSkybolt"/>
+            <Unit value="Skybolt"/>
+        </InfoArray>
+        <InfoArray index="Train2" Time="50">
+            <Button DefaultButtonFace="TrainWeatherPony"/>
+            <Unit value="WeatherPony"/>
+        </InfoArray>
+        <InfoArray index="Train3" Time="55">
+            <Button DefaultButtonFace="TrainStarDiver" Requirements="HaveArmory9"/>
+            <Unit value="StarDiver"/>
+        </InfoArray>
+        <InfoArray index="Train4" Time="40">
+            <Button DefaultButtonFace="TrainFeatherstriker" Requirements="HaveArmory7"/>
+            <Unit value="Featherstriker"/>
+        </InfoArray>
+    </CAbilTrain>
+    <CAbilTrain id="ForestGladesTrain">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoArray index="Train1" Time="42">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Charge Link=""/>
+            <Cooldown Link=""/>
+            <Button DefaultButtonFace="TrainCockatrice"/>
+            <Unit value="Cockatrice"/>
+        </InfoArray>
+        <InfoArray index="Train2" Time="70">
+            <Resource index="Minerals" value="300"/>
+            <Resource index="Vespene" value="200"/>
+            <Charge Link=""/>
+            <Cooldown Link=""/>
+            <Button DefaultButtonFace="TrainHydra" Requirements="HaveArmory8"/>
+            <Unit value="Hydra"/>
+        </InfoArray>
+        <InfoArray index="Train3" Time="100">
+            <Resource index="Minerals" value="400"/>
+            <Resource index="Vespene" value="250"/>
+            <Charge Link=""/>
+            <Cooldown Link=""/>
+            <Button DefaultButtonFace="TrainDragon" Requirements="HaveArmory10"/>
+            <Unit value="Dragon"/>
+        </InfoArray>
+        <InfoArray index="Train4" Time="45">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="TrainZebraHerbalist" Requirements="HaveArmory7"/>
+            <Unit value="ZebraHerbalist"/>
+        </InfoArray>
+        <Alert value=""/>
+    </CAbilTrain>
+    <CAbilBehavior id="SpectralNova">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <CmdButtonArray index="On" DefaultButtonFace="SpectralNovaEnable" Requirements="HaveSpectralNova"/>
+        <CmdButtonArray index="Off" DefaultButtonFace="SpectralNovaDisable"/>
+        <Flags index="Toggle" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <BehaviorArray value="SpectralNova"/>
+        <Cost>
+            <Vital index="Energy" value="125"/>
+        </Cost>
+    </CAbilBehavior>
+    <CAbilTrain id="TrainPioneer">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoArray index="Train1" Time="17">
+            <Resource index="Minerals" value="50"/>
+            <Button DefaultButtonFace="TrainPioneer"/>
+            <Unit value="Pioneer"/>
+        </InfoArray>
+    </CAbilTrain>
+    <CAbilBuild id="EquestrianBuild">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <FlagArray index="Interruptible" value="1"/>
+        <FlagArray index="PeonDisableCollision" value="1"/>
+        <InfoArray index="Build1" Unit="Outpost" Time="100">
+            <Resource index="Minerals" value="400"/>
+            <Button DefaultButtonFace="RaiseOutpost"/>
+        </InfoArray>
+        <InfoArray index="Build2" Unit="Orchard" Time="30">
+            <Resource index="Minerals" value="100"/>
+            <Button DefaultButtonFace="RaiseOrchard"/>
+        </InfoArray>
+        <InfoArray index="Build3" Unit="Compressor" Time="30">
+            <Resource index="Minerals" value="75"/>
+            <Button DefaultButtonFace="RaiseCompressor"/>
+            <ValidatorArray value="HasVespene"/>
+        </InfoArray>
+        <InfoArray index="Build4" Unit="Garrison" Time="65">
+            <Resource index="Minerals" value="125"/>
+            <Button DefaultButtonFace="AssembleGarrison"/>
+        </InfoArray>
+        <InfoArray index="Build5" Unit="Smithy" Time="35">
+            <Resource index="Minerals" value="150"/>
+            <Button DefaultButtonFace="RaiseSmithy"/>
+        </InfoArray>
+        <InfoArray index="Build6" Unit="BattleTower" Time="30">
+            <Resource index="Minerals" value="150"/>
+            <Button DefaultButtonFace="RaiseBattleTower" Requirements="HaveArmory3"/>
+        </InfoArray>
+        <InfoArray index="Build7" Unit="University" Time="35">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="RaiseUniversity" Requirements="HaveArmory2"/>
+        </InfoArray>
+        <InfoArray index="Build8" Time="50">
+            <Button State="Restricted" Requirements="UsePsiDisruptor"/>
+        </InfoArray>
+        <InfoArray index="Build9" Time="25">
+            <Button State="Restricted" Requirements="HaveEngineeringBay"/>
+        </InfoArray>
+        <InfoArray index="Build10" Unit="CloudFort" Time="65">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="RaiseCloudFort" Requirements="HaveArmory5"/>
+        </InfoArray>
+        <InfoArray index="Build11" Unit="Glades" Time="60">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="RaiseGlades" Requirements="HaveArmory5"/>
+        </InfoArray>
+        <InfoArray index="Build12" Unit="Embassy" Time="60">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="RaiseEmbassy" Requirements="HaveArmory5"/>
+        </InfoArray>
+        <InfoArray index="Build13" Unit="AlicornSanctuary" Time="45">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="50"/>
+            <Button DefaultButtonFace="RaiseAlicornSanctuary" Requirements="HaveArmory8"/>
+        </InfoArray>
+        <InfoArray index="Build14" Unit="Beastiary" Time="45">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="50"/>
+            <Button DefaultButtonFace="RaiseBestiary" Requirements="HaveArmory8"/>
+        </InfoArray>
+        <FidgetDelayMin value="5"/>
+        <FidgetDelayMax value="10"/>
+        <ConstructionMover value="Construction"/>
+    </CAbilBuild>
+    <CAbilResearch id="UniversityResearch">
+        <EditorCategories value="AbilityorEffectType:Structures"/>
+        <InfoArray index="Research1" Time="160" Upgrade="MonsterWeaponsLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="UpgradeMonsterWeaponsLevel1" State="Restricted" Requirements="LearnMonsterWeapon1"/>
+        </InfoArray>
+        <InfoArray index="Research2" Time="190" Upgrade="MonsterWeaponsLevel2">
+            <Resource index="Minerals" value="175"/>
+            <Resource index="Vespene" value="175"/>
+            <Button DefaultButtonFace="UpgradeMonsterWeaponsLevel2" State="Restricted" Requirements="LearnMonsterWeapon2"/>
+        </InfoArray>
+        <InfoArray index="Research3" Time="220" Upgrade="MonsterWeaponsLevel3">
+            <Resource index="Minerals" value="250"/>
+            <Resource index="Vespene" value="250"/>
+            <Button DefaultButtonFace="UpgradeMonsterWeaponsLevel3" State="Restricted" Requirements="LearnMonsterWeapon3"/>
+        </InfoArray>
+        <InfoArray index="Research4" Time="160" Upgrade="ZergGroundArmorsLevel12">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="UpgradeMonsterArmorLevel1" State="Restricted" Requirements="LearnMonsterArmor1"/>
+        </InfoArray>
+        <InfoArray index="Research5" Time="190" Upgrade="MonsterArmorLevel2">
+            <Resource index="Minerals" value="175"/>
+            <Resource index="Vespene" value="175"/>
+            <Button DefaultButtonFace="UpgradeMonsterArmorLevel2" State="Restricted" Requirements="LearnMonsterArmor2"/>
+        </InfoArray>
+        <InfoArray index="Research6" Time="220" Upgrade="MonsterArmorLevel3">
+            <Resource index="Minerals" value="250"/>
+            <Resource index="Vespene" value="250"/>
+            <Button DefaultButtonFace="TerranVehiclePlatingLevel32" State="Restricted" Requirements="LearnMonsterArmor3"/>
+        </InfoArray>
+        <InfoArray index="Research7" Time="160">
+            <Button State="Restricted" Requirements="LearnZergMissileWeapon1"/>
+        </InfoArray>
+        <InfoArray index="Research8" Time="190">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button State="Restricted" Requirements="LearnZergMissileWeapon2"/>
+        </InfoArray>
+        <InfoArray index="Research9" Time="220">
+            <Resource index="Minerals" value="200"/>
+            <Resource index="Vespene" value="200"/>
+            <Button State="Restricted" Requirements="LearnZergMissileWeapon3"/>
+        </InfoArray>
+        <InfoArray index="Research10" Time="100" Upgrade="MagicalInfusion">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="MagicalInfusion" Requirements="LearnMagicalInfusion"/>
+        </InfoArray>
+        <InfoArray index="Research11" Time="120" Upgrade="MagicArmor">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="MagicArmor" Requirements="LearnMagicArmor"/>
+        </InfoArray>
+        <InfoArray index="Research12" Time="80" Upgrade="SpellweaveCape">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ResearchSpellweaveCape" Requirements="LearnSpellweaveCape"/>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilEffectTarget id="MagicArmor">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Vital index="Energy" value="50"/>
+            <Charge Link=""/>
+            <Cooldown Link=""/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MagicArmor" Requirements="HaveMagicArmor"/>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="MagicArmor"/>
+        <Range value="9"/>
+        <AutoCastFilters value="Visible;Player,Enemy,Structure"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="StoneEye">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="StoneEyeApplyBehavior"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Cost>
+            <Charge Link="" TimeUse="4"/>
+            <Cooldown TimeUse="10"/>
+        </Cost>
+        <TargetFilters value="Visible;Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Marker Link="Abil/Contaminate"/>
+        <AINotifyEffect value=""/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="StoneEye"/>
+        <AutoCastRange value="6"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="TelekineticJam">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="TelekineticJamApplyBehavior"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="50"/>
+        </Cost>
+        <TargetFilters value="Mechanical,Visible;Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="9"/>
+        <Marker Link="Abil/Contaminate"/>
+        <AINotifyEffect value=""/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TelekeneticJam"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="Teleport">
+        <AbilSetId value="Blnk"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="Blink"/>
+        <Flags index="BestUnit" value="0"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Charge Link="Abil/Blink"/>
+            <Cooldown Link="Blink" TimeUse="10"/>
+        </Cost>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <Marker Link="Abil/Blink"/>
+        <AINotifyEffect value="Blink"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Blink">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
+    <CAbilMorph id="TornadoOn">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TornadoTornadoMode">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <Cost>
+            <Vital index="Energy" value="150"/>
+        </Cost>
+        <InfoArray Unit="Tornado" RandomDelayMax="0.5">
+            <SectionArray index="Abils">
+                <DurationArray index="Delay" value="0.5"/>
+            </SectionArray>
+            <SectionArray index="Actor">
+                <DurationArray index="Delay" value="0.5"/>
+            </SectionArray>
+            <SectionArray index="Mover">
+                <DurationArray index="Delay" value="0.5"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Delay" value="0.5"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
+    <CAbilMorph id="TornadoOff">
+        <AbilSetId value="Tornado"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TornadoTornadoMode">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <ActorKey value="SiegeMode"/>
+        <Flags index="SuppressMovement" value="1"/>
+        <Cost>
+            <Charge Link="Abil/Tornado"/>
+            <Cooldown Link="Abil/Tornado"/>
+        </Cost>
+        <InfoArray Unit="WeatherPony" RandomDelayMax="0.5">
+            <SectionArray index="Abils">
+                <DurationArray index="Delay" value="0.5"/>
+            </SectionArray>
+            <SectionArray index="Actor">
+                <DurationArray index="Delay" value="0.5"/>
+            </SectionArray>
+            <SectionArray index="Facing">
+                <DurationArray index="Duration" value="0.5"/>
+            </SectionArray>
+            <SectionArray index="Mover">
+                <DurationArray index="Delay" value="0.5"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Delay" value="0.5"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
+    <CAbilTransport id="WeatherPonyTransport">
+        <AbilSetId value="ULdM"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <CmdButtonArray index="Load" DefaultButtonFace="MedivacLoad"/>
+        <CmdButtonArray index="UnloadAll">
+            <Flags index="Hidden" value="1"/>
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="UnloadAt" DefaultButtonFace="MedivacUnloadAll"/>
+        <CmdButtonArray index="UnloadUnit">
+            <Flags index="Hidden" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="LoadAll">
+            <Flags index="Hidden" value="1"/>
+        </CmdButtonArray>
+        <Flags index="CargoDeath" value="1"/>
+        <MaxCargoCount value="8"/>
+        <MaxCargoSize value="8"/>
+        <TotalCargoSpace value="8"/>
+        <UnloadPeriod value="1"/>
+    </CAbilTransport>
+    <CAbilEffectInstant id="ParaspriteSwarm">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="BestUnit" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="75"/>
+            <Charge Link="Abil/HallucinationProbe"/>
+            <Cooldown Link="Abil/HallucinationProbe"/>
+        </Cost>
+        <AINotifyEffect value="HallucinationProbe"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ParaspriteSwarm" Requirements="HaveParaspriteSwarm"/>
+    </CAbilEffectInstant>
+</Catalog>

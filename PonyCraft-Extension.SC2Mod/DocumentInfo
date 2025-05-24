@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocInfo>
+    <Flags>
+        <Value>ExtensionMod</Value>
+    </Flags>
+    <ModType>
+        <Value>Interface</Value>
+    </ModType>
+    <Sections>
+        <Value>race selection</Value>
+    </Sections>
+    <Dependencies>
+        <Value>file:Mods\Ponycraft\PonyCraft-Data.SC2Mod</Value>
+    </Dependencies>
+    <Preload>
+        <Value>GameLink:Race;Equestrian</Value>
+    </Preload>
+</DocInfo>

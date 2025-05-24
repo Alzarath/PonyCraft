@@ -1,0 +1,2 @@
+﻿DocInfo/DescLong=An Extension Mod that allows you to play the game as equines
+DocInfo/Name=PonyCraft - Extension Mod
